@@ -1,0 +1,35 @@
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+
+.social {
+  padding: 2.4rem 0rem;
+  background: $smoke75;
+  &_nav {
+    &-wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+    &-contacts {
+      display: flex;
+      gap: 2.4rem;
+      @include font-montserrat;
+      font-size: 2rem;
+      &--links {
+        color: $white;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
+    }
+    &-social {
+      display: flex;
+      align-items: center;
+      gap: 2.4rem;
+      &--links {
+        text-decoration: none;
+        color: $black;
+      }
+    }
+  }
+}

@@ -1,4 +1,39 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
+.social {
+  padding: 2.4rem 0rem;
+  background: #1a1a1a;
+}
+.social_nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.social_nav-contacts {
+  display: flex;
+  gap: 2.4rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+}
+.social_nav-contacts--links {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.social_nav-social {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+}
+.social_nav-social--links {
+  text-decoration: none;
+  color: #1a1a1a;
+}
+
 html {
   font-size: 10px;
   scroll-behavior: smooth;
@@ -6,8 +41,9 @@ html {
 
 body {
   font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
   font-optical-sizing: auto;
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
 }
 
