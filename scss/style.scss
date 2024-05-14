@@ -1,0 +1,40 @@
+// COMPONENTS
+@import "../components/header";
+
+// MEDIA QUERIES COMPONENTS
+
+@import "../media-queries/media-header";
+
+// MIXINS
+
+@import "../scss/mixins/mixins";
+
+// ANIMATIONS
+
+@import "../scss/animations/animations";
+
+// VARIABLES
+@import "../scss/variables/variables";
+
+// FONTS
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
+
+// HTML
+
+html {
+  font-size: $base-font-size;
+  scroll-behavior: smooth;
+}
+
+// BODY
+
+body {
+  @include font-montserrat;
+}
+
+// CONTAINER
+
+.container {
+  max-width: 132rem;
+  margin: 0 auto;
+}
