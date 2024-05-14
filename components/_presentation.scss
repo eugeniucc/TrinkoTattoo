@@ -1,0 +1,22 @@
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+
+.swiper_presentation-wrapper {
+  height: 450px;
+}
+.swiper_presentation-title {
+  @include font-montserrat-title;
+  font-size: 3.2rem;
+  font-weight: 700;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.presentation-btn-next {
+  width: 200px;
+  height: 200px;
+  &::after {
+    content: "";
+  }
+}

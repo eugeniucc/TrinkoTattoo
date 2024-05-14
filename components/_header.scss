@@ -1,3 +1,35 @@
 @import "../scss/mixins/mixins";
 @import "../scss/variables/variables";
 
+.header {
+  padding: 3.6rem;
+  background-color: $smoke50;
+  &_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-logo {
+      &--img {
+        width: 100%;
+        height: 10rem;
+        display: block;
+      }
+    }
+    &-menu {
+      display: flex;
+      gap: 2.4rem;
+      &--links {
+        text-decoration: none;
+        @include font-montserrat-title;
+        color: $white;
+        &:hover {
+          color: $brick;
+          transition: 0.3s;
+        }
+        &:not(:hover) {
+          transition: 0.3s;
+        }
+      }
+    }
+  }
+}

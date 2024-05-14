@@ -12,14 +12,23 @@
     &-contacts {
       display: flex;
       gap: 2.4rem;
-      @include font-montserrat;
-      font-size: 2rem;
+
       &--links {
         color: $white;
         text-decoration: none;
         display: flex;
         align-items: center;
         gap: 1rem;
+      }
+      &--span {
+        @include font-montserrat-title;
+        &:hover {
+          color: $brick;
+          transition: 0.4s;
+        }
+        &:not(:hover) {
+          transition: 0.4s;
+        }
       }
     }
     &-social {

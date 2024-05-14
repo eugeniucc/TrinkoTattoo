@@ -5,3 +5,17 @@
   font-weight: 400;
   font-style: normal;
 }
+@mixin font-montserrat-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+@mixin font-montserrat-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
