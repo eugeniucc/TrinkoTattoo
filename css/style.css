@@ -185,6 +185,10 @@
   transition: 0.5s;
 }
 
+.correction {
+  background-color: #1a1a1a;
+}
+
 html {
   font-size: 10px;
   scroll-behavior: smooth;
