@@ -4,6 +4,8 @@ const popupButton = document.querySelector(".popup_form-close");
 const popupForm = document.querySelector(".popup_form");
 const userName = document.getElementById("name");
 const userTel = document.getElementById("tel");
+const askPrice = document.getElementById("linkopenmodal");
+const makeAppointment = document.querySelector(".about_wrapper-btn");
 
 const sendUserData = document.querySelector(".popup_form-submit");
 
@@ -58,4 +60,14 @@ document.addEventListener("keydown", (event) => {
 popupOverlay.addEventListener("click", () => {
   popupWindow.classList.remove("popup_show");
   popupOverlay.classList.remove("popup_show");
+});
+
+askPrice.addEventListener("click", function () {
+  popupWindow.classList.add("popup_show");
+  popupOverlay.classList.add("popup_show");
+});
+
+makeAppointment.addEventListener("click", function () {
+  popupWindow.classList.add("popup_show");
+  popupOverlay.classList.add("popup_show");
 });
