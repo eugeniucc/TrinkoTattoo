@@ -470,6 +470,7 @@
   border-radius: 3.5rem;
   font-size: 2.4rem;
   color: #fff;
+  cursor: pointer;
 }
 .popup_form-submit:hover {
   background-color: #fff;
@@ -478,6 +479,20 @@
 }
 .popup_form-submit:not(:hover) {
   transition: 0.5s;
+}
+
+.popup_show {
+  display: block;
+}
+
+.error {
+  border: 1px solid red;
+}
+.error::-moz-placeholder {
+  color: red;
+}
+.error::placeholder {
+  color: red;
 }
 
 html {

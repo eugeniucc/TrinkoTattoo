@@ -66,6 +66,17 @@
       border-radius: 3.5rem;
       font-size: 2.4rem;
       color: $white;
+      cursor: pointer;
     }
+  }
+}
+
+.popup_show {
+  display: block;
+}
+.error {
+  border: 1px solid red;
+  &::placeholder {
+    color: red;
   }
 }
