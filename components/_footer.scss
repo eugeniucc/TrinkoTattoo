@@ -1,2 +1,30 @@
 @import "../scss/mixins/mixins";
 @import "../scss/variables/variables";
+
+.footer {
+  padding: 10rem 0rem 5rem 0rem;
+  background-color: $smoke75;
+  &_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include font-montserrat-title;
+    color: $white;
+    &-wrapper {
+      display: flex;
+      gap: 2.4rem;
+      &--copyrights,
+      &--privacy {
+        color: $white;
+        text-decoration: none;
+        &:hover {
+          color: $brick;
+          transition: 0.3s;
+        }
+        &:not(:hover) {
+          transition: 0.3s;
+        }
+      }
+    }
+  }
+}

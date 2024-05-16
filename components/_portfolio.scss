@@ -1,2 +1,44 @@
 @import "../scss/mixins/mixins";
 @import "../scss/variables/variables";
+
+.portfolio {
+  padding: 10rem 0rem;
+  background-color: $smoke75;
+
+  &_title {
+    @include font-montserrat-title;
+    font-size: 3.2rem;
+    color: $white;
+    padding-bottom: 5rem;
+    text-align: center;
+  }
+}
+
+// SWIPER PORTFOLIO
+
+.swiper-slide-portfolio {
+  height: 50rem;
+}
+.swiper-slide-portfolio-img {
+  display: block;
+  width: 100%;
+}
+
+.portfolio-btn-next {
+  width: 4.5rem;
+  height: 4.5rem;
+  &::after {
+    content: "";
+  }
+}
+.portfolio-btn-prev {
+  width: 4.5rem;
+  height: 4.5rem;
+  &::after {
+    content: "";
+  }
+  transform: rotate(180deg);
+}
+.swiper-pagination-portfolio {
+  display: none;
+}
