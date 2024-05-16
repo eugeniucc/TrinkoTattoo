@@ -188,6 +188,91 @@
 .correction {
   background-color: #1a1a1a;
 }
+.correction_wrapper {
+  display: flex;
+  gap: 15rem;
+}
+.correction_wrapper-bg {
+  width: 80rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: grayscale(100%);
+}
+.correction_wrapper-bg:hover {
+  transition: 0.7s all ease;
+  filter: grayscale(0%);
+}
+.correction_wrapper-bg:not(:hover) {
+  transition: 0.7s all ease;
+}
+.correction_wrapper-content {
+  padding: 12rem 0rem;
+  width: 80rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.correction_wrapper-content--title {
+  font-size: 3.2rem;
+  color: #fff;
+  font-weight: 600;
+  padding-bottom: 2.4rem;
+}
+.correction_wrapper-content--text {
+  color: #616161;
+  padding-bottom: 2rem;
+  line-height: 2.4rem;
+  font-weight: 300;
+}
+.correction_wrapper-content--list {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+  color: #fff;
+}
+.correction_wrapper-content--item {
+  padding-bottom: 1rem;
+}
+
+.reviews {
+  padding: 12rem 0rem;
+}
+.reviews_wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+.reviews_wrapper-card {
+  max-width: 33rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.4rem;
+}
+.reviews_wrapper-card--bg {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.reviews_wrapper-card--title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.4rem;
+}
+.reviews_wrapper-card--text {
+  text-align: center;
+}
 
 html {
   font-size: 10px;

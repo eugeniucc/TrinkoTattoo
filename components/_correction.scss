@@ -3,4 +3,47 @@
 
 .correction {
   background-color: $smoke75;
+  &_wrapper {
+    display: flex;
+    gap: 15rem;
+    &-bg {
+      width: 80rem;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      filter: grayscale(100%);
+      &:hover {
+        transition: 0.7s all ease;
+        filter: grayscale(0%);
+      }
+      &:not(:hover) {
+        transition: 0.7s all ease;
+      }
+    }
+    &-content {
+      padding: 12rem 0rem;
+      width: 80rem;
+      @include font-montserrat-title;
+      &--title {
+        font-size: 3.2rem;
+        color: $white;
+        font-weight: 600;
+        padding-bottom: 2.4rem;
+      }
+      &--text {
+        color: $smoke25;
+        padding-bottom: 2rem;
+        line-height: 2.4rem;
+        font-weight: 300;
+      }
+      &--list {
+        @include font-montserrat-text;
+        font-size: 2rem;
+        color: $white;
+      }
+      &--item {
+        padding-bottom: 1rem;
+      }
+    }
+  }
 }

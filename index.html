@@ -335,10 +335,10 @@
             <h1 class="header_nav-logo--title">TrinkoTattoo</h1>
           </div>
           <div class="header_nav-menu">
-            <a class="header_nav-menu--links" href="#">
+            <a class="header_nav-menu--links" href="#presentation">
               <span class="header_nav-menu--span">Главная</span>
             </a>
-            <a class="header_nav-menu--links" href="#">
+            <a class="header_nav-menu--links" href="#about">
               <span class="header_nav-menu--span">Обо мне</span>
             </a>
             <a class="header_nav-menu--links" href="#">
@@ -347,6 +347,9 @@
             <a class="header_nav-menu--links" href="#">
               <span class="header_nav-menu--span">Прайс</span>
             </a>
+            <a class="header_nav-menu--links" href="#correction">
+              <span class="header_nav-menu--span">Исправление татуировок</span>
+            </a>
             <a class="header_nav-menu--links" href="#">
               <span class="header_nav-menu--span">Контакты</span>
             </a>
@@ -354,7 +357,7 @@
         </nav>
       </div>
     </header>
-    <section class="presentation">
+    <section class="presentation" id="presentation">
       <div class="swiper swiper-presentation">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
@@ -433,7 +436,7 @@
         </div>
       </div>
     </section>
-    <section class="about">
+    <section class="about" id="about">
       <div class="container">
         <div class="about_wrapper">
           <div class="about_wrapper-content">
@@ -452,7 +455,7 @@
         </div>
       </div>
     </section>
-    <section class="correction">
+    <section class="correction" id="correction">
       <div class="correction_wrapper">
         <div
           class="correction_wrapper-bg"
@@ -475,7 +478,10 @@
             что тату является серьёзным решением, и наша работа заключается, в
             том числе в предоставлении рекомендаций и консультации.
           </p>
-          <ul class="correction_wrapper-content--list">
+          <ul
+            class="correction_wrapper-content--list"
+            style="list-style: url(./icons/list-style-arrow.svg)"
+          >
             <li class="correction_wrapper-content--item">
               татуировки всех стилей
             </li>
@@ -492,7 +498,78 @@
         </div>
       </div>
     </section>
+    <section class="reviews">
+      <div class="container">
+        <div class="reviews_wrapper">
+          <div class="reviews_wrapper-card">
+            <div
+              class="reviews_wrapper-card--bg"
+              style="background-image: url(./icons/reviews-img.jpg)"
+            ></div>
+            <div class="reviews_wrapper-card--title">Маша</div>
+            <div class="reviews_wrapper-card--text">
+              Это была моя первая татуировка, и мне, мягко говоря, было
+              несколько тревожно. Боялась всего. Никогда не была в таких местах.
+              НО... Здесь я почувствовала себя хорошо, расслабленно. Меня
+              приняли, как желанного гостя. Мой татуировщик оказался настоящим
+              специалистом и хорошим человеком.
+            </div>
+          </div>
+          <div class="reviews_wrapper-card">
+            <div
+              class="reviews_wrapper-card--bg"
+              style="background-image: url(./icons/reviews-img.jpg)"
+            ></div>
+            <div class="reviews_wrapper-card--title">Артур</div>
+            <div class="reviews_wrapper-card--text">
+              Преклоняюсь перед этим парнем. Пришлось сидеть два дня по пять
+              часов, но это стоило того. Лекс и все остальные ребята, работающие
+              в салоне, очень приветливые и доброжелательные. Моя татуха все еще
+              в процессе заживления, но она и сейчас смотрится эффектно. Лекс -
+              великий художник, рекомендую.
+            </div>
+          </div>
+          <div class="reviews_wrapper-card">
+            <div
+              class="reviews_wrapper-card--bg"
+              style="background-image: url(./icons/reviews-img.jpg)"
+            ></div>
+            <div class="reviews_wrapper-card--title">Владик</div>
+            <div class="reviews_wrapper-card--text">
+              Пришли сюда с подругой, чтобы сделать по маленькой тату перед
+              отъездом в Таиланд. У нас было буквально несколько часов до
+              самолета. Ребята вошли в наше положение и позаботились о нас. Мы
+              получили две прекрасные маленькие татуировки и были счастливы.
+              Рекомендуем этот салон друзьям.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="portfolio">
+      <div class="swiper swiper-portfolio">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination swiper-pagination-portfolio"></div>
+      </div>
+    </section>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/swiper-nav.js"></script>
+    <script src="./js/swiper-portfolio.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
