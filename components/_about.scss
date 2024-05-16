@@ -1,0 +1,46 @@
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+
+.about {
+  padding: 12rem 0rem;
+  &_wrapper {
+    @include font-montserrat-title;
+    &-content {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      align-items: center;
+      &--title {
+        font-size: 1.8rem;
+        font-weight: 600;
+        max-width: 60rem;
+        text-align: center;
+        margin: 0 auto;
+        text-transform: uppercase;
+      }
+      &--text {
+        font-weight: 300;
+        color: $smoke50;
+        text-align: center;
+      }
+    }
+    &-btn {
+      @include font-montserrat-title;
+      font-weight: 600;
+      color: $white;
+      background-color: $brick;
+      border: 1px solid $brick;
+      cursor: pointer;
+      padding: 1.6rem 4rem;
+      margin-top: 3rem;
+      &:hover {
+        background-color: $white;
+        color: $black;
+        transition: 0.5s;
+      }
+      &:not(:hover) {
+        transition: 0.5s;
+      }
+    }
+  }
+}
