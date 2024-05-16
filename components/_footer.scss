@@ -11,10 +11,10 @@
     align-items: center;
     padding-bottom: 10rem;
     &-slider {
-      width: 50%;
+      width: 60%;
     }
     &-social {
-      width: 40%;
+      width: 30%;
       display: flex;
       gap: 4.8rem;
       &--links {
@@ -42,7 +42,6 @@
 }
 
 // SWIPER FOOTER
-
-.swiper-pagination-footer {
-  display: none;
+.swiper-pagination-bullet-active {
+  background-color: $brick;
 }

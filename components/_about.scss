@@ -33,14 +33,7 @@
       cursor: pointer;
       padding: 1.6rem 4rem;
       margin-top: 3rem;
-      &:hover {
-        background-color: $white;
-        color: $black;
-        transition: 0.5s;
-      }
-      &:not(:hover) {
-        transition: 0.5s;
-      }
+      @include hover-btn;
     }
   }
 }

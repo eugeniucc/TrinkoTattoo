@@ -3,6 +3,13 @@
 
 .reviews {
   padding: 12rem 0rem;
+  &_title {
+    @include font-montserrat-title;
+    color: $black;
+    font-size: 3.2rem;
+    text-align: center;
+    padding-bottom: 10rem;
+  }
   &_wrapper {
     display: flex;
     justify-content: space-around;

@@ -5,6 +5,13 @@
 .social {
   padding: 2.4rem 0rem;
   background: $smoke75;
+  &_title {
+    @include font-montserrat-title;
+    color: $white;
+    font-size: 3.2rem;
+    text-align: center;
+    padding-bottom: 3rem;
+  }
   &_nav {
     &-wrapper {
       display: flex;

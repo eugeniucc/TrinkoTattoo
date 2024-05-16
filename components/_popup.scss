@@ -1,0 +1,71 @@
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+@import "../scss/animations/hover";
+
+.popup {
+  display: none;
+  position: fixed;
+  width: 55rem;
+  height: 54rem;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 3.5rem;
+  background-color: $smoke25;
+  z-index: 2;
+  &_overlay {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(0.3rem);
+    z-index: 1;
+  }
+  &_form {
+    &-close {
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      float: right;
+      padding: 2rem 2rem 0rem 0rem;
+    }
+    &-title {
+      @include font-montserrat;
+      padding: 5rem 0rem;
+      text-align: center;
+      font-size: 3.2rem;
+      font-weight: 600;
+    }
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 5rem;
+      width: 45rem;
+      margin: 0 auto;
+      &--item {
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
+      }
+      &--input {
+        outline: none;
+        padding: 1.4rem 0rem 1.4rem 1.4rem;
+        @include font-montserrat;
+        font-size: 1.8rem;
+      }
+    }
+    &-submit {
+      background: $brick;
+      border: 1px solid $brick;
+      @include hover-btn;
+      @include font-montserrat;
+      padding: 1.4rem 0rem;
+      border-radius: 3.5rem;
+      font-size: 2.4rem;
+      color: $white;
+    }
+  }
+}

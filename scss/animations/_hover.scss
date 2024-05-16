@@ -10,3 +10,14 @@
     }
   }
 }
+
+@mixin hover-btn {
+  &:hover {
+    background-color: $white;
+    color: $black;
+    transition: 0.5s;
+  }
+  &:not(:hover) {
+    transition: 0.5s;
+  }
+}
