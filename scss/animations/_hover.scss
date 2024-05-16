@@ -1,0 +1,12 @@
+@import "../mixins/mixins";
+@import "../variables/variables";
+
+@mixin hover-brick {
+  &:hover {
+    transition: 0.4s;
+    color: $brick;
+    &:not(:hover) {
+      transition: 0.4s;
+    }
+  }
+}

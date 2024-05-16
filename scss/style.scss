@@ -12,11 +12,13 @@
 @import "../media-queries/media-header";
 
 // MIXINS
-
 @import "../scss/mixins/mixins";
 
 // VARIABLES
 @import "../scss/variables/variables";
+
+// HOVER
+@import "../scss/animations/hover";
 
 // FONTS
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");

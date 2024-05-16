@@ -1,5 +1,6 @@
 @import "../scss/mixins/mixins";
 @import "../scss/variables/variables";
+@import "../scss/animations/hover";
 
 .social {
   padding: 2.4rem 0rem;
@@ -22,13 +23,7 @@
       }
       &--span {
         @include font-montserrat-title;
-        &:hover {
-          color: $brick;
-          transition: 0.4s;
-        }
-        &:not(:hover) {
-          transition: 0.4s;
-        }
+        @include hover-brick;
       }
     }
     &-social {

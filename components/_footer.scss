@@ -1,9 +1,27 @@
 @import "../scss/mixins/mixins";
 @import "../scss/variables/variables";
+@import "../scss/animations/hover";
 
 .footer {
-  padding: 10rem 0rem 5rem 0rem;
+  padding-bottom: 5rem;
   background-color: $smoke75;
+  &_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10rem;
+    &-slider {
+      width: 50%;
+    }
+    &-social {
+      width: 40%;
+      display: flex;
+      gap: 4.8rem;
+      &--links {
+        text-decoration: none;
+      }
+    }
+  }
   &_content {
     display: flex;
     justify-content: space-between;
@@ -17,14 +35,14 @@
       &--privacy {
         color: $white;
         text-decoration: none;
-        &:hover {
-          color: $brick;
-          transition: 0.3s;
-        }
-        &:not(:hover) {
-          transition: 0.3s;
-        }
+        @include hover-brick;
       }
     }
   }
+}
+
+// SWIPER FOOTER
+
+.swiper-pagination-footer {
+  display: none;
 }

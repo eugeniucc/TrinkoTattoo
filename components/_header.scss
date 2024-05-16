@@ -1,5 +1,6 @@
 @import "../scss/mixins/mixins";
 @import "../scss/variables/variables";
+@import "../scss/animations/hover";
 
 .header {
   padding: 3.6rem;
@@ -30,13 +31,7 @@
         text-decoration: none;
         @include font-montserrat-title;
         color: $white;
-        &:hover {
-          color: $brick;
-          transition: 0.3s;
-        }
-        &:not(:hover) {
-          transition: 0.3s;
-        }
+        @include hover-brick;
       }
     }
   }
