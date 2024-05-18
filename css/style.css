@@ -394,6 +394,11 @@
   background-color: #f24342;
 }
 
+.checkage {
+  position: fixed;
+  background-color: #1a1a1a;
+}
+
 .popup {
   display: none;
   position: fixed;
