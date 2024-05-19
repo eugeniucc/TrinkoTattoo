@@ -1,16 +1,10 @@
 var swiper = new Swiper(".swiper_portfolio", {
-  effect: "coverflow",
-  grabCursor: true,
+  slidesPerView: 4,
   centeredSlides: true,
-  slidesPerView: "auto",
-  coverflowEffect: {
-    rotate: 50,
-    stretch: 0,
-    depth: 100,
-    modifier: 1,
-    slideShadows: true,
-  },
+  spaceBetween: 30,
+  grabCursor: true,
   pagination: {
     el: ".swiper-pagination",
+    clickable: true,
   },
 });

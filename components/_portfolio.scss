@@ -16,29 +16,12 @@
 
 // SWIPER PORTFOLIO
 
-.swiper-slide-portfolio {
-  height: 65rem;
-}
-.swiper-slide-portfolio-img {
-  display: block;
+.swiper_portfolio-content {
+  height: 50rem;
   width: 100%;
-}
-
-.portfolio-btn-next {
-  width: 4.5rem;
-  height: 4.5rem;
-  &::after {
-    content: "";
+  &--img {
+    display: block;
+    width: 100%;
+    height: 100%;
   }
-}
-.portfolio-btn-prev {
-  width: 4.5rem;
-  height: 4.5rem;
-  &::after {
-    content: "";
-  }
-  transform: rotate(180deg);
-}
-.swiper-pagination-portfolio {
-  display: none;
 }
