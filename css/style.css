@@ -40,8 +40,8 @@
   transition: 0.4s;
   color: #f24342;
 }
-.social_nav-contacts--span:hover:not(:hover) {
-  transition: 0.4s;
+.social_nav-contacts--span:not(:hover) {
+  transition: 0.5s;
 }
 .social_nav-social {
   display: flex;
@@ -98,8 +98,8 @@
   transition: 0.4s;
   color: #f24342;
 }
-.header_nav-menu--links:hover:not(:hover) {
-  transition: 0.4s;
+.header_nav-menu--links:not(:hover) {
+  transition: 0.5s;
 }
 
 .swiper_presentation-wrapper {
@@ -119,6 +119,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .presentation-btn-next {
@@ -138,10 +139,22 @@
   content: "";
 }
 
-.swiper_presentation-wrapper--bg {
+.swiper_presentation-wrapper--bg1 {
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position: center;
+  background-position-y: -35rem;
+}
+
+.swiper_presentation-wrapper--bg2 {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: -5rem;
+}
+
+.swiper_presentation-wrapper--bg3 {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: -12rem;
 }
 
 .about {
@@ -161,17 +174,21 @@
   align-items: center;
 }
 .about_wrapper-content--title {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 600;
   max-width: 60rem;
   text-align: center;
   margin: 0 auto;
-  text-transform: uppercase;
 }
 .about_wrapper-content--text {
   font-weight: 300;
   color: #282828;
   text-align: center;
+  font-size: 2rem;
+}
+.about_wrapper-content--span {
+  display: block;
+  padding-top: 2rem;
 }
 .about_wrapper-btn {
   font-family: "Montserrat", sans-serif;
@@ -194,6 +211,21 @@
 }
 .about_wrapper-btn:not(:hover) {
   transition: 0.5s;
+}
+
+.price {
+  padding: 12rem 0rem;
+  background-color: #1a1a1a;
+}
+.price_title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3.2rem;
+  color: #fff;
+  text-align: center;
 }
 
 .correction {
@@ -386,8 +418,8 @@
   transition: 0.4s;
   color: #f24342;
 }
-.footer_content-wrapper--copyrights:hover:not(:hover), .footer_content-wrapper--privacy:hover:not(:hover) {
-  transition: 0.4s;
+.footer_content-wrapper--copyrights:not(:hover), .footer_content-wrapper--privacy:not(:hover) {
+  transition: 0.5s;
 }
 
 .swiper-pagination-bullet-active {

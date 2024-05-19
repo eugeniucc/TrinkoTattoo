@@ -1,0 +1,14 @@
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+@import "../scss/animations/hover";
+
+.price {
+  padding: 12rem 0rem;
+  background-color: $smoke75;
+  &_title {
+    @include font-montserrat-title;
+    font-size: 3.2rem;
+    color: $white;
+    text-align: center;
+  }
+}

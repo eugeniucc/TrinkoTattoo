@@ -5,9 +5,9 @@
   &:hover {
     transition: 0.4s;
     color: $brick;
-    &:not(:hover) {
-      transition: 0.4s;
-    }
+  }
+  &:not(:hover) {
+    transition: 0.5s;
   }
 }
 
