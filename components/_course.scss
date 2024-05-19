@@ -1,13 +1,16 @@
 @import "../scss/mixins/mixins";
 @import "../scss/variables/variables";
 
-.correction {
+.course {
   background-color: $smoke75;
+  padding-bottom: 10rem;
   &_wrapper {
     display: flex;
-    gap: 15rem;
+    gap: 10rem;
+    align-items: center;
     &-bg {
-      width: 80rem;
+      width: 50%;
+      height: 50rem;
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -21,28 +24,24 @@
       }
     }
     &-content {
-      padding: 12rem 0rem;
-      width: 80rem;
+      width: 50%;
       @include font-montserrat-title;
+      padding: 5rem;
       &--title {
         font-size: 3.2rem;
         color: $white;
         font-weight: 600;
-        padding-bottom: 2.4rem;
-      }
-      &--text {
-        color: $smoke25;
-        padding-bottom: 2rem;
-        line-height: 2.4rem;
-        font-weight: 300;
+        padding-bottom: 4rem;
+        text-align: center;
       }
       &--list {
         @include font-montserrat-text;
         font-size: 2rem;
         color: $white;
+        text-align: left;
       }
       &--item {
-        padding-bottom: 1rem;
+        padding-bottom: 3.4rem;
       }
     }
   }

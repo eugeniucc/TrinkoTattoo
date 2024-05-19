@@ -3,12 +3,55 @@
 @import "../scss/animations/hover";
 
 .price {
-  padding: 12rem 0rem;
+  padding-top: 10rem;
   background-color: $smoke75;
   &_title {
     @include font-montserrat-title;
-    font-size: 3.2rem;
+    font-size: 4.6rem;
+    font-weight: 600;
     color: $white;
     text-align: center;
+  }
+  &_wrapper {
+    display: flex;
+    gap: 15rem;
+    align-items: center;
+    &-content {
+      width: 50%;
+      padding: 5rem;
+      &--title {
+        @include font-montserrat-title;
+        font-size: 3.2rem;
+        color: $white;
+        font-weight: 600;
+        padding-bottom: 2.4rem;
+        text-align: center;
+      }
+      &--list {
+        @include font-montserrat-title;
+        font-size: 2rem;
+        color: $white;
+        padding-bottom: 2.4rem;
+        text-align: center;
+      }
+      &--item {
+        padding-bottom: 1.6rem;
+      }
+    }
+    &-bg {
+      width: 50%;
+      height: 50rem;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: center;
+      filter: grayscale(100%);
+      &:hover {
+        transition: 0.7s all ease;
+        filter: grayscale(0%);
+      }
+      &:not(:hover) {
+        transition: 0.7s all ease;
+      }
+    }
   }
 }

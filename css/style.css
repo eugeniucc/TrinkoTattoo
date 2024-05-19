@@ -142,7 +142,7 @@
 .swiper_presentation-wrapper--bg1 {
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position-y: -35rem;
+  background-position-y: -55rem;
 }
 
 .swiper_presentation-wrapper--bg2 {
@@ -154,7 +154,7 @@
 .swiper_presentation-wrapper--bg3 {
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position-y: -12rem;
+  background-position-y: -18rem;
 }
 
 .about {
@@ -214,7 +214,7 @@
 }
 
 .price {
-  padding: 12rem 0rem;
+  padding-top: 10rem;
   background-color: #1a1a1a;
 }
 .price_title {
@@ -223,54 +223,103 @@
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-size: 3.2rem;
+  font-size: 4.6rem;
+  font-weight: 600;
   color: #fff;
   text-align: center;
 }
-
-.correction {
-  background-color: #1a1a1a;
-}
-.correction_wrapper {
+.price_wrapper {
   display: flex;
   gap: 15rem;
+  align-items: center;
 }
-.correction_wrapper-bg {
-  width: 80rem;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  filter: grayscale(100%);
+.price_wrapper-content {
+  width: 50%;
+  padding: 5rem;
 }
-.correction_wrapper-bg:hover {
-  transition: 0.7s all ease;
-  filter: grayscale(0%);
-}
-.correction_wrapper-bg:not(:hover) {
-  transition: 0.7s all ease;
-}
-.correction_wrapper-content {
-  padding: 12rem 0rem;
-  width: 80rem;
+.price_wrapper-content--title {
   font-family: "Montserrat", sans-serif;
   font-size: 1.8rem;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-}
-.correction_wrapper-content--title {
   font-size: 3.2rem;
   color: #fff;
   font-weight: 600;
   padding-bottom: 2.4rem;
+  text-align: center;
 }
-.correction_wrapper-content--text {
-  color: #616161;
-  padding-bottom: 2rem;
-  line-height: 2.4rem;
-  font-weight: 300;
+.price_wrapper-content--list {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+  color: #fff;
+  padding-bottom: 2.4rem;
+  text-align: center;
 }
-.correction_wrapper-content--list {
+.price_wrapper-content--item {
+  padding-bottom: 1.6rem;
+}
+.price_wrapper-bg {
+  width: 50%;
+  height: 50rem;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  filter: grayscale(100%);
+}
+.price_wrapper-bg:hover {
+  transition: 0.7s all ease;
+  filter: grayscale(0%);
+}
+.price_wrapper-bg:not(:hover) {
+  transition: 0.7s all ease;
+}
+
+.course {
+  background-color: #1a1a1a;
+  padding-bottom: 10rem;
+}
+.course_wrapper {
+  display: flex;
+  gap: 10rem;
+  align-items: center;
+}
+.course_wrapper-bg {
+  width: 50%;
+  height: 50rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: grayscale(100%);
+}
+.course_wrapper-bg:hover {
+  transition: 0.7s all ease;
+  filter: grayscale(0%);
+}
+.course_wrapper-bg:not(:hover) {
+  transition: 0.7s all ease;
+}
+.course_wrapper-content {
+  width: 50%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  padding: 5rem;
+}
+.course_wrapper-content--title {
+  font-size: 3.2rem;
+  color: #fff;
+  font-weight: 600;
+  padding-bottom: 4rem;
+  text-align: center;
+}
+.course_wrapper-content--list {
   font-family: "Montserrat", sans-serif;
   font-size: 1.6rem;
   font-optical-sizing: auto;
@@ -278,9 +327,10 @@
   font-style: normal;
   font-size: 2rem;
   color: #fff;
+  text-align: left;
 }
-.correction_wrapper-content--item {
-  padding-bottom: 1rem;
+.course_wrapper-content--item {
+  padding-bottom: 3.4rem;
 }
 
 .reviews {
