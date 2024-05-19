@@ -4,7 +4,7 @@
 // SWIPER PRESENTATION
 
 .swiper_presentation-wrapper {
-  height: 45rem;
+  height: 65rem;
 }
 .swiper_presentation-title {
   @include font-montserrat-title;
@@ -45,5 +45,5 @@
 .swiper_presentation-wrapper--bg3 {
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position-y: -18rem;
+  background-position-y: -12rem;
 }
