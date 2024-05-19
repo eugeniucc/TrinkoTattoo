@@ -333,8 +333,62 @@
   padding-bottom: 3.4rem;
 }
 
+.correction {
+  background-color: #1a1a1a;
+}
+.correction_wrapper {
+  display: flex;
+  gap: 10rem;
+  align-items: center;
+  padding-bottom: 5rem;
+}
+.correction_wrapper-bg {
+  width: 50%;
+  height: 50rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: grayscale(100%);
+}
+.correction_wrapper-bg:hover {
+  transition: 0.7s all ease;
+  filter: grayscale(0%);
+}
+.correction_wrapper-bg:not(:hover) {
+  transition: 0.7s all ease;
+}
+.correction_wrapper-content {
+  width: 50%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  padding: 5rem;
+}
+.correction_wrapper-content--title {
+  font-size: 3.2rem;
+  color: #fff;
+  font-weight: 600;
+  padding-bottom: 4rem;
+  text-align: center;
+}
+.correction_wrapper-content--list {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+  color: #fff;
+  text-align: left;
+}
+.correction_wrapper-content--item {
+  padding-bottom: 3.4rem;
+}
+
 .reviews {
-  padding: 12rem 0rem;
+  padding: 10rem 0rem;
 }
 .reviews_title {
   font-family: "Montserrat", sans-serif;
@@ -343,7 +397,8 @@
   font-weight: 400;
   font-style: normal;
   color: #1a1a1a;
-  font-size: 3.2rem;
+  font-size: 4.6rem;
+  font-weight: 600;
   text-align: center;
   padding-bottom: 10rem;
 }
@@ -359,10 +414,10 @@
   gap: 2.4rem;
 }
 .reviews_wrapper-card--bg {
-  width: 15rem;
-  height: 15rem;
+  width: 20rem;
+  height: 20rem;
   border-radius: 50%;
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 .reviews_wrapper-card--title {
@@ -378,6 +433,20 @@
   text-align: center;
 }
 
+.reviews-bg-1 {
+  background-position-x: -4rem;
+}
+
+.reviews-bg-2 {
+  background-position-y: -7rem;
+}
+
+.reviews-bg-3 {
+  background-position-y: -25rem;
+  background-position-x: -6rem;
+  background-size: 150%;
+}
+
 .portfolio {
   padding: 10rem 0rem;
   background-color: #1a1a1a;
@@ -388,14 +457,15 @@
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-size: 3.2rem;
+  font-size: 4.6rem;
+  font-weight: 600;
   color: #fff;
   padding-bottom: 5rem;
   text-align: center;
 }
 
 .swiper-slide-portfolio {
-  height: 50rem;
+  height: 65rem;
 }
 
 .swiper-slide-portfolio-img {

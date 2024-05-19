@@ -2,11 +2,12 @@
 @import "../scss/variables/variables";
 
 .reviews {
-  padding: 12rem 0rem;
+  padding: 10rem 0rem;
   &_title {
     @include font-montserrat-title;
     color: $black;
-    font-size: 3.2rem;
+    font-size: 4.6rem;
+    font-weight: 600;
     text-align: center;
     padding-bottom: 10rem;
   }
@@ -20,10 +21,10 @@
       align-items: center;
       gap: 2.4rem;
       &--bg {
-        width: 15rem;
-        height: 15rem;
+        width: 20rem;
+        height: 20rem;
         border-radius: 50%;
-        background-size: 100%;
+        background-size: cover;
         background-repeat: no-repeat;
       }
       &--title {
@@ -36,4 +37,15 @@
       }
     }
   }
+}
+.reviews-bg-1 {
+  background-position-x: -4rem;
+}
+.reviews-bg-2 {
+  background-position-y: -7rem;
+}
+.reviews-bg-3 {
+  background-position-y: -25rem;
+  background-position-x: -6rem;
+  background-size: 150%;
 }

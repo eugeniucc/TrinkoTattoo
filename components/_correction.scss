@@ -1,0 +1,48 @@
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+
+.correction {
+  background-color: $smoke75;
+  &_wrapper {
+    display: flex;
+    gap: 10rem;
+    align-items: center;
+    padding-bottom: 5rem;
+    &-bg {
+      width: 50%;
+      height: 50rem;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      filter: grayscale(100%);
+      &:hover {
+        transition: 0.7s all ease;
+        filter: grayscale(0%);
+      }
+      &:not(:hover) {
+        transition: 0.7s all ease;
+      }
+    }
+    &-content {
+      width: 50%;
+      @include font-montserrat-title;
+      padding: 5rem;
+      &--title {
+        font-size: 3.2rem;
+        color: $white;
+        font-weight: 600;
+        padding-bottom: 4rem;
+        text-align: center;
+      }
+      &--list {
+        @include font-montserrat-text;
+        font-size: 2rem;
+        color: $white;
+        text-align: left;
+      }
+      &--item {
+        padding-bottom: 3.4rem;
+      }
+    }
+  }
+}
