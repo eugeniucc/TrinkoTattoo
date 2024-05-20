@@ -20,6 +20,11 @@
     &_nav {
       flex-direction: column;
       gap: 3rem;
+      &-logo {
+        &--img {
+          width: 10rem;
+        }
+      }
       &-menu {
         gap: 2.4rem;
         flex-wrap: wrap;

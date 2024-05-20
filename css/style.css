@@ -882,6 +882,9 @@
     flex-direction: column;
     gap: 3rem;
   }
+  .header_nav-logo--img {
+    width: 10rem;
+  }
   .header_nav-menu {
     gap: 2.4rem;
     flex-wrap: wrap;
@@ -1116,6 +1119,21 @@
   .footer_content {
     flex-direction: column;
     gap: 3rem;
+  }
+  .footer_copyrights {
+    text-align: center;
+  }
+}
+@media (max-width: 375px) {
+  .footer_content {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .footer_content-wrapper {
+    gap: 1rem;
+  }
+  .footer_copyrights {
+    text-align: center;
   }
 }
 html {

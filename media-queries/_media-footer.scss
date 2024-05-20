@@ -21,5 +21,23 @@
       flex-direction: column;
       gap: 3rem;
     }
+    &_copyrights {
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: $breakpoint-smM) {
+  .footer {
+    &_content {
+      flex-direction: column;
+      gap: 3rem;
+      &-wrapper {
+        gap: 1rem;
+      }
+    }
+    &_copyrights {
+      text-align: center;
+    }
   }
 }
