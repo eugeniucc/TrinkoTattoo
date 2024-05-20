@@ -2,15 +2,12 @@
 @import "../scss/variables/variables";
 
 @media (max-width: $breakpoint-lg) {
-  .price {
-    padding: 5rem 0rem;
+  .course {
+    padding-bottom: 5rem;
     &_wrapper {
       &-content {
-        &--title {
-          padding-bottom: 2rem;
-        }
-        &--list {
-          padding-bottom: 1.4rem;
+        &--item {
+          padding-bottom: 2.4rem;
         }
       }
     }
@@ -18,13 +15,13 @@
 }
 
 @media (max-width: $breakpoint-md) {
-  .price {
+  .course {
     &_wrapper {
-      flex-direction: column;
+      flex-direction: column-reverse;
       gap: 3rem;
       &-content {
         width: 90%;
-        padding-left: 0;
+        padding-right: 0;
       }
       &-bg {
         width: 90%;

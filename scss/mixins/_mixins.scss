@@ -24,6 +24,9 @@
     font-size: 3.6rem;
     padding-bottom: 3rem;
   }
+  @media (max-width: $breakpoint-md) {
+    font-size: 3rem;
+  }
 }
 @mixin font-montserrat-title {
   font-family: "Montserrat", sans-serif;
@@ -32,6 +35,9 @@
   font-weight: 600;
   font-style: normal;
   text-align: center;
+  @media (max-width: $breakpoint-lg) {
+    font-size: 3rem;
+  }
 }
 @mixin font-montserrat-links {
   font-family: "Montserrat", sans-serif;
@@ -39,6 +45,9 @@
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  @media (max-width: $breakpoint-md) {
+    font-size: 1.8rem;
+  }
 }
 @mixin font-montserrat-list {
   font-family: "Montserrat", sans-serif;
@@ -47,6 +56,10 @@
   font-weight: 400;
   font-style: normal;
   text-align: center;
+  @media (max-width: $breakpoint-lg) {
+    font-size: 1.8rem;
+    font-weight: 300;
+  }
 }
 @mixin font-montserrat-span {
   font-family: "Montserrat", sans-serif;
@@ -76,4 +89,7 @@
   font-weight: 400;
   font-style: normal;
   text-align: center;
+  @media (max-width: $breakpoint-lg) {
+    font-weight: 300;
+  }
 }

@@ -1,0 +1,20 @@
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+
+@media (max-width: $breakpoint-lg) {
+  .portfolio {
+    padding: 5rem 0rem;
+  }
+
+  // SWIPER PORTFOLIO
+  .swiper_portfolio-content {
+    height: 35rem;
+  }
+}
+
+@media (max-width: $breakpoint-md) {
+  // SWIPER PORTFOLIO
+  .swiper_portfolio-content {
+    height: 30rem;
+  }
+}

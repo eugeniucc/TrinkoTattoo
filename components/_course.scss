@@ -25,18 +25,14 @@
     }
     &-content {
       width: 50%;
-      @include font-montserrat-title;
       padding-right: 5rem;
       &--title {
-        font-size: 3.2rem;
+        @include font-montserrat-title;
         color: $white;
-        font-weight: 600;
         padding-bottom: 4rem;
-        text-align: center;
       }
       &--list {
         @include font-montserrat-text;
-        font-size: 2rem;
         color: $white;
         text-align: left;
       }

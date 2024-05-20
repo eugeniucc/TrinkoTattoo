@@ -8,3 +8,9 @@
     }
   }
 }
+
+@media (max-width: $breakpoint-lg) {
+  .footer {
+    padding-bottom: 3rem;
+  }
+}

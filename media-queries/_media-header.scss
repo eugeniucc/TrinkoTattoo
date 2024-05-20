@@ -6,3 +6,12 @@
     padding: 3rem;
   }
 }
+@media (max-width: $breakpoint-md) {
+  .header {
+    &_nav {
+      &-menu {
+        gap: 1.2rem;
+      }
+    }
+  }
+}

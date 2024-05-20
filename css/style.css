@@ -19,6 +19,11 @@
     padding-bottom: 3rem;
   }
 }
+@media (max-width: 768px) {
+  .social_title {
+    font-size: 3rem;
+  }
+}
 .social_nav-wrapper {
   display: flex;
   justify-content: space-between;
@@ -40,6 +45,11 @@
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+}
+@media (max-width: 768px) {
+  .social_nav-contacts--span {
+    font-size: 1.8rem;
+  }
 }
 .social_nav-contacts--span:hover {
   transition: 0.4s;
@@ -88,6 +98,11 @@
   color: #fff;
   z-index: 2;
 }
+@media (max-width: 1024px) {
+  .header_nav-logo--title {
+    font-size: 3rem;
+  }
+}
 .header_nav-menu {
   display: flex;
   gap: 2.4rem;
@@ -100,6 +115,11 @@
   font-weight: 400;
   font-style: normal;
   color: #fff;
+}
+@media (max-width: 768px) {
+  .header_nav-menu--links {
+    font-size: 1.8rem;
+  }
 }
 .header_nav-menu--links:hover {
   transition: 0.4s;
@@ -158,6 +178,11 @@
   text-align: center;
   z-index: 1;
 }
+@media (max-width: 1024px) {
+  .swiper_presentation-title--2 {
+    font-size: 3rem;
+  }
+}
 .swiper_presentation-title--2::after {
   position: absolute;
   content: "";
@@ -186,6 +211,11 @@
   transform: translate(-50%, -50%);
   text-align: center;
   z-index: 1;
+}
+@media (max-width: 1024px) {
+  .swiper_presentation-title--3 {
+    font-size: 3rem;
+  }
 }
 .swiper_presentation-title--3::after {
   position: absolute;
@@ -241,6 +271,11 @@
   font-size: 2.6rem;
   max-width: 60rem;
   text-align: center;
+}
+@media (max-width: 1024px) {
+  .about_wrapper-content--title {
+    font-size: 3rem;
+  }
 }
 .about_wrapper-content--text {
   font-family: "Montserrat", sans-serif;
@@ -299,6 +334,11 @@
     padding-bottom: 3rem;
   }
 }
+@media (max-width: 768px) {
+  .price_title {
+    font-size: 3rem;
+  }
+}
 .price_wrapper {
   display: flex;
   gap: 10rem;
@@ -318,6 +358,11 @@
   color: #fff;
   padding-bottom: 2.4rem;
 }
+@media (max-width: 1024px) {
+  .price_wrapper-content--title {
+    font-size: 3rem;
+  }
+}
 .price_wrapper-content--list {
   font-family: "Montserrat", sans-serif;
   font-size: 2rem;
@@ -327,6 +372,12 @@
   text-align: center;
   padding-bottom: 2.4rem;
   color: #fff;
+}
+@media (max-width: 1024px) {
+  .price_wrapper-content--list {
+    font-size: 1.8rem;
+    font-weight: 300;
+  }
 }
 .price_wrapper-content--item {
   padding-bottom: 1.6rem;
@@ -373,20 +424,22 @@
 }
 .course_wrapper-content {
   width: 50%;
+  padding-right: 5rem;
+}
+.course_wrapper-content--title {
   font-family: "Montserrat", sans-serif;
   font-size: 3.4rem;
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
   text-align: center;
-  padding-right: 5rem;
-}
-.course_wrapper-content--title {
-  font-size: 3.2rem;
   color: #fff;
-  font-weight: 600;
   padding-bottom: 4rem;
-  text-align: center;
+}
+@media (max-width: 1024px) {
+  .course_wrapper-content--title {
+    font-size: 3rem;
+  }
 }
 .course_wrapper-content--list {
   font-family: "Montserrat", sans-serif;
@@ -395,9 +448,13 @@
   font-weight: 400;
   font-style: normal;
   text-align: center;
-  font-size: 2rem;
   color: #fff;
   text-align: left;
+}
+@media (max-width: 1024px) {
+  .course_wrapper-content--list {
+    font-weight: 300;
+  }
 }
 .course_wrapper-content--item {
   padding-bottom: 3.4rem;
@@ -429,20 +486,22 @@
 }
 .correction_wrapper-content {
   width: 50%;
+  padding-left: 5rem;
+}
+.correction_wrapper-content--title {
   font-family: "Montserrat", sans-serif;
   font-size: 3.4rem;
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
   text-align: center;
-  padding: 5rem;
-}
-.correction_wrapper-content--title {
-  font-size: 3.2rem;
   color: #fff;
-  font-weight: 600;
   padding-bottom: 4rem;
-  text-align: center;
+}
+@media (max-width: 1024px) {
+  .correction_wrapper-content--title {
+    font-size: 3rem;
+  }
 }
 .correction_wrapper-content--text {
   font-family: "Montserrat", sans-serif;
@@ -451,10 +510,13 @@
   font-weight: 400;
   font-style: normal;
   text-align: center;
-  font-size: 2rem;
   color: #fff;
-  text-align: center;
   padding-bottom: 3.4rem;
+}
+@media (max-width: 1024px) {
+  .correction_wrapper-content--text {
+    font-weight: 300;
+  }
 }
 
 .reviews {
@@ -474,6 +536,11 @@
   .reviews_title {
     font-size: 3.6rem;
     padding-bottom: 3rem;
+  }
+}
+@media (max-width: 768px) {
+  .reviews_title {
+    font-size: 3rem;
   }
 }
 .reviews_wrapper {
@@ -502,6 +569,11 @@
   font-style: normal;
   text-align: center;
 }
+@media (max-width: 1024px) {
+  .reviews_wrapper-card--title {
+    font-size: 3rem;
+  }
+}
 .reviews_wrapper-card--text {
   font-family: "Montserrat", sans-serif;
   font-size: 1.8rem;
@@ -509,6 +581,11 @@
   font-weight: 400;
   font-style: normal;
   text-align: center;
+}
+@media (max-width: 1024px) {
+  .reviews_wrapper-card--text {
+    font-weight: 300;
+  }
 }
 
 .reviews-bg-1 {
@@ -543,6 +620,11 @@
   .portfolio_title {
     font-size: 3.6rem;
     padding-bottom: 3rem;
+  }
+}
+@media (max-width: 768px) {
+  .portfolio_title {
+    font-size: 3rem;
   }
 }
 
@@ -587,6 +669,11 @@
   font-weight: 400;
   font-style: normal;
   color: #fff;
+}
+@media (max-width: 768px) {
+  .footer_content {
+    font-size: 1.8rem;
+  }
 }
 .footer_content-wrapper {
   display: flex;
@@ -722,9 +809,23 @@
     flex-wrap: wrap;
   }
 }
+@media (max-width: 768px) {
+  .social_nav {
+    padding: 0rem 3rem;
+  }
+  .social_nav-contacts {
+    flex-wrap: wrap;
+    gap: 1.4rem;
+  }
+}
 @media (max-width: 1200px) {
   .header {
     padding: 3rem;
+  }
+}
+@media (max-width: 768px) {
+  .header_nav-menu {
+    gap: 1.2rem;
   }
 }
 @media (max-width: 1024px) {
@@ -740,6 +841,23 @@
     font-weight: 600;
   }
 }
+@media (max-width: 768px) {
+  .swiper_presentation-wrapper {
+    background-size: cover;
+    background-position: center;
+  }
+  .swiper_presentation-title {
+    font-weight: 600;
+  }
+  .swiper_presentation-title--2 {
+    font-size: 3rem;
+    font-weight: 500;
+  }
+  .swiper_presentation-title--3 {
+    font-size: 3rem;
+    font-weight: 500;
+  }
+}
 @media (max-width: 1200px) {
   .about {
     padding: 10rem 0rem;
@@ -752,15 +870,129 @@
   .about {
     padding: 5rem 0rem;
   }
+  .about_wrapper-content--title {
+    font-size: 2.4rem;
+  }
+  .about_wrapper-btn {
+    font-size: 2.4rem;
+    font-weight: 500;
+  }
+}
+@media (max-width: 768px) {
+  .about {
+    padding: 5rem 0rem;
+  }
+  .about_wrapper-content--title {
+    font-size: 2rem;
+  }
+  .about_wrapper-content--text {
+    font-size: 1.8rem;
+  }
+  .about_wrapper-btn {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+}
+@media (max-width: 1024px) {
+  .course {
+    padding-bottom: 5rem;
+  }
+  .course_wrapper-content--item {
+    padding-bottom: 2.4rem;
+  }
+}
+@media (max-width: 768px) {
+  .course_wrapper {
+    flex-direction: column-reverse;
+    gap: 3rem;
+  }
+  .course_wrapper-content {
+    width: 90%;
+    padding-right: 0;
+  }
+  .course_wrapper-bg {
+    width: 90%;
+  }
+}
+@media (max-width: 768px) {
+  .correction_wrapper {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .correction_wrapper-content {
+    width: 90%;
+    padding-left: 0;
+  }
+  .correction_wrapper-bg {
+    width: 90%;
+  }
+}
+@media (max-width: 1024px) {
+  .reviews {
+    padding: 5rem 0rem;
+  }
+  .reviews_wrapper {
+    padding: 0rem 5rem;
+  }
+  .reviews_wrapper-card {
+    max-width: 25rem;
+  }
+}
+@media (max-width: 768px) {
+  .reviews_wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+  }
+  .reviews_wrapper-card {
+    max-width: 40rem;
+  }
+}
+@media (max-width: 1024px) {
+  .portfolio {
+    padding: 5rem 0rem;
+  }
+  .swiper_portfolio-content {
+    height: 35rem;
+  }
+}
+@media (max-width: 768px) {
+  .swiper_portfolio-content {
+    height: 30rem;
+  }
 }
 @media (max-width: 1024px) {
   .price {
     padding: 5rem 0rem;
   }
+  .price_wrapper-content--title {
+    padding-bottom: 2rem;
+  }
+  .price_wrapper-content--list {
+    padding-bottom: 1.4rem;
+  }
+}
+@media (max-width: 768px) {
+  .price_wrapper {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .price_wrapper-content {
+    width: 90%;
+    padding-left: 0;
+  }
+  .price_wrapper-bg {
+    width: 90%;
+  }
 }
 @media (max-width: 1200px) {
   .footer_content {
     padding: 0rem 3rem;
+  }
+}
+@media (max-width: 1024px) {
+  .footer {
+    padding-bottom: 3rem;
   }
 }
 html {

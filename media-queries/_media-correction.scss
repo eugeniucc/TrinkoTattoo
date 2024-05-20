@@ -1,24 +1,8 @@
 @import "../scss/mixins/mixins";
 @import "../scss/variables/variables";
 
-@media (max-width: $breakpoint-lg) {
-  .price {
-    padding: 5rem 0rem;
-    &_wrapper {
-      &-content {
-        &--title {
-          padding-bottom: 2rem;
-        }
-        &--list {
-          padding-bottom: 1.4rem;
-        }
-      }
-    }
-  }
-}
-
 @media (max-width: $breakpoint-md) {
-  .price {
+  .correction {
     &_wrapper {
       flex-direction: column;
       gap: 3rem;

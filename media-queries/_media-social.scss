@@ -11,3 +11,14 @@
     }
   }
 }
+@media (max-width: $breakpoint-md) {
+  .social {
+    &_nav {
+      padding: 0rem 3rem;
+      &-contacts {
+        flex-wrap: wrap;
+        gap: 1.4rem;
+      }
+    }
+  }
+}
