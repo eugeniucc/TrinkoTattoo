@@ -2,7 +2,9 @@
 @import "../scss/variables/variables";
 
 @media (max-width: $breakpoint-xl) {
-  .header {
-    padding: 3rem;
+  .footer {
+    &_content {
+      padding: 0rem 3rem;
+    }
   }
 }

@@ -1,0 +1,17 @@
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+
+@media (max-width: $breakpoint-lg) {
+  // SWIPER PRESENTATION
+  .swiper_presentation-title {
+    font-weight: 600;
+  }
+  .swiper_presentation-title--2 {
+    font-size: 3.4rem;
+    font-weight: 600;
+  }
+  .swiper_presentation-title--3 {
+    font-size: 3.4rem;
+    font-weight: 600;
+  }
+}

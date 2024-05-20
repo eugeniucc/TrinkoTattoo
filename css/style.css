@@ -13,6 +13,12 @@
   padding-bottom: 5rem;
   color: #fff;
 }
+@media (max-width: 1200px) {
+  .social_title {
+    font-size: 3.6rem;
+    padding-bottom: 3rem;
+  }
+}
 .social_nav-wrapper {
   display: flex;
   justify-content: space-between;
@@ -287,6 +293,12 @@
   padding-bottom: 5rem;
   color: #fff;
 }
+@media (max-width: 1200px) {
+  .price_title {
+    font-size: 3.6rem;
+    padding-bottom: 3rem;
+  }
+}
 .price_wrapper {
   display: flex;
   gap: 10rem;
@@ -458,6 +470,12 @@
   padding-bottom: 5rem;
   color: #1a1a1a;
 }
+@media (max-width: 1200px) {
+  .reviews_title {
+    font-size: 3.6rem;
+    padding-bottom: 3rem;
+  }
+}
 .reviews_wrapper {
   display: flex;
   justify-content: space-around;
@@ -520,6 +538,12 @@
   text-align: center;
   padding-bottom: 5rem;
   color: #fff;
+}
+@media (max-width: 1200px) {
+  .portfolio_title {
+    font-size: 3.6rem;
+    padding-bottom: 3rem;
+  }
 }
 
 .swiper_portfolio-content {
@@ -690,6 +714,55 @@
   color: red;
 }
 
+@media (max-width: 1200px) {
+  .social_nav {
+    padding: 0rem 3rem;
+  }
+  .social_nav-contacts {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 1200px) {
+  .header {
+    padding: 3rem;
+  }
+}
+@media (max-width: 1024px) {
+  .swiper_presentation-title {
+    font-weight: 600;
+  }
+  .swiper_presentation-title--2 {
+    font-size: 3.4rem;
+    font-weight: 600;
+  }
+  .swiper_presentation-title--3 {
+    font-size: 3.4rem;
+    font-weight: 600;
+  }
+}
+@media (max-width: 1200px) {
+  .about {
+    padding: 10rem 0rem;
+  }
+  .about_wrapper {
+    padding: 0rem 3rem;
+  }
+}
+@media (max-width: 1024px) {
+  .about {
+    padding: 5rem 0rem;
+  }
+}
+@media (max-width: 1024px) {
+  .price {
+    padding: 5rem 0rem;
+  }
+}
+@media (max-width: 1200px) {
+  .footer_content {
+    padding: 0rem 3rem;
+  }
+}
 html {
   font-size: 10px;
   scroll-behavior: smooth;

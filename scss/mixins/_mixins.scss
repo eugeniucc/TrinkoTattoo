@@ -20,6 +20,10 @@
   font-style: normal;
   text-align: center;
   padding-bottom: 5rem;
+  @media (max-width: $breakpoint-xl) {
+    font-size: 3.6rem;
+    padding-bottom: 3rem;
+  }
 }
 @mixin font-montserrat-title {
   font-family: "Montserrat", sans-serif;

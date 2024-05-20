@@ -2,7 +2,12 @@
 @import "../scss/variables/variables";
 
 @media (max-width: $breakpoint-xl) {
-  .header {
-    padding: 3rem;
+  .social {
+    &_nav {
+      padding: 0rem 3rem;
+      &-contacts {
+        flex-wrap: wrap;
+      }
+    }
   }
 }

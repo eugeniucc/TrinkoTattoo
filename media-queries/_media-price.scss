@@ -1,8 +1,8 @@
 @import "../scss/mixins/mixins";
 @import "../scss/variables/variables";
 
-@media (max-width: $breakpoint-xl) {
-  .header {
-    padding: 3rem;
+@media (max-width: $breakpoint-lg) {
+  .price {
+    padding: 5rem 0rem;
   }
 }

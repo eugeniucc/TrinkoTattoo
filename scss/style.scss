@@ -13,7 +13,12 @@
 @import "../components/popup";
 
 // MEDIA QUERIES COMPONENTS
+@import "../media-queries/media-social";
 @import "../media-queries/media-header";
+@import "../media-queries/media-presentation";
+@import "../media-queries/media-about";
+@import "../media-queries/media-price";
+@import "../media-queries/media-footer";
 
 // MIXINS
 @import "../scss/mixins/mixins";
