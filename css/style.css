@@ -216,6 +216,7 @@
 .price {
   padding-top: 10rem;
   background-color: #1a1a1a;
+  padding: 10rem 0rem;
 }
 .price_title {
   font-family: "Montserrat", sans-serif;
@@ -227,15 +228,16 @@
   font-weight: 600;
   color: #fff;
   text-align: center;
+  padding-bottom: 10rem;
 }
 .price_wrapper {
   display: flex;
-  gap: 15rem;
+  gap: 10rem;
   align-items: center;
 }
 .price_wrapper-content {
   width: 50%;
-  padding: 5rem;
+  padding-left: 5rem;
 }
 .price_wrapper-content--title {
   font-family: "Montserrat", sans-serif;
@@ -310,7 +312,7 @@
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  padding: 5rem;
+  padding-right: 5rem;
 }
 .course_wrapper-content--title {
   font-size: 3.2rem;
@@ -373,7 +375,7 @@
   padding-bottom: 4rem;
   text-align: center;
 }
-.correction_wrapper-content--list {
+.correction_wrapper-content--text {
   font-family: "Montserrat", sans-serif;
   font-size: 1.6rem;
   font-optical-sizing: auto;
@@ -381,9 +383,7 @@
   font-style: normal;
   font-size: 2rem;
   color: #fff;
-  text-align: left;
-}
-.correction_wrapper-content--item {
+  text-align: center;
   padding-bottom: 3.4rem;
 }
 

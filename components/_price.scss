@@ -5,20 +5,22 @@
 .price {
   padding-top: 10rem;
   background-color: $smoke75;
+  padding: 10rem 0rem;
   &_title {
     @include font-montserrat-title;
     font-size: 4.6rem;
     font-weight: 600;
     color: $white;
     text-align: center;
+    padding-bottom: 10rem;
   }
   &_wrapper {
     display: flex;
-    gap: 15rem;
+    gap: 10rem;
     align-items: center;
     &-content {
       width: 50%;
-      padding: 5rem;
+      padding-left: 5rem;
       &--title {
         @include font-montserrat-title;
         font-size: 3.2rem;

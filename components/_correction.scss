@@ -34,13 +34,11 @@
         padding-bottom: 4rem;
         text-align: center;
       }
-      &--list {
+      &--text {
         @include font-montserrat-text;
         font-size: 2rem;
         color: $white;
-        text-align: left;
-      }
-      &--item {
+        text-align: center;
         padding-bottom: 3.4rem;
       }
     }
