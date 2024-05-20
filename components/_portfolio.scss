@@ -5,12 +5,8 @@
   padding: 10rem 0rem;
   background-color: $smoke75;
   &_title {
-    @include font-montserrat-title;
-    font-size: 4.6rem;
-    font-weight: 600;
+    @include font-montserrat-section-title;
     color: $white;
-    padding-bottom: 5rem;
-    text-align: center;
   }
 }
 

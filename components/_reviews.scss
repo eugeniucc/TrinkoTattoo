@@ -4,12 +4,8 @@
 .reviews {
   padding: 10rem 0rem;
   &_title {
-    @include font-montserrat-title;
+    @include font-montserrat-section-title;
     color: $black;
-    font-size: 4.6rem;
-    font-weight: 600;
-    text-align: center;
-    padding-bottom: 5rem;
   }
   &_wrapper {
     display: flex;
@@ -29,11 +25,9 @@
       }
       &--title {
         @include font-montserrat-title;
-        font-weight: 600;
-        font-size: 2.4rem;
       }
       &--text {
-        text-align: center;
+        @include font-montserrat-text;
       }
     }
   }

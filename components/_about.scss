@@ -4,24 +4,22 @@
 .about {
   padding: 12rem 0rem;
   &_wrapper {
-    @include font-montserrat-title;
     &-content {
       display: flex;
       flex-direction: column;
       gap: 0.5rem;
       align-items: center;
       &--title {
-        font-size: 2rem;
-        font-weight: 600;
+        @include font-montserrat-title;
+        font-size: 2.6rem;
         max-width: 60rem;
         text-align: center;
-        margin: 0 auto;
       }
       &--text {
+        @include font-montserrat-p;
         font-weight: 300;
         color: $smoke50;
         text-align: center;
-        font-size: 2rem;
       }
       &--span {
         display: block;
@@ -29,8 +27,7 @@
       }
     }
     &-btn {
-      @include font-montserrat-title;
-      font-weight: 600;
+      @include font-montserrat-btn;
       color: $white;
       background-color: $brick;
       border: 1px solid $brick;
