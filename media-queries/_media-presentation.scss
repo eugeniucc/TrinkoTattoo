@@ -34,3 +34,34 @@
     font-weight: 500;
   }
 }
+
+@media (max-width: $breakpoint-smL) {
+  // SWIPER PRESENTATION
+  .swiper_presentation-wrapper {
+    height: 40rem;
+  }
+  .swiper_presentation-title {
+    font-weight: 600;
+    &::after {
+      width: 105%;
+      height: 250%;
+    }
+  }
+  .swiper_presentation-title--2,
+  .swiper_presentation-title--3 {
+    font-size: 2.6rem;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: $breakpoint-smM) {
+  // SWIPER PRESENTATION
+  .swiper_presentation-title {
+    font-size: 3.4rem;
+  }
+  .swiper_presentation-title--2,
+  .swiper_presentation-title--3 {
+    font-size: 2.2rem;
+    font-weight: 400;
+  }
+}

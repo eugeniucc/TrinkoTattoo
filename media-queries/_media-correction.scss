@@ -16,3 +16,23 @@
     }
   }
 }
+
+@media (max-width: $breakpoint-md) {
+  .correction {
+    &_wrapper {
+      &-bg {
+        height: 40rem;
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint-smL) {
+  .correction {
+    &_wrapper {
+      &-bg {
+        filter: none;
+      }
+    }
+  }
+}

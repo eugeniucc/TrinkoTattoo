@@ -32,3 +32,23 @@
     }
   }
 }
+
+@media (max-width: $breakpoint-md) {
+  .price {
+    &_wrapper {
+      &-bg {
+        height: 40rem;
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint-smL) {
+  .price {
+    &_wrapper {
+      &-bg {
+        filter: none;
+      }
+    }
+  }
+}

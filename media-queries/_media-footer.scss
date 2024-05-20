@@ -14,3 +14,12 @@
     padding-bottom: 3rem;
   }
 }
+
+@media (max-width: $breakpoint-smL) {
+  .footer {
+    &_content {
+      flex-direction: column;
+      gap: 3rem;
+    }
+  }
+}
