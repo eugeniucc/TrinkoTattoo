@@ -49,3 +49,13 @@
     }
   }
 }
+
+@media (max-width: $breakpoint-smS) {
+  .course {
+    &_wrapper {
+      &-bg {
+        height: 35rem;
+      }
+    }
+  }
+}

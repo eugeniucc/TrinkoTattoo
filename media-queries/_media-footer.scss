@@ -41,3 +41,18 @@
     }
   }
 }
+@media (max-width: $breakpoint-smS) {
+  .footer {
+    &_content {
+      &-wrapper {
+        &--copyrights,
+        &--privacy {
+          font-size: 1.4rem;
+        }
+      }
+    }
+    &_copyrights {
+      font-size: 1.4rem;
+    }
+  }
+}

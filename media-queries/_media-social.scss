@@ -29,11 +29,29 @@
     &_nav {
       &-wrapper {
         flex-direction: column;
+        align-items: center;
         gap: 4rem;
       }
       &-contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
         gap: 2rem;
       }
     }
+  }
+}
+
+.social_nav-contacts-location--425px {
+  display: none;
+  @media (max-width: $breakpoint-smL) {
+    display: block;
+  }
+}
+
+.social_nav-contacts-nolocation--425px {
+  @media (max-width: $breakpoint-smL) {
+    display: none;
   }
 }

@@ -52,3 +52,13 @@
     }
   }
 }
+
+@media (max-width: $breakpoint-smS) {
+  .price {
+    &_wrapper {
+      &-bg {
+        height: 35rem;
+      }
+    }
+  }
+}
