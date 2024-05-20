@@ -1,6 +1,30 @@
 @import "../scss/mixins/mixins";
 @import "../scss/variables/variables";
 
+@media (max-width: $breakpoint-xxl) {
+  // SWIPER PRESENTATION
+  .swiper_presentation-bg--1 {
+    background-position-y: -39rem;
+  }
+  .swiper_presentation-bg--3 {
+    background-position-y: -10rem;
+  }
+  .swiper_presentation-title--3 {
+    font-size: 3.4rem;
+  }
+}
+@media (max-width: $breakpoint-xxl) {
+  // SWIPER PRESENTATION
+  .swiper_presentation-bg--2 {
+    background-position-y: -4rem;
+  }
+  .swiper_presentation-bg--3 {
+    background-position-y: -4rem;
+  }
+  .swiper_presentation-title--2 {
+    font-size: 3.4rem;
+  }
+}
 @media (max-width: $breakpoint-lg) {
   // SWIPER PRESENTATION
   .swiper_presentation-title {
@@ -11,8 +35,17 @@
     font-weight: 600;
   }
   .swiper_presentation-title--3 {
-    font-size: 3.4rem;
+    font-size: 2.4rem;
     font-weight: 600;
+  }
+  .swiper_presentation-bg--2 {
+    background-position-y: 0rem;
+    background-size: cover;
+  }
+  .swiper_presentation-bg--3 {
+    background-size: 150%;
+    background-position-x: -24rem;
+    background-position-y: -12rem;
   }
 }
 
@@ -30,8 +63,12 @@
     font-weight: 500;
   }
   .swiper_presentation-title--3 {
-    font-size: 3rem;
+    font-size: 2.4rem;
     font-weight: 500;
+  }
+  .swiper_presentation-bg--3 {
+    background-size: 200%;
+    background-position-y: -12rem;
   }
 }
 
@@ -52,6 +89,9 @@
   .swiper_presentation-title--3 {
     font-size: 2.2rem;
     font-weight: 500;
+  }
+  .swiper_presentation-bg--3 {
+    background-size: 300%;
   }
 }
 
@@ -75,5 +115,8 @@
   .swiper_presentation-title--3 {
     font-size: 1.8rem;
     font-weight: 400;
+  }
+  .swiper_presentation-bg--3 {
+    background-position-y: 0rem;
   }
 }

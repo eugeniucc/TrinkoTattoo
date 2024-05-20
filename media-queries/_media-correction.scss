@@ -1,6 +1,17 @@
 @import "../scss/mixins/mixins";
 @import "../scss/variables/variables";
 
+@media (max-width: $breakpoint-xxl) {
+  .correction {
+    &_wrapper {
+      &-bg {
+        background-size: 100%;
+        background-position-x: 0rem;
+      }
+    }
+  }
+}
+
 @media (max-width: $breakpoint-md) {
   .correction {
     &_wrapper {

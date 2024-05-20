@@ -13,7 +13,9 @@
       height: 50rem;
       background-position: center;
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: 115%;
+      background-position-x: -12rem;
+
       filter: grayscale(100%);
       &:hover {
         transition: 0.7s all ease;

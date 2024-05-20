@@ -1,6 +1,27 @@
 @import "../scss/mixins/mixins";
 @import "../scss/variables/variables";
 
+@media (max-width: $breakpoint-xxl) {
+  .course {
+    &_wrapper {
+      &-bg {
+        background-size: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint-xl) {
+  .course {
+    &_wrapper {
+      &-bg {
+        background-size: 105%;
+        background-position-y: -8rem;
+      }
+    }
+  }
+}
+
 @media (max-width: $breakpoint-lg) {
   .course {
     padding-bottom: 5rem;
@@ -24,17 +45,7 @@
         padding-right: 0;
       }
       &-bg {
-        width: 90%;
-      }
-    }
-  }
-}
-
-@media (max-width: $breakpoint-md) {
-  .course {
-    &_wrapper {
-      &-bg {
-        height: 40rem;
+        width: 60%;
       }
     }
   }
@@ -45,6 +56,8 @@
     &_wrapper {
       &-bg {
         filter: none;
+        width: 90%;
+        background-size: 150%;
       }
     }
   }
