@@ -24,3 +24,6 @@
 .swiper-pagination-bullet-active {
   background-color: $brick;
 }
+.swiper-zoom-container > img {
+  object-fit: unset !important;
+}

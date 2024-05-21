@@ -699,6 +699,11 @@
   background-color: #f24342;
 }
 
+.swiper-zoom-container > img {
+  -o-object-fit: unset !important;
+     object-fit: unset !important;
+}
+
 .footer {
   padding-bottom: 5rem;
   background-color: #1a1a1a;
@@ -1177,6 +1182,7 @@
 }
 @media (max-width: 820px) {
   .swiper_portfolio-content {
+    width: 8.3%;
     height: 30rem;
   }
 }

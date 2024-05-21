@@ -41,7 +41,7 @@ function showModal() {
   popupOverlay.classList.add("popup_show");
 }
 
-let timerId = setTimeout(showModal, 1000);
+let timerId = setTimeout(showModal, 15000);
 
 popupButton.addEventListener("click", () => {
   popupWindow.classList.remove("popup_show");
