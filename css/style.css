@@ -133,9 +133,6 @@
 .header_nav-menu--links:not(:hover) {
   transition: 0.5s;
 }
-.header_nav-menu--span-red {
-  color: #f24342;
-}
 
 .swiper_presentation-wrapper {
   height: 50rem;
