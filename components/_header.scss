@@ -34,6 +34,11 @@
         color: $white;
         @include hover-brick;
       }
+      &--span {
+        &-red {
+          color: $brick;
+        }
+      }
     }
   }
 }

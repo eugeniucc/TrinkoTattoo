@@ -1,0 +1,22 @@
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+
+@media (max-width: $breakpoint-smL) {
+  .popup {
+    width: 90%;
+    height: 45rem;
+    &_form {
+      &-wrapper {
+        width: 90%;
+        gap: 4rem;
+        &--input {
+          font-size: 1.4rem;
+          padding: 1rem 0rem 1rem 1rem;
+        }
+      }
+      &-title {
+        padding: 5rem 0rem 3rem 0rem;
+      }
+    }
+  }
+}

@@ -10,17 +10,6 @@
     justify-content: space-between;
     align-items: center;
     padding-bottom: 10rem;
-    &-slider {
-      width: 60%;
-    }
-    &-social {
-      width: 30%;
-      display: flex;
-      gap: 4.8rem;
-      &--links {
-        text-decoration: none;
-      }
-    }
   }
   &_content {
     display: flex;
@@ -38,10 +27,13 @@
         @include hover-brick;
       }
     }
+    &-social {
+      display: flex;
+      gap: 2.4rem;
+    }
   }
 }
 
-// SWIPER FOOTER
-.swiper-pagination-bullet-active {
-  background-color: $brick;
+.social_footer-social--links {
+  text-decoration: none;
 }
