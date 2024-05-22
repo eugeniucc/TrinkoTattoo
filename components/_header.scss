@@ -42,3 +42,10 @@
     }
   }
 }
+
+.stickyactive {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  padding: 1.6rem;
+}
