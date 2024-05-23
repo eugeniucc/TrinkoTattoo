@@ -4,7 +4,23 @@
 .swiper_portfolio-mobile {
   display: none;
 }
-
+$breakpoint-xxl: 1400px;
+$breakpoint-xl: 1200px;
+$breakpoint-lg: 1024px;
+$breakpoint-md: 820px;
+$breakpoint-smL: 425px;
+$breakpoint-smM: 375px;
+$breakpoint-smS: 320px;
+@media (max-width: $breakpoint-xxl) {
+  .swiper_portfolio-content {
+    height: 45rem;
+  }
+}
+@media (max-width: $breakpoint-xxl) {
+  .swiper_portfolio-content {
+    height: 40rem;
+  }
+}
 @media (max-width: $breakpoint-lg) {
   .portfolio {
     padding: 5rem 0rem;

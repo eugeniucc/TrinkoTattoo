@@ -1,13 +1,23 @@
 @import "../scss/mixins/mixins";
 @import "../scss/variables/variables";
 
+@media (max-width: $breakpoint-xl) {
+  .reviews {
+    &_wrapper {
+      &-card {
+        max-width: 27rem;
+      }
+    }
+  }
+}
+
 @media (max-width: $breakpoint-lg) {
   .reviews {
     padding: 5rem 0rem;
     &_wrapper {
       padding: 0rem 5rem;
       &-card {
-        max-width: 25rem;
+        width: 23rem;
       }
     }
   }
