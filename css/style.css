@@ -1224,6 +1224,38 @@
   .swiper_portfolio-mobile {
     display: block;
   }
+  .swiper_mobile-content {
+    height: 50rem;
+    width: 60%;
+    margin: 0 auto;
+  }
+  .swiper_mobile-content--img {
+    width: 100%;
+    display: block;
+    height: 100%;
+  }
+  .portfolio-mobile-btn-prev::after,
+  .portfolio-mobile-btn-next::after {
+    content: "";
+  }
+  .portfolio-mobile-btn-next {
+    transform: rotate(180deg);
+  }
+}
+@media (max-width: 425px) {
+  .swiper_mobile-content {
+    width: 75%;
+  }
+}
+@media (max-width: 425px) {
+  .swiper_mobile-content {
+    width: 80%;
+  }
+}
+@media (max-width: 320px) {
+  .swiper_mobile-content {
+    width: 100%;
+  }
 }
 @media (max-width: 1200px) {
   .price_wrapper-bg {

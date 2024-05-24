@@ -4,13 +4,6 @@
 .swiper_portfolio-mobile {
   display: none;
 }
-$breakpoint-xxl: 1400px;
-$breakpoint-xl: 1200px;
-$breakpoint-lg: 1024px;
-$breakpoint-md: 820px;
-$breakpoint-smL: 425px;
-$breakpoint-smM: 375px;
-$breakpoint-smS: 320px;
 @media (max-width: $breakpoint-xxl) {
   .swiper_portfolio-content {
     height: 45rem;
@@ -38,5 +31,40 @@ $breakpoint-smS: 320px;
   }
   .swiper_portfolio-mobile {
     display: block;
+  }
+  .swiper_mobile-content {
+    height: 50rem;
+    width: 60%;
+    margin: 0 auto;
+  }
+  .swiper_mobile-content--img {
+    width: 100%;
+    display: block;
+    height: 100%;
+  }
+  .portfolio-mobile-btn-prev,
+  .portfolio-mobile-btn-next {
+    &::after {
+      content: "";
+    }
+  }
+  .portfolio-mobile-btn-next {
+    transform: rotate(180deg);
+  }
+}
+
+@media (max-width: $breakpoint-smL) {
+  .swiper_mobile-content {
+    width: 75%;
+  }
+}
+@media (max-width: $breakpoint-smL) {
+  .swiper_mobile-content {
+    width: 80%;
+  }
+}
+@media (max-width: $breakpoint-smS) {
+  .swiper_mobile-content {
+    width: 100%;
   }
 }
