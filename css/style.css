@@ -979,6 +979,94 @@
   z-index: 5;
 }
 
+.promo {
+  position: fixed;
+  display: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70rem;
+  height: 40rem;
+  z-index: 3;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: -10rem;
+}
+.promo_wrapper {
+  margin: 0 auto;
+  width: 55rem;
+  height: 30rem;
+  background-color: #616161;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.4rem;
+}
+.promo_wrapper-btn--close {
+  align-self: flex-end;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+}
+.promo_wrapper-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.4rem;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  text-align: center;
+  color: #fff;
+  padding: 0rem 1rem;
+}
+@media (max-width: 1024px) {
+  .promo_wrapper-title {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 425px) {
+  .promo_wrapper-title {
+    font-size: 2.6rem;
+  }
+}
+.promo_wrapper-link--accept {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.4rem;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  text-align: center;
+  text-decoration: none;
+  color: #f24342;
+}
+@media (max-width: 1024px) {
+  .promo_wrapper-link--accept {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 425px) {
+  .promo_wrapper-link--accept {
+    font-size: 2.6rem;
+  }
+}
+.promo_wrapper-price {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-weight: 500;
+  text-align: center;
+  padding: 0rem 1rem;
+}
+.promo_wrapper-price--span {
+  color: #f24342;
+}
+
+.promo_show {
+  display: block;
+}
+
 @media (max-width: 1200px) {
   .social_nav {
     padding: 0rem 3rem;
@@ -1479,6 +1567,18 @@
 @media (max-width: 320px) {
   .checkage {
     width: 28rem;
+  }
+}
+@media (max-width: 425px) {
+  .promo_wrapper {
+    gap: 1.4rem;
+    width: 38rem;
+  }
+}
+@media (max-width: 425px) {
+  .promo_wrapper {
+    gap: 1rem;
+    width: 30rem;
   }
 }
 html {

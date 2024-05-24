@@ -1,0 +1,19 @@
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+
+@media (max-width: $breakpoint-smL) {
+  .promo {
+    &_wrapper {
+      gap: 1.4rem;
+      width: 38rem;
+    }
+  }
+}
+@media (max-width: $breakpoint-smL) {
+  .promo {
+    &_wrapper {
+      gap: 1rem;
+      width: 30rem;
+    }
+  }
+}
