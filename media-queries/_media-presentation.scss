@@ -93,6 +93,11 @@
   .swiper_presentation-bg--3 {
     background-size: 300%;
   }
+  .presentation-btn-next,
+  .presentation-btn-prev {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
 }
 
 @media (max-width: $breakpoint-smM) {

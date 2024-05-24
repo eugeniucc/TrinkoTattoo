@@ -1,0 +1,23 @@
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+
+@media (max-width: $breakpoint-md) {
+  .checkage {
+    width: 47rem;
+  }
+}
+@media (max-width: $breakpoint-smL) {
+  .checkage {
+    width: 36rem;
+  }
+}
+@media (max-width: $breakpoint-smM) {
+  .checkage {
+    width: 33rem;
+  }
+}
+@media (max-width: $breakpoint-smS) {
+  .checkage {
+    width: 28rem;
+  }
+}
