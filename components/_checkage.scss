@@ -40,6 +40,7 @@
         padding: 1rem 3rem;
         @include font-montserrat-btn;
         cursor: pointer;
+        border-radius: 3.5rem;
       }
       &--confirm {
         color: $green100;

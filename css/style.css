@@ -827,6 +827,7 @@
   font-weight: 600;
   font-style: normal;
   cursor: pointer;
+  border-radius: 3.5rem;
 }
 .checkage_wrapper-btn--confirm {
   color: #44d62c;
