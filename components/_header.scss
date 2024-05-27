@@ -34,6 +34,12 @@
         color: $white;
         @include hover-brick;
       }
+      &--btn {
+        text-decoration: none;
+        @include font-montserrat-links;
+        cursor: pointer;
+      }
+
       &--span {
         &-red {
           color: $brick;

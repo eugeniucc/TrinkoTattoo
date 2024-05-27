@@ -10,6 +10,7 @@ showPromo.addEventListener("click", () => {
 });
 promoBtnClose.addEventListener("click", () => {
   promo.classList.remove("promo_show");
+  promoOverlay.classList.remove("promo_show");
 });
 promoOverlay.addEventListener("click", () => {
   promo.classList.remove("promo_show");

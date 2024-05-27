@@ -133,6 +133,20 @@
 .header_nav-menu--links:not(:hover) {
   transition: 0.5s;
 }
+.header_nav-menu--btn {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  cursor: pointer;
+}
+@media (max-width: 820px) {
+  .header_nav-menu--btn {
+    font-size: 1.8rem;
+  }
+}
 .header_nav-menu--span-red {
   color: #f24342;
 }
