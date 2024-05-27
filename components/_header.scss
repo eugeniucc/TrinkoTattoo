@@ -39,10 +39,11 @@
         @include font-montserrat-links;
         cursor: pointer;
       }
-
       &--span {
         &-red {
           color: $brick;
+          @include font-montserrat-links;
+          cursor: pointer;
         }
       }
     }
