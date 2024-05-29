@@ -977,7 +977,6 @@
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  padding: 1.4rem 0rem;
   border-radius: 3.5rem;
   font-size: 2.4rem;
   color: #fff;
@@ -989,6 +988,26 @@
   transition: 0.5s;
 }
 .popup_form-submit:not(:hover) {
+  transition: 0.5s;
+}
+.popup_form-submit-link {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.4rem;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  padding: 1.4rem 0rem;
+}
+.popup_form-submit-link:hover {
+  color: #1a1a1a;
+  transition: 0.5s;
+}
+.popup_form-submit-link:not(:hover) {
   transition: 0.5s;
 }
 
