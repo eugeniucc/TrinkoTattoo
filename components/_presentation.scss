@@ -106,3 +106,10 @@
 .swiper_presentation-bg--3 {
   background-position-y: -20rem;
 }
+
+.lazy-bg {
+  min-height: 200px;
+  background-color: #f0f0f0;
+  background-size: cover;
+  background-position: center;
+}
