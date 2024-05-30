@@ -534,7 +534,7 @@
   font-style: normal;
   text-align: center;
   color: #fff;
-  text-align: left;
+  text-align: center;
 }
 @media (max-width: 1024px) {
   .course_wrapper-content--list {
