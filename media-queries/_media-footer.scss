@@ -17,6 +17,15 @@
     }
   }
 }
+
+@media (max-width: 870px) {
+  .footer {
+    &_content {
+      flex-direction: column;
+      gap: 3rem;
+    }
+  }
+}
 @media (max-width: $breakpoint-md) {
   .footer {
     padding-bottom: 3rem;

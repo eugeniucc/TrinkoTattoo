@@ -1,10 +1,28 @@
 @import "../scss/mixins/mixins";
 @import "../scss/variables/variables";
 
+@media (max-width: $breakpoint-xxl) {
+  .social {
+    &_nav {
+      padding: 0rem 3rem;
+      &-wrapper {
+        gap: 2rem;
+      }
+      &-contacts {
+        &--links {
+          max-width: 32rem;
+        }
+      }
+    }
+  }
+}
 @media (max-width: $breakpoint-xl) {
   .social {
     &_nav {
       padding: 0rem 3rem;
+      &-wrapper {
+        gap: 2rem;
+      }
       &-contacts {
         flex-wrap: wrap;
       }
@@ -19,6 +37,9 @@
       &-contacts {
         flex-wrap: wrap;
         gap: 1.4rem;
+        &--links {
+          max-width: 30rem;
+        }
       }
     }
   }

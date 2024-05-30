@@ -6,11 +6,39 @@
     padding: 3rem;
   }
 }
+@media (max-width: $breakpoint-lg) {
+  .header {
+    &_nav {
+      &-menu {
+        width: 70%;
+        flex-wrap: wrap;
+      }
+    }
+  }
+}
+@media (max-width: 870px) {
+  .header {
+    &_nav {
+      &-menu {
+        width: 75%;
+      }
+    }
+  }
+}
 @media (max-width: $breakpoint-md) {
   .header {
     &_nav {
       &-menu {
-        gap: 0.5rem;
+        width: 60%;
+      }
+    }
+  }
+}
+@media (max-width: 514px) {
+  .header {
+    &_nav {
+      &-menu {
+        width: 65%;
       }
     }
   }
@@ -26,6 +54,9 @@
         }
       }
       &-menu {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
         gap: 2.4rem;
         flex-wrap: wrap;
       }

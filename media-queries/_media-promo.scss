@@ -17,3 +17,10 @@
     }
   }
 }
+@media (max-width: 550px) {
+  .promo {
+    &_wrapper {
+      width: 90%;
+    }
+  }
+}

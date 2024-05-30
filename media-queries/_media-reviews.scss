@@ -15,9 +15,23 @@
   .reviews {
     padding: 5rem 0rem;
     &_wrapper {
-      padding: 0rem 5rem;
+      padding: 0rem 1rem;
       &-card {
         width: 23rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 930px) {
+  .reviews {
+    &_wrapper {
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 5rem;
+      &-card {
+        width: 35rem;
+        max-width: 35rem;
       }
     }
   }

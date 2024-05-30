@@ -6,14 +6,9 @@
     width: 47rem;
   }
 }
-@media (max-width: $breakpoint-smL) {
+@media (max-width: 490px) {
   .checkage {
-    width: 36rem;
-  }
-}
-@media (max-width: $breakpoint-smM) {
-  .checkage {
-    width: 33rem;
+    width: 90%;
   }
 }
 @media (max-width: $breakpoint-smS) {

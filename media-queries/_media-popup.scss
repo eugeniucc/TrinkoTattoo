@@ -20,3 +20,14 @@
     }
   }
 }
+
+@media (max-width: 550px) {
+  .popup {
+    width: 90%;
+    &_form {
+      &-wrapper {
+        width: 95%;
+      }
+    }
+  }
+}
