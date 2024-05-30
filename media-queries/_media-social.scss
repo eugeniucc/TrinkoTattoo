@@ -66,13 +66,13 @@
 
 .social_nav-contacts-location--425px {
   display: none;
-  @media (max-width: $breakpoint-smL) {
+  @media (max-width: 530px) {
     display: block;
   }
 }
 
 .social_nav-contacts-nolocation--425px {
-  @media (max-width: $breakpoint-smL) {
+  @media (max-width: 530px) {
     display: none;
   }
 }

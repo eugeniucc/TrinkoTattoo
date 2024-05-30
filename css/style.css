@@ -1181,13 +1181,13 @@
 .social_nav-contacts-location--425px {
   display: none;
 }
-@media (max-width: 425px) {
+@media (max-width: 530px) {
   .social_nav-contacts-location--425px {
     display: block;
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 530px) {
   .social_nav-contacts-nolocation--425px {
     display: none;
   }
