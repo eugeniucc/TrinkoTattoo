@@ -1,0 +1,18 @@
+User-agent: *
+Disallow: /private/     
+Disallow: /tmp/         
+Disallow: /cgi-bin/     
+Disallow: /admin/       
+
+User-agent: Googlebot
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /private/
+
+User-agent: Bingbot
+Disallow: /private/
+Disallow: /tmp/
+Disallow: /cgi-bin/
+
+Sitemap: http://trinkotattoo.ink/sitemap.xml
+
