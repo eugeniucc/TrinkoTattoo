@@ -1541,7 +1541,6 @@
   }
   .reviews_wrapper-card {
     width: 35rem;
-    max-width: 35rem;
   }
 }
 @media (max-width: 820px) {
@@ -1549,9 +1548,6 @@
     flex-direction: column;
     align-items: center;
     gap: 5rem;
-  }
-  .reviews_wrapper-card {
-    max-width: 40rem;
   }
 }
 .swiper_portfolio-mobile {
