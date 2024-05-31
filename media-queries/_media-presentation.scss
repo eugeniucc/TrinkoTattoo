@@ -1,6 +1,17 @@
 @import "../scss/mixins/mixins";
 @import "../scss/variables/variables";
 
+@media (max-width: 1750px) {
+  .swiper_presentation-bg--1 {
+    background-position-y: -50rem;
+  }
+}
+@media (max-width: 1550px) {
+  .swiper_presentation-bg--1 {
+    background-position-y: -43rem;
+  }
+}
+
 @media (max-width: $breakpoint-xxl) {
   // SWIPER PRESENTATION
   .swiper_presentation-bg--1 {
@@ -13,6 +24,11 @@
     font-size: 3.4rem;
   }
 }
+@media (max-width: 1300px) {
+  .swiper_presentation-bg--1 {
+    background-position-y: -32rem;
+  }
+}
 @media (max-width: $breakpoint-xxl) {
   // SWIPER PRESENTATION
   .swiper_presentation-bg--2 {
@@ -23,6 +39,9 @@
   }
   .swiper_presentation-title--2 {
     font-size: 3.4rem;
+  }
+  .swiper_presentation-bg--1 {
+    background-position-y: -28rem;
   }
 }
 @media (max-width: $breakpoint-lg) {
@@ -38,6 +57,9 @@
     font-size: 2.4rem;
     font-weight: 600;
   }
+  .swiper_presentation-bg--1 {
+    background-position-y: -22rem;
+  }
   .swiper_presentation-bg--2 {
     background-position-y: 0rem;
     background-size: cover;
@@ -48,8 +70,23 @@
     background-position-y: -12rem;
   }
 }
-
+@media (max-width: 930px) {
+  .swiper_presentation-bg--3 {
+    background-size: 150%;
+    background-position-x: -24rem;
+    background-position-y: -8rem;
+  }
+  .swiper_presentation-bg--1 {
+    background-position-y: -12rem;
+  }
+}
 @media (max-width: $breakpoint-md) {
+  .swiper_presentation-title {
+    &::after {
+      width: 150%;
+      height: 300%;
+    }
+  }
   // SWIPER PRESENTATION
   .swiper_presentation-wrapper {
     background-size: cover;
@@ -68,10 +105,24 @@
   }
   .swiper_presentation-bg--3 {
     background-size: 200%;
-    background-position-y: -12rem;
   }
 }
-
+@media (max-width: 560px) {
+  .swiper_presentation-title {
+    &::after {
+      width: 120%;
+      height: 250%;
+    }
+  }
+}
+@media (max-width: 450px) {
+  .swiper_presentation-title {
+    &::after {
+      width: 110%;
+      height: 200%;
+    }
+  }
+}
 @media (max-width: $breakpoint-smL) {
   // SWIPER PRESENTATION
   .swiper_presentation-wrapper {
@@ -99,7 +150,14 @@
     height: 3.5rem;
   }
 }
-
+@media (max-width: 350px) {
+  .swiper_presentation-title--3 {
+    &::after {
+      width: 110%;
+      height: 110%;
+    }
+  }
+}
 @media (max-width: $breakpoint-smM) {
   // SWIPER PRESENTATION
   .swiper_presentation-title {
