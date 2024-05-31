@@ -42,7 +42,15 @@
     }
   }
 }
-
+@media (max-width: 630px) {
+  .price {
+    &_wrapper {
+      &-bg {
+        width: 90%;
+      }
+    }
+  }
+}
 @media (max-width: $breakpoint-smL) {
   .price {
     &_wrapper {
