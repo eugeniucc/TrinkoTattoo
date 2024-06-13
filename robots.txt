@@ -3,16 +3,22 @@ Disallow: /private/
 Disallow: /tmp/         
 Disallow: /cgi-bin/     
 Disallow: /admin/       
+Disallow: /termsandconditions
+Disallow: /privacypolicy  
 
 User-agent: Googlebot
 Disallow: /cgi-bin/
 Disallow: /tmp/
 Disallow: /private/
+Disallow: /termsandconditions
+Disallow: /privacypolicy  
 
 User-agent: Bingbot
 Disallow: /private/
 Disallow: /tmp/
 Disallow: /cgi-bin/
+Disallow: /termsandconditions
+Disallow: /privacypolicy  
 
 Sitemap: http://trinkotattoo.ink/sitemap.xml
 
