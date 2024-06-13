@@ -1,11 +1,26 @@
 @import "../scss/mixins/mixins";
 @import "../scss/variables/variables";
 
-@media (max-width: $breakpoint-smL) {
+@media (max-width: 580px) {
   .promo {
     &_wrapper {
       gap: 1.4rem;
-      width: 38rem;
+      width: 90%;
+      height: 90%;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .promo {
+    &_wrapper {
+      width: 80%;
+    }
+  }
+}
+@media (max-width: 450px) {
+  .promo {
+    &_wrapper {
+      width: 70%;
     }
   }
 }
@@ -13,14 +28,22 @@
   .promo {
     &_wrapper {
       gap: 1rem;
-      width: 30rem;
+      width: 65%;
     }
   }
 }
-@media (max-width: 550px) {
+@media (max-width: $breakpoint-smM) {
   .promo {
     &_wrapper {
-      width: 90%;
+      height: 95%;
+      width: 60%;
+    }
+  }
+}
+@media (max-width: 345px) {
+  .promo {
+    &_wrapper {
+      width: 55%;
     }
   }
 }
