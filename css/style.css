@@ -1401,6 +1401,11 @@
     background-position-y: 0rem;
   }
 }
+@media (max-width: 1400px) {
+  .about_wrapper-content--text {
+    padding: 0rem 1.4rem;
+  }
+}
 @media (max-width: 1200px) {
   .about {
     padding: 10rem 0rem;
