@@ -8,44 +8,23 @@
       &-wrapper {
         gap: 2rem;
       }
-      &-contacts {
-        &--links {
-          max-width: 32rem;
-        }
-      }
     }
   }
 }
-@media (max-width: $breakpoint-xl) {
+@media (max-width: 1270px) {
   .social {
     &_nav {
-      padding: 0rem 3rem;
       &-wrapper {
-        gap: 2rem;
+        flex-wrap: wrap;
       }
       &-contacts {
-        flex-wrap: wrap;
+        width: 100%;
       }
     }
   }
 }
 
-@media (max-width: $breakpoint-md) {
-  .social {
-    &_nav {
-      padding: 0rem 3rem;
-      &-contacts {
-        flex-wrap: wrap;
-        gap: 1.4rem;
-        &--links {
-          max-width: 30rem;
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 490px) {
+@media (max-width: 1100px) {
   .social {
     &_nav {
       &-wrapper {
