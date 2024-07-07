@@ -6,8 +6,8 @@
 >
 
 	<url>
-		<loc>https://trinkotattoo.ink/</loc>
-		<lastmod>2024-05-29</lastmod>
+		<loc>https://trinkotattoo.ink</loc>
+		<lastmod>2024-07-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>1.0</priority>
 		<image:image>
@@ -126,14 +126,14 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://trinkotattoo.ink/termsandconditions.html</loc>
-		<lastmod>2024-05-27</lastmod>
+		<loc>https://trinkotattoo.ink/index.html</loc>
+		<lastmod>2024-07-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://trinkotattoo.ink/privacypolicy.html</loc>
-		<lastmod>2024-05-27</lastmod>
+		<loc>https://trinkotattoo.ink/index-ro.html</loc>
+		<lastmod>2024-07-08</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
