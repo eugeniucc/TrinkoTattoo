@@ -16,9 +16,10 @@
     }
   }
 }
-@media (max-width: 870px) {
+@media (max-width: 875px) {
   .header {
     &_nav {
+      gap: 4rem;
       &-menu {
         width: 75%;
       }
@@ -30,6 +31,17 @@
     &_nav {
       &-menu {
         width: 60%;
+      }
+    }
+  }
+}
+@media (max-width: 660px) {
+  .header {
+    &_nav {
+      flex-direction: column;
+      gap: 5rem;
+      &-menu {
+        justify-content: center;
       }
     }
   }

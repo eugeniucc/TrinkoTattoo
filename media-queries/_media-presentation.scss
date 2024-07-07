@@ -47,6 +47,7 @@
 @media (max-width: $breakpoint-lg) {
   // SWIPER PRESENTATION
   .swiper_presentation-title {
+    font-size: 3.4rem;
     font-weight: 600;
   }
   .swiper_presentation-title--2 {
@@ -81,19 +82,13 @@
   }
 }
 @media (max-width: $breakpoint-md) {
-  .swiper_presentation-title {
-    &::after {
-      width: 150%;
-      height: 300%;
-    }
-  }
   // SWIPER PRESENTATION
   .swiper_presentation-wrapper {
     background-size: cover;
     background-position: center;
   }
   .swiper_presentation-title {
-    font-weight: 600;
+    font-weight: 500;
   }
   .swiper_presentation-title--2 {
     font-size: 3rem;
@@ -107,39 +102,42 @@
     background-size: 200%;
   }
 }
-@media (max-width: 560px) {
-  .swiper_presentation-title {
-    &::after {
-      width: 120%;
-      height: 250%;
-    }
-  }
-}
-@media (max-width: 450px) {
+@media (max-width: 564px) {
   .swiper_presentation-title {
     &::after {
       width: 110%;
-      height: 200%;
+      height: 115%;
+    }
+  }
+  .swiper_presentation-bg--3 {
+    background-size: cover;
+  }
+}
+@media (max-width: 520px) {
+  .swiper_presentation-title {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 460px) {
+  .swiper_presentation-title {
+    font-size: 2.4rem;
+    &--2,
+    &--3 {
+      font-size: 2.4rem;
     }
   }
 }
+
 @media (max-width: $breakpoint-smL) {
   // SWIPER PRESENTATION
   .swiper_presentation-wrapper {
     height: 40rem;
   }
-  .swiper_presentation-title {
-    font-weight: 600;
-    font-size: 4rem;
-    &::after {
-      width: 105%;
-      height: 250%;
-    }
-  }
+  .swiper_presentation-title,
   .swiper_presentation-title--2,
   .swiper_presentation-title--3 {
     font-size: 2.2rem;
-    font-weight: 500;
+    font-weight: 400;
   }
   .swiper_presentation-bg--3 {
     background-size: 300%;
@@ -157,28 +155,14 @@
       height: 110%;
     }
   }
-}
-@media (max-width: $breakpoint-smM) {
-  // SWIPER PRESENTATION
-  .swiper_presentation-title {
-    font-size: 3.4rem;
-  }
-  .swiper_presentation-title--2,
-  .swiper_presentation-title--3 {
-    font-size: 2.2rem;
-    font-weight: 400;
-  }
-}
-
-@media (max-width: $breakpoint-smS) {
-  .swiper_presentation-title {
-    font-size: 3rem;
-  }
+  .swiper_presentation-title,
   .swiper_presentation-title--2,
   .swiper_presentation-title--3 {
     font-size: 1.8rem;
     font-weight: 400;
   }
+}
+@media (max-width: $breakpoint-smS) {
   .swiper_presentation-bg--3 {
     background-position-y: 0rem;
   }

@@ -47,6 +47,14 @@
         }
       }
     }
+    &-lang {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      &--links {
+        text-decoration: none;
+      }
+    }
   }
 }
 

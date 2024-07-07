@@ -27,6 +27,16 @@
     &_form {
       &-wrapper {
         width: 95%;
+        gap: 6.5rem;
+      }
+    }
+  }
+}
+@media (max-width: $breakpoint-smL) {
+  .popup {
+    &_form {
+      &-wrapper {
+        gap: 5rem;
       }
     }
   }
