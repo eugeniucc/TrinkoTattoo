@@ -12,7 +12,7 @@
         dataLayer.push(arguments);
       }
       gtag("js", new Date());
-      gtag("config", "G-L0J29744YQ");
+      gtag("config", "G-L0J29744YQ", { cookie_flags: "SameSite=None; Secure" });
     </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -84,6 +84,7 @@
       integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
       crossorigin=""
     ></script>
+    <script defer src="./js/leaflet.js"></script>
     <!-- SWIPER SCRIPTS -->
     <script
       defer
@@ -93,8 +94,8 @@
     <script defer src="./js/portfolio-mobile.js"></script>
     <script defer src="./js/swiper-nav.js"></script>
     <!-- MY SCRIPTS -->
-    <!-- <script defer src="./js/modal.js"></script>
-    <script defer src="./js/checkage.js"></script> -->
+    <script defer src="./js/modal.js"></script>
+    <script defer src="./js/checkage.js"></script>
     <script defer src="./js/duck.js"></script>
     <script defer src="./js/promo.js"></script>
     <script defer src="./js/sectionhref.js"></script>
@@ -458,13 +459,9 @@
                 preserveAspectRatio="xMidYMid meet"
                 fill="#000000"
               >
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                <g
-                  id="SVGRepo_tracerCarrier"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></g>
-                <g id="SVGRepo_iconCarrier">
+                <g stroke-width="0"></g>
+                <g stroke-linecap="round" stroke-linejoin="round"></g>
+                <g>
                   <path
                     fill="#CE2028"
                     d="M36 27a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4v-4h36v4z"
@@ -490,13 +487,9 @@
                 preserveAspectRatio="xMidYMid meet"
                 fill="#000000"
               >
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                <g
-                  id="SVGRepo_tracerCarrier"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></g>
-                <g id="SVGRepo_iconCarrier">
+                <g stroke-width="0"></g>
+                <g stroke-linecap="round" stroke-linejoin="round"></g>
+                <g>
                   <path
                     fill="#DD2E44"
                     d="M32 5h-8v26h8a4 4 0 0 0 4-4V9a4 4 0 0 0-4-4z"
@@ -750,6 +743,60 @@
         ></div>
       </div>
     </section>
+
+    <section class="location">
+      <div class="container">
+        <div class="location_wrapper">
+          <div class="location_content">
+            <h3 class="location_title">Тату салон в Кишиневе на карте</h3>
+            <p class="location_text">
+              Ищете лучший тату салон в Кишиневе? Посетите Trinkotattoo,
+              расположенный в самом центре города.
+            </p>
+            <p class="location_text">
+              Наши мастера обладают многолетним опытом и готовы воплотить любые
+              ваши идеи в реальность. Используйте карту ниже, чтобы найти нас
+              легко и быстро.
+            </p>
+            <h3 class="location_title">Почему стоит выбрать Trinkotattoo?</h3>
+            <ul class="location_list">
+              <li class="location_list-item">
+                <p class="location_list-text">
+                  Профессиональные мастера с многолетним опытом
+                </p>
+              </li>
+              <li class="location_list-item">
+                <p class="location_list-text">
+                  Современное оборудование и безопасные материалы
+                </p>
+              </li>
+              <li class="location_list-item">
+                <p class="location_list-text">
+                  Удобное расположение в центре Кишинева
+                </p>
+              </li>
+              <li class="location_list-item">
+                <p class="location_list-text">
+                  Индивидуальный подход к каждому клиенту
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div id="map"></div>
+          <div class="location_address">
+            <p class="location_text">
+              Наш адрес: ТЦ Атриум, ул. Армянская, 44, Кишинев
+            </p>
+            <p class="location_text">
+              Мы всегда рады новым клиентам и готовы предложить вам лучшие
+              условия для создания вашего уникального тату. Не откладывайте,
+              запишитесь на консультацию прямо сейчас!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="reviews">
       <div class="container">
         <h4 class="reviews_title">Отзывы клиентов</h4>
@@ -1256,6 +1303,7 @@
         <div class="swiper-pagination"></div>
       </div>
     </section>
+
     <footer class="footer" id="footer">
       <div class="container">
         <div class="footer_content">
@@ -1452,14 +1500,13 @@
               placeholder="Введите ваш номер телефона*"
             />
           </div>
-          <button class="popup_form-submit">
-            <a
-              class="popup_form-submit-link"
-              href="https://t.me/Trinkonfox"
-              target="_blank"
-              >Записаться</a
-            >
-          </button>
+
+          <a
+            class="popup_form-submit popup_form-submit-link"
+            href="https://t.me/Trinkonfox"
+            target="_blank"
+            >Записаться</a
+          >
         </div>
       </form>
     </div>
@@ -1490,13 +1537,9 @@
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-        <g
-          id="SVGRepo_tracerCarrier"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        ></g>
-        <g id="SVGRepo_iconCarrier">
+        <g stroke-width="0"></g>
+        <g stroke-linecap="round" stroke-linejoin="round"></g>
+        <g>
           <path
             d="M12 4L6 10M12 4L18 10M12 4L12 14.5M12 20V17.5"
             stroke="#f24342"

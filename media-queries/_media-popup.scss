@@ -28,6 +28,9 @@
       &-wrapper {
         width: 95%;
         gap: 6.5rem;
+        &--input {
+          font-size: 1.6rem;
+        }
       }
     }
   }
@@ -37,6 +40,17 @@
     &_form {
       &-wrapper {
         gap: 5rem;
+      }
+    }
+  }
+}
+@media (max-width: $breakpoint-smS) {
+  .popup {
+    &_form {
+      &-wrapper {
+        &--input {
+          font-size: 1.4rem;
+        }
       }
     }
   }

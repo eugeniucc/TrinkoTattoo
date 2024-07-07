@@ -1,0 +1,60 @@
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+
+#map {
+  max-width: 100%;
+  width: 100%;
+  height: 40rem;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.location {
+  background-color: $black;
+  padding-bottom: 10rem;
+  &_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  &_title {
+    @include font-montserrat-title;
+    color: $white;
+    padding-bottom: 1rem;
+  }
+  &_text {
+    @include font-montserrat-p;
+    color: $white;
+    text-align: center;
+  }
+  &_list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    list-style: url("../../icons/list-dot.svg");
+    &-item {
+      max-width: 51rem;
+      margin: 0 auto;
+      width: 100%;
+    }
+    &-text {
+      @include font-montserrat-p;
+      color: $white;
+    }
+  }
+  &_content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  &_address {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+  &_content,
+  &_address {
+    padding: 0rem 1.6rem;
+  }
+}

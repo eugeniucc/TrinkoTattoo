@@ -11,7 +11,13 @@
     }
   }
 }
-
+@media (max-width: $breakpoint-lg) {
+  .correction {
+    &_wrapper {
+      padding-bottom: 5rem;
+    }
+  }
+}
 @media (max-width: $breakpoint-md) {
   .correction {
     &_wrapper {
@@ -28,11 +34,11 @@
   }
 }
 
-@media (max-width: $breakpoint-md) {
+@media (max-width: 565px) {
   .correction {
     &_wrapper {
       &-bg {
-        height: 40rem;
+        height: 30rem;
       }
     }
   }
@@ -43,16 +49,6 @@
     &_wrapper {
       &-bg {
         filter: none;
-      }
-    }
-  }
-}
-
-@media (max-width: $breakpoint-smS) {
-  .correction {
-    &_wrapper {
-      &-bg {
-        height: 35rem;
       }
     }
   }

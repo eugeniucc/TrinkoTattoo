@@ -1,0 +1,47 @@
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+
+@media (max-width: 1365px) {
+  #map {
+    width: 92%;
+  }
+}
+
+@media (max-width: $breakpoint-lg) {
+  .location {
+    padding-bottom: 5rem;
+  }
+}
+@media (max-width: 690px) {
+  .location {
+    &_list {
+      &-item {
+        max-width: 100%;
+        width: 90%;
+      }
+    }
+  }
+}
+@media (max-width: 550px) {
+  .location {
+    &_list {
+      text-align: center;
+      &-item {
+        max-width: 100%;
+        width: 90%;
+      }
+    }
+  }
+}
+@media (max-width: $breakpoint-smL) {
+  .location {
+    &_title {
+      padding-bottom: 2rem;
+    }
+    &_list {
+      &-text {
+        font-size: 1.8rem;
+      }
+    }
+  }
+}

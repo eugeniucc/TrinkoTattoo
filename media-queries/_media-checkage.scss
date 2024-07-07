@@ -11,9 +11,28 @@
     width: 90%;
   }
 }
+@media (max-width: $breakpoint-smL) {
+  .checkage {
+    &_wrapper {
+      &-content {
+        &--text {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: $breakpoint-smS) {
   .checkage {
     width: 28rem;
     height: 33rem;
+    &_wrapper {
+      &-content {
+        &--text {
+          font-size: 2rem;
+        }
+      }
+    }
   }
 }
