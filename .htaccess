@@ -1,8 +1,20 @@
 # Включение модуля переписывания URL
 RewriteEngine On
 
-# Перенаправление на русскую версию сайта
-RewriteRule ^ru$ /ru.html [L]
+# Указание файла по умолчанию
+DirectoryIndex index.html
 
 # Перенаправление на румынскую версию сайта
 RewriteRule ^ro$ /ro.html [L]
+
+<IfModule mod_headers.c>
+    # Cache-Control заголовок для кэширования на 1 день
+    <FilesMatch "\.(js|css)$">
+        Header set Cache-Control "public, max-age=86400"
+    </FilesMatch>
+    
+    # Expires заголовок с датой истечения кэша
+    <FilesMatch "\.(js|css)$">
+        Header set Expires "Wed, 21 Oct 2024 07:28:00 GMT"
+    </FilesMatch>
+</IfModule>

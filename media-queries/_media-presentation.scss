@@ -44,6 +44,23 @@
     background-position-y: -28rem;
   }
 }
+@media (max-width: $breakpoint-xl) {
+  // SWIPER PRESENTATION
+  .swiper_presentation-bg--2 {
+    background-position-y: 0rem;
+    background-size: cover;
+  }
+  .swiper_presentation-bg--3 {
+    background-position-y: 0rem;
+    background-size: cover;
+  }
+  .swiper_presentation-title--2 {
+    font-size: 3.4rem;
+  }
+  .swiper_presentation-bg--1 {
+    background-position-y: -28rem;
+  }
+}
 @media (max-width: $breakpoint-lg) {
   // SWIPER PRESENTATION
   .swiper_presentation-title {
@@ -79,6 +96,13 @@
   }
   .swiper_presentation-bg--1 {
     background-position-y: -12rem;
+  }
+}
+@media (max-width: 860px) {
+  .swiper_presentation-bg--3 {
+    background-size: 170%;
+    background-position-x: -24rem;
+    background-position-y: -8rem;
   }
 }
 @media (max-width: $breakpoint-md) {

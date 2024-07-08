@@ -4,52 +4,30 @@
 @media (max-width: $breakpoint-xxl) {
   .reviews {
     &_wrapper {
-      gap: 1rem;
       padding: 0rem 1rem;
     }
   }
 }
-@media (max-width: $breakpoint-xl) {
-  .reviews {
-    &_wrapper {
-      &-card {
-        max-width: 27rem;
-      }
-    }
-  }
-}
-
-@media (max-width: $breakpoint-lg) {
+@media (max-width: 1128px) {
   .reviews {
     padding: 5rem 0rem;
     &_wrapper {
-      padding: 0rem 1rem;
-      &-card {
-        width: 23rem;
-      }
-    }
-  }
-}
-
-@media (max-width: 930px) {
-  .reviews {
-    &_wrapper {
-      align-items: center;
       flex-wrap: wrap;
-      gap: 5rem;
+      justify-content: space-around;
       &-card {
-        width: 35rem;
+        max-width: 40rem;
       }
     }
   }
 }
-
-@media (max-width: $breakpoint-md) {
+@media (max-width: 500px) {
   .reviews {
     &_wrapper {
-      flex-direction: column;
-      align-items: center;
-      gap: 5rem;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      &-card {
+        max-width: 30rem;
+      }
     }
   }
 }

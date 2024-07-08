@@ -1,141 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-	xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
-	xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
->
-
-	<url>
-		<loc>https://trinkotattoo.ink</loc>
-		<lastmod>2024-07-08</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>1.0</priority>
-		<image:image>
-		<image:loc>https://trinkotattoo.ink/icons/logo.webp</image:loc>
-		<image:title> TrinkoTattoo</image:title>
-		</image:image>
-		<image:image>
-		<image:loc>https://trinkotattoo.ink/img/presentation-1.webp</image:loc>
-		</image:image>
-		<image:image>
-		<image:loc>https://trinkotattoo.ink/img/presentation-2.webp</image:loc>
-		</image:image>
-		<image:image>
-		<image:loc>https://trinkotattoo.ink/img/presentation-3.webp</image:loc>
-		</image:image>
-		<image:image>
-		<image:loc>https://trinkotattoo.ink/img/price-bg.webp</image:loc>
-		</image:image>
-		<image:image>
-		<image:loc>https://trinkotattoo.ink/img/course-img.webp</image:loc>
-		</image:image>
-		<image:image>
-		<image:loc>https://trinkotattoo.ink/img/correction-bg.webp</image:loc>
-		</image:image>
-		<image:image>
-		<image:loc>https://trinkotattoo.ink/img/reviews-1.webp</image:loc>
-		</image:image>
-		<image:image>
-		<image:loc>https://trinkotattoo.ink/img/reviews-2.webp</image:loc>
-		</image:image>
-		<image:image>
-		<image:loc>https://trinkotattoo.ink/img/reviews-3.webp</image:loc>
-		</image:image>
-		<image:image>
-		<image:loc>https://trinkotattoo.ink/img/reviews-4.webp</image:loc>
-		</image:image>
-		<image:image>
-		<image:loc>https://trinkotattoo.ink/img/portfolio-1.webp</image:loc>
-		<image:title> тату девушка тату девушки эскиз Молдова</image:title>
-		</image:image>
-		<image:image>
-		<image:loc>https://trinkotattoo.ink/img/portfolio-2.webp</image:loc>
-		<image:title> тату змея тату цветы эскиз Молдова</image:title>
-		</image:image>
-		<image:image>
-		<image:loc>https://trinkotattoo.ink/img/portfolio-3.webp</image:loc>
-		<image:title> тату абстракт тату кота эскиз Молдова</image:title>
-		</image:image>
-		<image:image>
-		<image:loc>https://trinkotattoo.ink/img/portfolio-4.webp</image:loc>
-		<image:title> тату карп тату кой эскиз Молдова</image:title>
-		</image:image>
-		<image:image>
-		<image:loc>https://trinkotattoo.ink/img/portfolio-5.webp</image:loc>
-		<image:title> тату бабочек тату бабочка эскиз Молдова</image:title>
-		</image:image>
-		<image:image>
-		<image:loc>https://trinkotattoo.ink/img/portfolio-6.webp</image:loc>
-		<image:title> тату сердце тату сердца эскиз Молдова</image:title>
-		</image:image>
-		<image:image>
-		<image:loc>https://trinkotattoo.ink/img/portfolio-7.webp</image:loc>
-		<image:title> тату солнца тату луны эскиз Молдова</image:title>
-		</image:image>
-		<image:image>
-		<image:loc>https://trinkotattoo.ink/img/portfolio-8.webp</image:loc>
-		<image:title> тату птицы тату на плече эскиз Молдова</image:title>
-		</image:image>
-		<image:image>
-		<image:loc>https://trinkotattoo.ink/img/portfolio-9.webp</image:loc>
-		<image:title> тату абстракт эскиз Молдова</image:title>
-		</image:image>
-		<image:image>
-		<image:loc>https://trinkotattoo.ink/img/portfolio-10.webp</image:loc>
-		<image:title> тату мики маус тату дисней эскиз Молдова</image:title>
-		</image:image>
-		<image:image>
-		<image:loc>https://trinkotattoo.ink/img/portfolio-11.webp</image:loc>
-		<image:title> тату роза тату на руке эскиз Молдова</image:title>
-		</image:image>
-		<image:image>
-		<image:loc>https://trinkotattoo.ink/img/portfolio-12.webp</image:loc>
-		<image:title> тату сигарета тату рук эскиз Молдова</image:title>
-		</image:image>
-		<image:image>
-		<image:loc>https://trinkotattoo.ink/img/portfolio-13.webp</image:loc>
-		<image:title> тату надпись тату цветок эскиз Молдова</image:title>
-		</image:image>
-		<image:image>
-		<image:loc>https://trinkotattoo.ink/img/portfolio-14.webp</image:loc>
-		<image:title> тату бульдог тату мафия надпись эскиз Молдова</image:title>
-		</image:image>
-		<image:image>
-		<image:loc>https://trinkotattoo.ink/img/portfolio-15.webp</image:loc>
-		<image:title> тату граната тату на руке эскиз Молдова</image:title>
-		</image:image>
-		<image:image>
-		<image:loc>https://trinkotattoo.ink/img/portfolio-16.webp</image:loc>
-		<image:title> тату бабочек тату на руке эскиз Молдова</image:title>
-		</image:image>
-		<image:image>
-		<image:loc>https://trinkotattoo.ink/img/portfolio-17.webp</image:loc>
-		<image:title> тату дракона тату на руке эскиз Молдова</image:title>
-		</image:image>
-		<image:image>
-		<image:loc>https://trinkotattoo.ink/img/portfolio-18.webp</image:loc>
-		<image:title> тату череп тату цветы эскиз Молдова</image:title>
-		</image:image>
-		<image:image>
-		<image:loc>https://trinkotattoo.ink/img/portfolio-19.webp</image:loc>
-		<image:title> тату знак зодиака тату на рукеэскиз Молдова</image:title>
-		</image:image>
-		<image:image>
-		<image:loc>https://trinkotattoo.ink/img/portfolio-20.webp</image:loc>
-		<image:title> тату римский венок тату римские венки эскиз Молдова</image:title>
-		</image:image>
-	</url>
-	<url>
-		<loc>https://trinkotattoo.ink/index.html</loc>
-		<lastmod>2024-07-08</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.5</priority>
-	</url>
-	<url>
-		<loc>https://trinkotattoo.ink/index-ro.html</loc>
-		<lastmod>2024-07-08</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.5</priority>
-	</url>
+<url>
+  <loc>https://trinkotattoo.ink/</loc>
+  <lastmod>2024-07-08T07:40:19+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://trinkotattoo.ink/ro.html</loc>
+  <lastmod>2024-07-08T07:40:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
 
 </urlset>
