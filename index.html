@@ -4,10 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- GOOGLE ANALYTICS SCRIPT -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-L0J29744YQ"
-    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
@@ -16,51 +12,20 @@
       gtag("js", new Date());
       gtag("config", "G-L0J29744YQ", { cookie_flags: "SameSite=None; Secure" });
     </script>
-    <!-- Yandex.Metrika counter -->
-    <script type="text/javascript">
-      (function (m, e, t, r, i, k, a) {
-        m[i] =
-          m[i] ||
-          function () {
-            (m[i].a = m[i].a || []).push(arguments);
-          };
-        m[i].l = 1 * new Date();
-        for (var j = 0; j < document.scripts.length; j++) {
-          if (document.scripts[j].src === r) {
-            return;
-          }
-        }
-        (k = e.createElement(t)),
-          (a = e.getElementsByTagName(t)[0]),
-          (k.async = 1),
-          (k.src = r),
-          a.parentNode.insertBefore(k, a);
-      })(
-        window,
-        document,
-        "script",
-        "https://mc.yandex.ru/metrika/tag.js",
-        "ym"
-      );
-
-      ym(97777745, "init", {
-        clickmap: true,
-        trackLinks: true,
-        accurateTrackBounce: true,
-        webvisor: true,
-      });
-    </script>
-    <noscript
-      ><div>
-        <img
-          src="https://mc.yandex.ru/watch/97777745"
-          style="position: absolute; left: -9999px"
-          alt=""
-        /></div
-    ></noscript>
-    <!-- /Yandex.Metrika counter -->
+    <!-- GOOGLE MAPS -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbRvJr7zYnoIqAbh7qeSObBaPOi2JCNqo&loading=async"
+      async
+    ></script>
+    <!-- JIVO CHAT -->
+    <!-- <script src="//code.jivo.ru/widget/w9UCfRlMLQ" async></script> -->
+    <!-- INSTAGRAM ASYNC -->
+    <script async src="//www.instagram.com/embed.js"></script>
     <!-- CANONICAL LINK -->
     <link rel="canonical" href="https://www.trinkotattoo.ink/" />
+    <!-- FANCY BOX -->
+    <script defer src="./fancybox/fancybox.umd.js"></script>
+    <link rel="stylesheet" href="./fancybox/fancybox.css" />
     <!-- GENERAL METAGRAPH -->
     <meta property="og:type" content="website" />
     <meta
@@ -77,11 +42,6 @@
       name="description"
       content="Лучший тату салон в Кишиневе - TrinkoTattoo. Профессиональные мастера, качественные материалы, татуировки любого размера и сложности. Запишитесь на сеанс прямо сейчас!"
     />
-    <!-- KEYWORDS -->
-    <meta
-      name="keywords"
-      content="тату салон, татуировка, тату, Кишинев, Trinkotattoo, tattoo salon, tattoo, Chisinau, тату салоны Кишинев, профессиональные тату мастера, лучшие тату мастера Кишинев, уникальные татуировки"
-    />
     <!-- TWITTER METAGRAPH -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta
@@ -93,12 +53,14 @@
       property="twitter:description"
       content="Лучший тату салон в Кишиневе - TrinkoTattoo. Профессиональные мастера, качественные материалы, татуировки любого размера и сложности. Запишитесь на сеанс прямо сейчас!"
     />
+    <!-- KEYWORDS -->
+    <meta
+      name="keywords"
+      content="тату салон, татуировка, тату, Кишинев, Trinkotattoo, tattoo salon, tattoo, Chisinau, тату салоны Кишинев, профессиональные тату мастера, лучшие тату мастера Кишинев, уникальные татуировки"
+    />
+    <!-- TITLE -->
     <title>Лучший тату салон в Кишиневе - TrinkoTattoo</title>
     <!-- ICONS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -128,1446 +90,871 @@
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
     <meta name="msapplication-config" content="./icons/browserconfig.xml" />
-    <!-- LEAFLET -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-      crossorigin=""
-    />
-    <script
-      defer
-      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-      crossorigin=""
-    ></script>
-    <script defer src="./js/leaflet.js"></script>
     <!-- SWIPER SCRIPTS -->
-    <script
-      defer
-      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
-    ></script>
-    <script defer src="./js/swiper-portfolio.js"></script>
-    <script defer src="./js/portfolio-mobile.js"></script>
-    <script defer src="./js/swiper-nav.js"></script>
+    <script defer src="./swiper/swiper-bundle.min.js"></script>
+    <!-- SWIPER STYLES -->
+    <link rel="stylesheet" href="./swiper/swiper-bundle.min.css" />
     <!-- MY SCRIPTS -->
-    <script defer src="./js/modal.js"></script>
-    <script defer src="./js/checkage.js"></script>
-    <script defer src="./js/duck.js"></script>
-    <script defer src="./js/promo.js"></script>
-    <script defer src="./js/sectionhref.js"></script>
+    <script defer src="./js/first.js"></script>
     <!-- MY STYLES -->
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/min_css/style.min.css" />
   </head>
   <body>
-    <section class="social" id="social">
-      <div class="container">
-        <h2 class="social_title">
-          Тату салон в Кишиневе Trinkotattoo в социальных сетях
-        </h2>
-        <nav class="social_nav">
-          <div class="social_nav-wrapper">
-            <div class="social_nav-contacts">
-              <a
-                class="social_nav-contacts--links"
-                href="https://t.me/Trinkonfox"
-                target="_blank"
-                ><svg
-                  width="24px"
-                  height="24px"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  stroke="#ffffff"
-                  stroke-width="0.00024000000000000003"
-                >
-                  <g stroke-width="0"></g>
-                  <g stroke-linecap="round" stroke-linejoin="round"></g>
-                  <g>
-                    <path
-                      d="M15.5562 14.5477L15.1007 15.0272C15.1007 15.0272 14.0181 16.167 11.0631 13.0559C8.10812 9.94484 9.1907 8.80507 9.1907 8.80507L9.47752 8.50311C10.1841 7.75924 10.2507 6.56497 9.63424 5.6931L8.37326 3.90961C7.61028 2.8305 6.13596 2.68795 5.26145 3.60864L3.69185 5.26114C3.25823 5.71766 2.96765 6.30945 3.00289 6.96594C3.09304 8.64546 3.81071 12.259 7.81536 16.4752C12.0621 20.9462 16.0468 21.1239 17.6763 20.9631C18.1917 20.9122 18.6399 20.6343 19.0011 20.254L20.4217 18.7584C21.3806 17.7489 21.1102 16.0182 19.8833 15.312L17.9728 14.2123C17.1672 13.7486 16.1858 13.8848 15.5562 14.5477Z"
-                      fill="#fff6fd"
-                    ></path>
-                    <path
-                      d="M13.2595 1.87983C13.3257 1.47094 13.7122 1.19357 14.1211 1.25976C14.1464 1.26461 14.2279 1.27983 14.2705 1.28933C14.3559 1.30834 14.4749 1.33759 14.6233 1.38082C14.9201 1.46726 15.3347 1.60967 15.8323 1.8378C16.8286 2.29456 18.1544 3.09356 19.5302 4.46936C20.906 5.84516 21.705 7.17097 22.1617 8.16725C22.3899 8.66487 22.5323 9.07947 22.6187 9.37625C22.6619 9.52466 22.6912 9.64369 22.7102 9.72901C22.7197 9.77168 22.7267 9.80594 22.7315 9.83125L22.7373 9.86245C22.8034 10.2713 22.5286 10.6739 22.1197 10.7401C21.712 10.8061 21.3279 10.53 21.2601 10.1231C21.258 10.1121 21.2522 10.0828 21.2461 10.0551C21.2337 9.9997 21.2124 9.91188 21.1786 9.79572C21.1109 9.56339 20.9934 9.21806 20.7982 8.79238C20.4084 7.94207 19.7074 6.76789 18.4695 5.53002C17.2317 4.29216 16.0575 3.59117 15.2072 3.20134C14.7815 3.00618 14.4362 2.88865 14.2038 2.82097C14.0877 2.78714 13.9417 2.75363 13.8863 2.7413C13.4793 2.67347 13.1935 2.28755 13.2595 1.87983Z"
-                      fill="#fff6fd"
-                    ></path>
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M13.4857 5.3293C13.5995 4.93102 14.0146 4.7004 14.4129 4.81419L14.2069 5.53534C14.4129 4.81419 14.4129 4.81419 14.4129 4.81419L14.4144 4.81461L14.4159 4.81505L14.4192 4.81602L14.427 4.81834L14.4468 4.8245C14.4618 4.82932 14.4807 4.8356 14.5031 4.84357C14.548 4.85951 14.6074 4.88217 14.6802 4.91337C14.8259 4.97581 15.0249 5.07223 15.2695 5.21694C15.7589 5.50662 16.4271 5.9878 17.2121 6.77277C17.9971 7.55775 18.4782 8.22593 18.7679 8.7154C18.9126 8.95991 19.009 9.15897 19.0715 9.30466C19.1027 9.37746 19.1254 9.43682 19.1413 9.48173C19.1493 9.50418 19.1555 9.52301 19.1604 9.53809L19.1665 9.55788L19.1688 9.56563L19.1698 9.56896L19.1702 9.5705C19.1702 9.5705 19.1707 9.57194 18.4495 9.77798L19.1707 9.57194C19.2845 9.97021 19.0538 10.3853 18.6556 10.4991C18.2607 10.6119 17.8492 10.3862 17.7313 9.99413L17.7276 9.98335C17.7223 9.96832 17.7113 9.93874 17.6928 9.89554C17.6558 9.8092 17.5887 9.66797 17.4771 9.47938C17.2541 9.10264 16.8514 8.53339 16.1514 7.83343C15.4515 7.13348 14.8822 6.73078 14.5055 6.50781C14.3169 6.39619 14.1757 6.32909 14.0893 6.29209C14.0461 6.27358 14.0165 6.26254 14.0015 6.25721L13.9907 6.25352C13.5987 6.13564 13.3729 5.72419 13.4857 5.3293Z"
-                      fill="#fff6fd"
-                    ></path>
-                  </g>
-                </svg>
-                <span class="social_nav-contacts--span">+373 60 833 389</span>
-              </a>
-              <a
-                class="social_nav-contacts--links social_nav-contacts-nolocation--425px"
-                href="https://maps.app.goo.gl/AQCTQYeW79ZsMuM29"
-                target="_blank"
-                ><svg
-                  width="24px"
-                  height="24px"
-                  viewBox="-3 0 20 20"
-                  version="1.1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  fill="#000000"
-                >
-                  <g stroke-width="0"></g>
-                  <g stroke-linecap="round" stroke-linejoin="round"></g>
-                  <g>
-                    <g
-                      id="Page-1"
-                      stroke="none"
-                      stroke-width="1"
-                      fill="none"
-                      fill-rule="evenodd"
-                    >
-                      <g
-                        transform="translate(-223.000000, -5399.000000)"
-                        fill="#ffffff"
-                      >
-                        <g transform="translate(56.000000, 160.000000)">
-                          <path
-                            d="M174,5248.219 C172.895,5248.219 172,5247.324 172,5246.219 C172,5245.114 172.895,5244.219 174,5244.219 C175.105,5244.219 176,5245.114 176,5246.219 C176,5247.324 175.105,5248.219 174,5248.219 M174,5239 C170.134,5239 167,5242.134 167,5246 C167,5249.866 174,5259 174,5259 C174,5259 181,5249.866 181,5246 C181,5242.134 177.866,5239 174,5239"
-                          ></path>
-                        </g>
-                      </g>
-                    </g>
-                  </g>
-                </svg>
-                <span class="social_nav-contacts--span"
-                  >г. Кишинев, ул. Албишоара 4, ТЦ Атриум</span
-                >
-              </a>
-              <a
-                class="social_nav-contacts--links social_nav-contacts-location--425px"
-                href="https://maps.app.goo.gl/AQCTQYeW79ZsMuM29"
-                target="_blank"
-                ><svg
-                  width="24px"
-                  height="24px"
-                  viewBox="-3 0 20 20"
-                  version="1.1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  fill="#000000"
-                >
-                  <g stroke-width="0"></g>
-                  <g stroke-linecap="round" stroke-linejoin="round"></g>
-                  <g>
-                    <g
-                      stroke="none"
-                      stroke-width="1"
-                      fill="none"
-                      fill-rule="evenodd"
-                    >
-                      <g
-                        id="Dribbble-Light-Preview"
-                        transform="translate(-223.000000, -5399.000000)"
-                        fill="#ffffff"
-                      >
-                        <g
-                          id="icons"
-                          transform="translate(56.000000, 160.000000)"
-                        >
-                          <path
-                            d="M174,5248.219 C172.895,5248.219 172,5247.324 172,5246.219 C172,5245.114 172.895,5244.219 174,5244.219 C175.105,5244.219 176,5245.114 176,5246.219 C176,5247.324 175.105,5248.219 174,5248.219 M174,5239 C170.134,5239 167,5242.134 167,5246 C167,5249.866 174,5259 174,5259 C174,5259 181,5249.866 181,5246 C181,5242.134 177.866,5239 174,5239"
-                          ></path>
-                        </g>
-                      </g>
-                    </g>
-                  </g>
-                </svg>
-                <span class="social_nav-contacts--span"
-                  >г. Кишинев, ТЦ Атриум</span
-                >
-              </a>
-              <a
-                class="social_nav-contacts--links"
-                href="https://t.me/Trinkonfox"
-                target="_blank"
-              >
-                <svg
-                  width="24px"
-                  height="24px"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g stroke-width="0"></g>
-                  <g stroke-linecap="round" stroke-linejoin="round"></g>
-                  <g>
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M23.1117 4.49449C23.4296 2.94472 21.9074 1.65683 20.4317 2.227L2.3425 9.21601C0.694517 9.85273 0.621087 12.1572 2.22518 12.8975L6.1645 14.7157L8.03849 21.2746C8.13583 21.6153 8.40618 21.8791 8.74917 21.968C9.09216 22.0568 9.45658 21.9576 9.70712 21.707L12.5938 18.8203L16.6375 21.8531C17.8113 22.7334 19.5019 22.0922 19.7967 20.6549L23.1117 4.49449ZM3.0633 11.0816L21.1525 4.0926L17.8375 20.2531L13.1 16.6999C12.7019 16.4013 12.1448 16.4409 11.7929 16.7928L10.5565 18.0292L10.928 15.9861L18.2071 8.70703C18.5614 8.35278 18.5988 7.79106 18.2947 7.39293C17.9906 6.99479 17.4389 6.88312 17.0039 7.13168L6.95124 12.876L3.0633 11.0816ZM8.17695 14.4791L8.78333 16.6015L9.01614 15.321C9.05253 15.1209 9.14908 14.9366 9.29291 14.7928L11.5128 12.573L8.17695 14.4791Z"
-                      fill="#ffffff"
-                    ></path>
-                  </g>
-                </svg>
-                <span class="social_nav-contacts--span">TrinkoTattoo</span>
-              </a>
-              <a
-                class="social_nav-contacts--links"
-                href="https://www.instagram.com/trinko_tattoo/"
-                target="_blank"
-              >
-                <svg
-                  width="24px"
-                  height="24px"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g stroke-width="0"></g>
-                  <g stroke-linecap="round" stroke-linejoin="round"></g>
-                  <g>
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"
-                      fill="#ffffff"
-                    ></path>
-                    <path
-                      d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z"
-                      fill="#ffffff"
-                    ></path>
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z"
-                      fill="#ffffff"
-                    ></path>
-                  </g>
-                </svg>
-                <span class="social_nav-contacts--span">TrinkoTattoo</span>
-              </a>
-            </div>
-            <div class="social_nav-social">
-              <a
-                class="social_nav-social--links"
-                href="https://t.me/Trinkonfox"
-                target="_blank"
-                ><svg
-                  width="24px"
-                  height="24px"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g stroke-width="0"></g>
-                  <g stroke-linecap="round" stroke-linejoin="round"></g>
-                  <g>
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M23.1117 4.49449C23.4296 2.94472 21.9074 1.65683 20.4317 2.227L2.3425 9.21601C0.694517 9.85273 0.621087 12.1572 2.22518 12.8975L6.1645 14.7157L8.03849 21.2746C8.13583 21.6153 8.40618 21.8791 8.74917 21.968C9.09216 22.0568 9.45658 21.9576 9.70712 21.707L12.5938 18.8203L16.6375 21.8531C17.8113 22.7334 19.5019 22.0922 19.7967 20.6549L23.1117 4.49449ZM3.0633 11.0816L21.1525 4.0926L17.8375 20.2531L13.1 16.6999C12.7019 16.4013 12.1448 16.4409 11.7929 16.7928L10.5565 18.0292L10.928 15.9861L18.2071 8.70703C18.5614 8.35278 18.5988 7.79106 18.2947 7.39293C17.9906 6.99479 17.4389 6.88312 17.0039 7.13168L6.95124 12.876L3.0633 11.0816ZM8.17695 14.4791L8.78333 16.6015L9.01614 15.321C9.05253 15.1209 9.14908 14.9366 9.29291 14.7928L11.5128 12.573L8.17695 14.4791Z"
-                      fill="#ffffff"
-                    ></path>
-                  </g>
-                </svg>
-              </a>
-              <a
-                class="social_nav-social--links"
-                href="https://www.instagram.com/trinko_tattoo/"
-                target="_blank"
-              >
-                <svg
-                  width="24px"
-                  height="24px"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g stroke-width="0"></g>
-                  <g stroke-linecap="round" stroke-linejoin="round"></g>
-                  <g>
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"
-                      fill="#ffffff"
-                    ></path>
-                    <path
-                      d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z"
-                      fill="#ffffff"
-                    ></path>
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z"
-                      fill="#ffffff"
-                    ></path>
-                  </g>
-                </svg>
-              </a>
-              <a
-                class="social_nav-social--links"
-                href="viber://chat?number=%2B37360833389"
-                target="_blank"
-              >
-                <svg
-                  width="24px"
-                  height="24px"
-                  viewBox="0 0 24.00 24.00"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  stroke="#000000"
-                  stroke-width="0.00024000000000000003"
-                >
-                  <g stroke-width="0"></g>
-                  <g stroke-linecap="round" stroke-linejoin="round"></g>
-                  <g>
-                    <path
-                      d="M13 4C12.4477 4 12 4.44772 12 5C12 5.55228 12.4477 6 13 6C14.2728 6 15.2557 6.41989 15.9179 7.08211C16.5801 7.74433 17 8.72725 17 10C17 10.5523 17.4477 11 18 11C18.5523 11 19 10.5523 19 10C19 8.27275 18.4199 6.75567 17.3321 5.66789C16.2443 4.58011 14.7272 4 13 4Z"
-                      fill="#ffffff"
-                    ></path>
-                    <path
-                      d="M5.014 8.00613C5.12827 7.1024 6.30277 5.87414 7.23488 6.01043L7.23339 6.00894C8.01251 6.15699 8.65217 7.32965 9.07373 8.10246C9.14298 8.22942 9.20635 8.34559 9.26349 8.44465C9.55041 8.95402 9.3641 9.4701 9.09655 9.68787C9.06561 9.7128 9.03317 9.73855 8.9998 9.76504C8.64376 10.0477 8.18114 10.4149 8.28943 10.7834C8.5 11.5 11 14 12.2296 14.7107C12.6061 14.9283 12.8988 14.5057 13.1495 14.1438C13.2087 14.0583 13.2656 13.9762 13.3207 13.9067C13.5301 13.6271 14.0466 13.46 14.5548 13.736C15.3138 14.178 16.0288 14.6917 16.69 15.27C17.0202 15.546 17.0977 15.9539 16.8689 16.385C16.4659 17.1443 15.3003 18.1456 14.4542 17.9421C12.9764 17.5868 7 15.27 5.08033 8.55801C4.97981 8.26236 4.99645 8.13792 5.01088 8.02991L5.014 8.00613Z"
-                      fill="#ffffff"
-                    ></path>
-                    <path
-                      d="M13 7C12.4477 7 12 7.44772 12 8C12 8.55228 12.4477 9 13 9C13.1748 9 13.4332 9.09745 13.6679 9.33211C13.9025 9.56676 14 9.82523 14 10C14 10.5523 14.4477 11 15 11C15.5523 11 16 10.5523 16 10C16 9.17477 15.5975 8.43324 15.0821 7.91789C14.5668 7.40255 13.8252 7 13 7Z"
-                      fill="#ffffff"
-                    ></path>
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M7.51742 23.8312C7.54587 23.8469 7.57508 23.8612 7.60492 23.874C8.14762 24.1074 8.81755 23.5863 10.1574 22.5442L11.5 21.5C14.1884 21.589 16.514 21.2362 18.312 20.6071C20.3227 19.9035 21.9036 18.3226 22.6072 16.3119C23.5768 13.541 23.5768 8.45883 22.6072 5.68794C21.9036 3.67722 20.3227 2.0963 18.312 1.39271C15.1103 0.272407 8.82999 0.293306 5.68806 1.39271C3.67733 2.0963 2.09642 3.67722 1.39283 5.68794C0.423255 8.45883 0.423255 13.541 1.39283 16.3119C2.09642 18.3226 3.67733 19.9035 5.68806 20.6071C6.08252 20.7451 6.52371 20.8965 7 21C7 22.6974 7 23.5461 7.51742 23.8312ZM9 20.9107V19.7909C9 19.5557 8.836 19.3524 8.60597 19.3032C7.84407 19.1403 7.08676 18.9776 6.34862 18.7193C4.91238 18.2168 3.78316 17.0875 3.2806 15.6513C2.89871 14.5599 2.66565 12.8453 2.66565 10.9999C2.66565 9.15453 2.89871 7.43987 3.2806 6.3485C3.78316 4.91227 4.91238 3.78304 6.34862 3.28048C7.61625 2.83692 9.71713 2.56282 11.9798 2.56032C14.2422 2.55782 16.3561 2.82723 17.6514 3.28048C19.0876 3.78304 20.2169 4.91227 20.7194 6.3485C21.1013 7.43987 21.3344 9.15453 21.3344 10.9999C21.3344 12.8453 21.1013 14.5599 20.7194 15.6513C20.2169 17.0875 19.0876 18.2168 17.6514 18.7193C15.5197 19.4652 13.259 19.549 11.0239 19.4828C10.9071 19.4794 10.7926 19.5165 10.7004 19.5882L9 20.9107Z"
-                      fill="#ffffff"
-                    ></path>
-                  </g>
-                </svg>
-              </a>
-              <a
-                class="social_nav-social--links"
-                href="https://wa.me/60833389"
-                target="_blank"
-              >
-                <svg
-                  fill="#ffffff"
-                  width="24px"
-                  height="24px"
-                  viewBox="0 0 32 32"
-                  version="1.1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  stroke="#ffffff"
-                >
-                  <g stroke-width="0"></g>
-                  <g stroke-linecap="round" stroke-linejoin="round"></g>
-                  <g>
-                    <title>whatsapp</title>
-                    <path
-                      d="M26.576 5.363c-2.69-2.69-6.406-4.354-10.511-4.354-8.209 0-14.865 6.655-14.865 14.865 0 2.732 0.737 5.291 2.022 7.491l-0.038-0.070-2.109 7.702 7.879-2.067c2.051 1.139 4.498 1.809 7.102 1.809h0.006c8.209-0.003 14.862-6.659 14.862-14.868 0-4.103-1.662-7.817-4.349-10.507l0 0zM16.062 28.228h-0.005c-0 0-0.001 0-0.001 0-2.319 0-4.489-0.64-6.342-1.753l0.056 0.031-0.451-0.267-4.675 1.227 1.247-4.559-0.294-0.467c-1.185-1.862-1.889-4.131-1.889-6.565 0-6.822 5.531-12.353 12.353-12.353s12.353 5.531 12.353 12.353c0 6.822-5.53 12.353-12.353 12.353h-0zM22.838 18.977c-0.371-0.186-2.197-1.083-2.537-1.208-0.341-0.124-0.589-0.185-0.837 0.187-0.246 0.371-0.958 1.207-1.175 1.455-0.216 0.249-0.434 0.279-0.805 0.094-1.15-0.466-2.138-1.087-2.997-1.852l0.010 0.009c-0.799-0.74-1.484-1.587-2.037-2.521l-0.028-0.052c-0.216-0.371-0.023-0.572 0.162-0.757 0.167-0.166 0.372-0.434 0.557-0.65 0.146-0.179 0.271-0.384 0.366-0.604l0.006-0.017c0.043-0.087 0.068-0.188 0.068-0.296 0-0.131-0.037-0.253-0.101-0.357l0.002 0.003c-0.094-0.186-0.836-2.014-1.145-2.758-0.302-0.724-0.609-0.625-0.836-0.637-0.216-0.010-0.464-0.012-0.712-0.012-0.395 0.010-0.746 0.188-0.988 0.463l-0.001 0.002c-0.802 0.761-1.3 1.834-1.3 3.023 0 0.026 0 0.053 0.001 0.079l-0-0.004c0.131 1.467 0.681 2.784 1.527 3.857l-0.012-0.015c1.604 2.379 3.742 4.282 6.251 5.564l0.094 0.043c0.548 0.248 1.25 0.513 1.968 0.74l0.149 0.041c0.442 0.14 0.951 0.221 1.479 0.221 0.303 0 0.601-0.027 0.889-0.078l-0.031 0.004c1.069-0.223 1.956-0.868 2.497-1.749l0.009-0.017c0.165-0.366 0.261-0.793 0.261-1.242 0-0.185-0.016-0.366-0.047-0.542l0.003 0.019c-0.092-0.155-0.34-0.247-0.712-0.434z"
-                    ></path>
-                  </g>
-                </svg>
-              </a>
-            </div>
-          </div>
-        </nav>
-      </div>
-    </section>
-    <header class="header">
+    <header class="header" id="header">
       <div class="container">
         <nav class="header_nav">
-          <div class="header_nav-logo">
+          <a href="./index.html" class="header_nav-logo">
             <img
               class="header_nav-logo--img"
               src="./icons/logo.webp"
               alt="TrinkoTattoo"
             />
-          </div>
-          <div class="header_nav-menu">
-            <a class="header_nav-menu--links" href="#presentation">
-              <span class="header_nav-menu--span">Главная</span>
+          </a>
+          <ul class="header_nav-list">
+            <a class="header_nav-list--links" href="#">
+              <span class="header_nav-list--span">Обо мне</span>
             </a>
-            <a class="header_nav-menu--links" href="#about">
-              <span class="header_nav-menu--span">Обо мне</span>
+            <a class="header_nav-list--links" href="#">
+              <span class="header_nav-list--span">Портфолио</span>
             </a>
-            <a class="header_nav-menu--links" href="#portfolio">
-              <span class="header_nav-menu--span">Портфолио</span>
+            <a class="header_nav-list--links" href="#">
+              <span class="header_nav-list--span">Цены</span>
             </a>
-            <a class="header_nav-menu--links" href="#price">
-              <span class="header_nav-menu--span">Прайс</span>
-            </a>
-            <a class="header_nav-menu--links" href="#course">
-              <span class="header_nav-menu--span">Курсы тату</span>
+            <a class="header_nav-list--links" href="#">
+              <span class="header_nav-list--span">Курсы тату</span>
             </a>
             <span
-              class="header_nav-menu--span header_nav-menu--span-red"
+              class="header_nav-list--span header_nav-list--span-red"
               id="duck-sound-onclick"
               >Нажми на меня</span
             >
-          </div>
+          </ul>
+          <button class="header_nav-meet header_nav-meet-excl">
+            Записаться
+          </button>
           <div class="header_nav-lang">
-            <a href="./index.html" class="header_nav-lang--links"
-              ><svg
-                width="24px"
-                height="24px"
-                viewBox="0 0 36 36"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                aria-hidden="true"
-                role="img"
-                class="iconify iconify--twemoji"
-                preserveAspectRatio="xMidYMid meet"
-                fill="#000000"
-              >
-                <g stroke-width="0"></g>
-                <g stroke-linecap="round" stroke-linejoin="round"></g>
-                <g>
-                  <path
-                    fill="#CE2028"
-                    d="M36 27a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4v-4h36v4z"
-                  ></path>
-                  <path fill="#22408C" d="M0 13h36v10H0z"></path>
-                  <path
-                    fill="#EEE"
-                    d="M32 5H4a4 4 0 0 0-4 4v4h36V9a4 4 0 0 0-4-4z"
-                  ></path>
-                </g>
-              </svg>
+            <a href="./index.html" class="header_nav-link">
+              <img
+                class="header_nav-img"
+                src="./svg/flag-ru.svg"
+                alt="Русский язык Trinkotattoo"
+              />
             </a>
-            <a href="./ro.html" class="header_nav-lang--links"
-              ><svg
-                width="24px"
-                height="24px"
-                viewBox="0 0 36 36"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                aria-hidden="true"
-                role="img"
-                class="iconify iconify--twemoji"
-                preserveAspectRatio="xMidYMid meet"
-                fill="#000000"
-              >
-                <g stroke-width="0"></g>
-                <g stroke-linecap="round" stroke-linejoin="round"></g>
-                <g>
-                  <path
-                    fill="#DD2E44"
-                    d="M32 5h-8v26h8a4 4 0 0 0 4-4V9a4 4 0 0 0-4-4z"
-                  ></path>
-                  <path
-                    fill="#265FB5"
-                    d="M4 5a4 4 0 0 0-4 4v18a4 4 0 0 0 4 4h8V5H4z"
-                  ></path>
-                  <path fill="#FFCC4D" d="M12 5h12v26H12z"></path>
-                  <path fill="#DD2E44" d="M16 15h4v3h-4z"></path>
-                  <path fill="#269" d="M16 18v2l2 1l2-1v-2z"></path>
-                  <path
-                    fill="#A0724A"
-                    d="M16 11v1h1v2h2v-3zm3 10l-1 .625L17 21l-1 3l2 1l2-1zm-4-8l-1-1l-1 1v10l2-2v-7h1zm7-1l-1 1l-1 1h1v7l2 2V13z"
-                  ></path>
-                  <path
-                    fill="#FFCC4D"
-                    d="M16.234 17.594h.531V18h-.531zm3 0h.531V18h-.531z"
-                  ></path>
-                  <path
-                    fill="#77B255"
-                    d="M15.637 22.743c-.106.062-.263-.01-.35-.159l-2.232-3.866c-.086-.15-.07-.321.037-.383l.136-.078c.106-.062.263.01.349.159l2.232 3.867c.087.149.07.32-.036.382l-.136.078z"
-                  ></path>
-                  <path
-                    fill="#FFCC4D"
-                    d="M22.817 18.393c.107.061.125.23.039.377l-2.191 3.798c-.086.147-.24.216-.348.155l-.135-.078c-.106-.062-.124-.23-.039-.378l2.192-3.798c.085-.146.24-.217.347-.154l.135.078z"
-                  ></path>
-                  <path
-                    fill="#DD2E44"
-                    d="M16 21l-1 1v1l1-1zm4 0v1l1 1v-1z"
-                  ></path>
-                  <path
-                    fill="#FFCC4D"
-                    d="M18 17l-1-1v2.958L18 20l1-1.042V16z"
-                  ></path>
-                </g>
-              </svg>
-            </a>
+            <a href="./ro.html" class="header_nav-link">
+              <img
+                class="header_nav-img"
+                src="./svg/flag-md.svg"
+                alt="Limba Romana Trinkotattoo"
+            /></a>
           </div>
         </nav>
       </div>
     </header>
-    <section class="presentation" id="presentation">
-      <div class="swiper swiper-presentation">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="swiper-slide-presentation">
-              <div
-                class="swiper_presentation-wrapper swiper_presentation-bg--1"
-                style="background-image: url(./img/presentation-1.webp)"
-              >
-                <h1 class="swiper_presentation-title">
-                  Профессиональный тату салон в Кишиневе: TrinkoTattoo
-                </h1>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper-slide-presentation">
-              <div
-                class="swiper_presentation-wrapper swiper_presentation-bg--2"
-                style="background-image: url(./img/presentation-2.webp)"
-              >
-                <h2 class="swiper_presentation-title--2">
-                  Художественная татуировка в любом стиле и размере, выполненная
-                  профессионалом в Молдове
-                </h2>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper-slide-presentation">
-              <div
-                class="swiper_presentation-wrapper swiper_presentation-bg--3"
-                style="background-image: url(./img/presentation-3.webp)"
-              >
-                <h2 class="swiper_presentation-title--3">
-                  Индивидуальные эскизы и запись на сеанс по вашим
-                  предпочтениям, без очередей
-                </h2>
-              </div>
-            </div>
+    <main class="main">
+      <section class="primary">
+        <div class="container">
+          <div class="primary_wrapper">
+            <h1 class="primary_title">
+              Профессиональный тату салон в Кишиневе:
+              <span class="primary_title-span">TrinkoTattoo</span>
+            </h1>
+            <img
+              class="primary_img"
+              src="./img/primary.webp"
+              alt="Тату на руке татау на груди Кишинев"
+              loading="lazy"
+            />
           </div>
         </div>
-        <div class="swiper-button-next presentation-btn-next">
-          <svg
-            fill="#000000"
-            width="24px"
-            height="24px"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-            stroke="#f24342"
-          >
-            <g stroke-width="0"></g>
-            <g stroke-linecap="round" stroke-linejoin="round"></g>
-            <g>
-              <path
-                d="M16.2928932,12 L13.1464466,8.85355339 C12.9511845,8.65829124 12.9511845,8.34170876 13.1464466,8.14644661 C13.3417088,7.95118446 13.6582912,7.95118446 13.8535534,8.14644661 L17.8535534,12.1464466 C18.0488155,12.3417088 18.0488155,12.6582912 17.8535534,12.8535534 L13.8535534,16.8535534 C13.6582912,17.0488155 13.3417088,17.0488155 13.1464466,16.8535534 C12.9511845,16.6582912 12.9511845,16.3417088 13.1464466,16.1464466 L16.2928932,13 L7.5,13 C7.22385763,13 7,12.7761424 7,12.5 C7,12.2238576 7.22385763,12 7.5,12 L16.2928932,12 Z M19.5,21 C20.3284271,21 21,20.3284271 21,19.5 L21,5.5 C21,4.67157288 20.3284271,4 19.4999725,4 L5.49305689,3.99922869 C4.66462977,3.99922869 3.99305689,4.67080157 3.99305689,5.49922869 L4.00000011,19.499807 C4.00031957,20.3280081 4.67179882,20.9992284 5.5,20.9992284 C5.50626743,20.9992284 10.1729341,20.9994856 19.5,21 Z M3.00000021,19.5002478 L2.99305708,5.50019301 C2.99305689,4.11851682 4.11234502,2.99922869 5.49308443,2.99922869 L19.5,3 C20.8807119,3 22,4.11928813 22,5.5 L22,19.5 C22,20.8807119 20.8807119,22 19.5,22 L5.5,22 C4.10278895,21.9822801 3.00052859,20.8700816 3.00000021,19.5002478 Z"
-              ></path>
-            </g>
-          </svg>
-        </div>
-        <div class="swiper-button-prev presentation-btn-prev">
-          <svg
-            fill="#000000"
-            width="24px"
-            height="24px"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-            stroke="#f24342"
-          >
-            <g stroke-width="0"></g>
-            <g stroke-linecap="round" stroke-linejoin="round"></g>
-            <g>
-              <path
-                d="M16.2928932,12 L13.1464466,8.85355339 C12.9511845,8.65829124 12.9511845,8.34170876 13.1464466,8.14644661 C13.3417088,7.95118446 13.6582912,7.95118446 13.8535534,8.14644661 L17.8535534,12.1464466 C18.0488155,12.3417088 18.0488155,12.6582912 17.8535534,12.8535534 L13.8535534,16.8535534 C13.6582912,17.0488155 13.3417088,17.0488155 13.1464466,16.8535534 C12.9511845,16.6582912 12.9511845,16.3417088 13.1464466,16.1464466 L16.2928932,13 L7.5,13 C7.22385763,13 7,12.7761424 7,12.5 C7,12.2238576 7.22385763,12 7.5,12 L16.2928932,12 Z M19.5,21 C20.3284271,21 21,20.3284271 21,19.5 L21,5.5 C21,4.67157288 20.3284271,4 19.4999725,4 L5.49305689,3.99922869 C4.66462977,3.99922869 3.99305689,4.67080157 3.99305689,5.49922869 L4.00000011,19.499807 C4.00031957,20.3280081 4.67179882,20.9992284 5.5,20.9992284 C5.50626743,20.9992284 10.1729341,20.9994856 19.5,21 Z M3.00000021,19.5002478 L2.99305708,5.50019301 C2.99305689,4.11851682 4.11234502,2.99922869 5.49308443,2.99922869 L19.5,3 C20.8807119,3 22,4.11928813 22,5.5 L22,19.5 C22,20.8807119 20.8807119,22 19.5,22 L5.5,22 C4.10278895,21.9822801 3.00052859,20.8700816 3.00000021,19.5002478 Z"
-              ></path>
-            </g>
-          </svg>
-        </div>
-      </div>
-    </section>
-    <section class="about" id="about">
-      <div class="container">
-        <div class="about_wrapper">
-          <div class="about_wrapper-content">
-            <h2 class="about_wrapper-content--title">
-              Я - тату мастер из Кишинёва с пятилетним стажем в области
-              татуировок. Моя работа для меня не просто профессия, это
-              искусство, воплощение идей и эмоций в уникальных образах на коже.
+      </section>
+      <section class="art">
+        <div class="container">
+          <div class="art_wrapper">
+            <h2 class="art_title">
+              Художественная татуировка в любом стиле и размере, выполненная
+              профессионалом в Молдове
             </h2>
-            <p class="about_wrapper-content--text">
-              Каждая татуировка - это возможность рассказать историю,
-              подчеркнуть индивидуальность, создать нечто поистине неповторимое.
-              В последнее время я все больше задумываюсь о значимости нашего
-              времени и того, как мы его используем. Каждая работа, которую я
-              делаю, отражает эту философию - она уникальна, продумана и создана
-              с любовью к деталям. Моя цель - не просто сделать красивую
-              татуировку, но и вложить в нее частичку моей души, чтобы она стала
-              частью жизни и вдохновляла своего обладателя каждый день. Спасибо,
-              что делитесь этим путешествием со мной.
-              <span class="about_wrapper-content--span"> С любовью, Яна</span>
-            </p>
-            <button class="about_wrapper-btn">Записаться</button>
+            <div class="art_swiper">
+              <div class="swiper artSwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./img/portfolio-1.webp" alt="" loading="lazy" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/portfolio-2.webp" alt="" loading="lazy" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/portfolio-3.webp" alt="" loading="lazy" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/portfolio-4.webp" alt="" loading="lazy" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/portfolio-5.webp" alt="" loading="lazy" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/portfolio-6.webp" alt="" loading="lazy" />
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+            <button class="header_nav-meet">Записаться</button>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="price" id="price">
-      <h3 class="price_title">Прайс</h3>
-      <div class="price_wrapper">
-        <div class="price_wrapper-content">
-          <h2 class="price_wrapper-content--title">Татуировки в Кишиневе:</h2>
-          <ul class="price_wrapper-content--list">
-            <li class="price_wrapper-content--item">
-              Черная татуировка: от 300 лей
-            </li>
-            <li class="price_wrapper-content--item">
-              Черная татуировка с цветным контуром: от 400 лей
-            </li>
-            <li class="price_wrapper-content--item">
-              Цветная татуировка с закрасом: от 600 лей
-            </li>
-          </ul>
-          <h2 class="price_wrapper-content--title">
-            Перманентный макияж в Кишиневе:
-          </h2>
-          <ul class="price_wrapper-content--list">
-            <li class="price_wrapper-content--item">
-              Брови пудровый эффект: 600 лей
-            </li>
-            <li class="price_wrapper-content--item">
-              Стрелки любая техника: 600 лей
-            </li>
-            <li class="price_wrapper-content--item">
-              Губы любая техника: 600 лей
-            </li>
-          </ul>
-          <h3 class="price_wrapper-content--title">
-            Дополнительно включено в стоимость:
-          </h3>
-          <ul class="price_wrapper-content--list">
-            <li class="price_wrapper-content--item">
-              В стоимость включена работа, даже если требуется более одного
-              сеанса, это для сложных и больших работ.
-            </li>
-            <li class="price_wrapper-content--item">
-              Используем обезболивающее при необходимости, чтобы обеспечить
-              комфорт клиента во время процедуры.
-            </li>
-          </ul>
+      </section>
+      <section class="individual">
+        <div class="container">
+          <div class="individual_wrapper">
+            <h2 class="individual_title">
+              Индивидуальные эскизы и запись на сеанс по вашим предпочтениям,
+              без очередей
+            </h2>
+            <div class="individual_content">
+              <video
+                class="individual_video"
+                autoplay
+                muted
+                loop
+                preload="auto"
+              >
+                <source src="./video/art.mp4" type="video/mp4" />
+                Ваш браузер не поддерживает видео.
+              </video>
+              <div class="individual_galery">
+                <a data-fancybox="gallery" href="./img/portfolio-1.webp">
+                  <img
+                    class="individual_galery-img"
+                    src="./img/portfolio-1.webp"
+                    loading="lazy"
+                    alt="Thumbnail 1"
+                  />
+                </a>
+                <a data-fancybox="gallery" href="./img/portfolio-2.webp">
+                  <img
+                    class="individual_galery-img"
+                    src="./img/portfolio-2.webp"
+                    loading="lazy"
+                    alt="Thumbnail 1"
+                  />
+                </a>
+                <a data-fancybox="gallery" href="./img/portfolio-3.webp">
+                  <img
+                    class="individual_galery-img"
+                    src="./img/portfolio-3.webp"
+                    loading="lazy"
+                    alt="Thumbnail 1"
+                  />
+                </a>
+                <a data-fancybox="gallery" href="./img/portfolio-4.webp">
+                  <img
+                    class="individual_galery-img"
+                    src="./img/portfolio-4.webp"
+                    loading="lazy"
+                    alt="Thumbnail 1"
+                  />
+                </a>
+                <a data-fancybox="gallery" href="./img/portfolio-5.webp">
+                  <img
+                    class="individual_galery-img"
+                    src="./img/portfolio-5.webp"
+                    loading="lazy"
+                    alt="Thumbnail 1"
+                  />
+                </a>
+                <a data-fancybox="gallery" href="./img/portfolio-6.webp">
+                  <img
+                    class="individual_galery-img"
+                    src="./img/portfolio-6.webp"
+                    loading="lazy"
+                    alt="Thumbnail 1"
+                  />
+                </a>
+              </div>
+            </div>
+            <button class="header_nav-meet">Записаться</button>
+          </div>
         </div>
-        <div
-          class="price_wrapper-bg"
-          style="background-image: url(./img/price-bg.webp)"
-        ></div>
-      </div>
-    </section>
-    <section class="course" id="course">
-      <div class="course_wrapper">
-        <div
-          class="course_wrapper-bg"
-          style="background-image: url(./img/course-img.webp)"
-        ></div>
-        <div class="course_wrapper-content">
-          <h2 class="course_wrapper-content--title">Курсы тату в Кишиневе!</h2>
-          <ul class="course_wrapper-content--list">
-            <li class="course_wrapper-content--item">
-              Присоединяйтесь к нашим курсам тату в Кишиневе и станьте
-              профессионалом в мире татуирования! Обучение всестороннее за 400
-              евро. Курс включает один день теории и шесть дней интенсивной
-              практики.
-            </li>
-            <li class="course_wrapper-content--item">
-              Изучите все аспекты татуировки: от контура до теней с закрасом в
-              различных стилях.
-            </li>
-            <li class="course_wrapper-content--item">
-              Предоставляем все необходимое оборудование и расходные материалы.
-              Вы также научитесь правильному уходу за оборудованием и
-              стерилизации инструментов.
-            </li>
-            <li class="course_wrapper-content--item">
-              Начните свой захватывающий путь в мире татуировки прямо сейчас!
-            </li>
-          </ul>
+      </section>
+      <section class="social">
+        <div class="container">
+          <div class="social_wrapper">
+            <h2 class="social_title">
+              Тату салон в Кишиневе Trinkotattoo в социальных сетях
+            </h2>
+            <ul class="social_list">
+              <li class="social_list-item">
+                <a
+                  class="social_list-link"
+                  href="https://t.me/Trinkonfox"
+                  target="_blank"
+                >
+                  <img
+                    class="social_list-img"
+                    src="./svg/telegram-logo.svg"
+                    alt=""
+                    loading="lazy"
+                  />
+                  Telegram
+                </a>
+              </li>
+              <li class="social_list-item">
+                <a
+                  class="social_list-link"
+                  href="https://www.instagram.com/trinko_tattoo/"
+                  target="_blank"
+                >
+                  <img
+                    class="social_list-img"
+                    src="./svg/instagram-logo.svg"
+                    alt=""
+                    loading="lazy"
+                  />
+                  Instagram
+                </a>
+              </li>
+              <li class="social_list-item">
+                <a
+                  class="social_list-link"
+                  href="viber://chat?number=%2B37360833389"
+                  target="_blank"
+                >
+                  <img
+                    class="social_list-img"
+                    src="./svg/viber-logo.svg"
+                    alt=""
+                    loading="lazy"
+                  />
+                  Viber
+                </a>
+              </li>
+              <li class="social_list-item">
+                <a
+                  class="social_list-link"
+                  href="https://wa.me/60833389"
+                  target="_blank"
+                >
+                  <img
+                    class="social_list-img"
+                    src="./svg/whatsapp-logo.svg"
+                    alt=""
+                    loading="lazy"
+                  />
+                  WhatsApp
+                </a>
+              </li>
+            </ul>
+            <div class="instagram_wrapper">
+              <div class="social_galery">
+                <a data-fancybox="gallery" href="./img/portfolio-1.webp">
+                  <img
+                    class="social_galery-img"
+                    src="./img/portfolio-1.webp"
+                    loading="lazy"
+                    alt="Thumbnail 1"
+                  />
+                </a>
+                <a data-fancybox="gallery" href="./img/portfolio-2.webp">
+                  <img
+                    class="social_galery-img"
+                    src="./img/portfolio-2.webp"
+                    loading="lazy"
+                    alt="Thumbnail 1"
+                  />
+                </a>
+                <a data-fancybox="gallery" href="./img/portfolio-3.webp">
+                  <img
+                    class="social_galery-img"
+                    src="./img/portfolio-3.webp"
+                    loading="lazy"
+                    alt="Thumbnail 1"
+                  />
+                </a>
+                <a data-fancybox="gallery" href="./img/portfolio-4.webp">
+                  <img
+                    class="social_galery-img"
+                    src="./img/portfolio-4.webp"
+                    loading="lazy"
+                    alt="Thumbnail 1"
+                  />
+                </a>
+                <a data-fancybox="gallery" href="./img/portfolio-5.webp">
+                  <img
+                    class="social_galery-img"
+                    src="./img/portfolio-5.webp"
+                    loading="lazy"
+                    alt="Thumbnail 1"
+                  />
+                </a>
+                <a data-fancybox="gallery" href="./img/portfolio-6.webp">
+                  <img
+                    class="social_galery-img"
+                    src="./img/portfolio-6.webp"
+                    loading="lazy"
+                    alt="Thumbnail 1"
+                  />
+                </a>
+                <a data-fancybox="gallery" href="./img/portfolio-6.webp">
+                  <img
+                    class="social_galery-img"
+                    src="./img/portfolio-7.webp"
+                    loading="lazy"
+                    alt="Thumbnail 1"
+                  />
+                </a>
+                <a data-fancybox="gallery" href="./img/portfolio-6.webp">
+                  <img
+                    class="social_galery-img"
+                    src="./img/portfolio-8.webp"
+                    loading="lazy"
+                    alt="Thumbnail 1"
+                  />
+                </a>
+                <a data-fancybox="gallery" href="./img/portfolio-6.webp">
+                  <img
+                    class="social_galery-img"
+                    src="./img/portfolio-9.webp"
+                    loading="lazy"
+                    alt="Thumbnail 1"
+                  />
+                </a>
+              </div>
+              <div class="instagram_embeded">
+                <blockquote
+                  class="instagram-media"
+                  data-instgrm-permalink="https://www.instagram.com/reel/DBb3_PzMOOi/?utm_source=ig_embed&amp;utm_campaign=loading"
+                  data-instgrm-version="14"
+                  style="
+                    background: #fff;
+                    border: 0;
+                    border-radius: 3px;
+                    box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5),
+                      0 1px 10px 0 rgba(0, 0, 0, 0.15);
+                    margin: 1px;
+                    max-width: 540px;
+                    min-width: 326px;
+                    padding: 0;
+                    width: 99.375%;
+                    width: -webkit-calc(100% - 2px);
+                    width: calc(100% - 2px);
+                  "
+                >
+                  <div style="padding: 16px">
+                    <a
+                      href="https://www.instagram.com/reel/DBb3_PzMOOi/?utm_source=ig_embed&amp;utm_campaign=loading"
+                      style="
+                        background: #ffffff;
+                        line-height: 0;
+                        padding: 0 0;
+                        text-align: center;
+                        text-decoration: none;
+                        width: 100%;
+                      "
+                      target="_blank"
+                    >
+                      <div
+                        style="
+                          display: flex;
+                          flex-direction: row;
+                          align-items: center;
+                        "
+                      >
+                        <div
+                          style="
+                            background-color: #f4f4f4;
+                            border-radius: 50%;
+                            flex-grow: 0;
+                            height: 40px;
+                            margin-right: 14px;
+                            width: 40px;
+                          "
+                        ></div>
+                        <div
+                          style="
+                            display: flex;
+                            flex-direction: column;
+                            flex-grow: 1;
+                            justify-content: center;
+                          "
+                        >
+                          <div
+                            style="
+                              background-color: #f4f4f4;
+                              border-radius: 4px;
+                              flex-grow: 0;
+                              height: 14px;
+                              margin-bottom: 6px;
+                              width: 100px;
+                            "
+                          ></div>
+                          <div
+                            style="
+                              background-color: #f4f4f4;
+                              border-radius: 4px;
+                              flex-grow: 0;
+                              height: 14px;
+                              width: 60px;
+                            "
+                          ></div>
+                        </div>
+                      </div>
+                      <div style="padding: 19% 0"></div>
+                      <div
+                        style="
+                          display: block;
+                          height: 50px;
+                          margin: 0 auto 12px;
+                          width: 50px;
+                        "
+                      >
+                        <svg
+                          width="50px"
+                          height="50px"
+                          viewBox="0 0 60 60"
+                          version="1.1"
+                          xmlns="https://www.w3.org/2000/svg"
+                          xmlns:xlink="https://www.w3.org/1999/xlink"
+                        >
+                          <g
+                            stroke="none"
+                            stroke-width="1"
+                            fill="none"
+                            fill-rule="evenodd"
+                          >
+                            <g
+                              transform="translate(-511.000000, -20.000000)"
+                              fill="#000000"
+                            >
+                              <g>
+                                <path
+                                  d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"
+                                ></path>
+                              </g>
+                            </g>
+                          </g>
+                        </svg>
+                      </div>
+                      <div style="padding-top: 8px">
+                        <div
+                          style="
+                            color: #3897f0;
+                            font-family: Arial, sans-serif;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 550;
+                            line-height: 18px;
+                          "
+                        >
+                          Посмотреть эту публикацию в Instagram
+                        </div>
+                      </div>
+                      <div style="padding: 12.5% 0"></div>
+                      <div
+                        style="
+                          display: flex;
+                          flex-direction: row;
+                          margin-bottom: 14px;
+                          align-items: center;
+                        "
+                      >
+                        <div>
+                          <div
+                            style="
+                              background-color: #f4f4f4;
+                              border-radius: 50%;
+                              height: 12.5px;
+                              width: 12.5px;
+                              transform: translateX(0px) translateY(7px);
+                            "
+                          ></div>
+                          <div
+                            style="
+                              background-color: #f4f4f4;
+                              height: 12.5px;
+                              transform: rotate(-45deg) translateX(3px)
+                                translateY(1px);
+                              width: 12.5px;
+                              flex-grow: 0;
+                              margin-right: 14px;
+                              margin-left: 2px;
+                            "
+                          ></div>
+                          <div
+                            style="
+                              background-color: #f4f4f4;
+                              border-radius: 50%;
+                              height: 12.5px;
+                              width: 12.5px;
+                              transform: translateX(9px) translateY(-18px);
+                            "
+                          ></div>
+                        </div>
+                        <div style="margin-left: 8px">
+                          <div
+                            style="
+                              background-color: #f4f4f4;
+                              border-radius: 50%;
+                              flex-grow: 0;
+                              height: 20px;
+                              width: 20px;
+                            "
+                          ></div>
+                          <div
+                            style="
+                              width: 0;
+                              height: 0;
+                              border-top: 2px solid transparent;
+                              border-left: 6px solid #f4f4f4;
+                              border-bottom: 2px solid transparent;
+                              transform: translateX(16px) translateY(-4px)
+                                rotate(30deg);
+                            "
+                          ></div>
+                        </div>
+                        <div style="margin-left: auto">
+                          <div
+                            style="
+                              width: 0px;
+                              border-top: 8px solid #f4f4f4;
+                              border-right: 8px solid transparent;
+                              transform: translateY(16px);
+                            "
+                          ></div>
+                          <div
+                            style="
+                              background-color: #f4f4f4;
+                              flex-grow: 0;
+                              height: 12px;
+                              width: 16px;
+                              transform: translateY(-4px);
+                            "
+                          ></div>
+                          <div
+                            style="
+                              width: 0;
+                              height: 0;
+                              border-top: 8px solid #f4f4f4;
+                              border-left: 8px solid transparent;
+                              transform: translateY(-4px) translateX(8px);
+                            "
+                          ></div>
+                        </div>
+                      </div>
+                      <div
+                        style="
+                          display: flex;
+                          flex-direction: column;
+                          flex-grow: 1;
+                          justify-content: center;
+                          margin-bottom: 24px;
+                        "
+                      >
+                        <div
+                          style="
+                            background-color: #f4f4f4;
+                            border-radius: 4px;
+                            flex-grow: 0;
+                            height: 14px;
+                            margin-bottom: 6px;
+                            width: 224px;
+                          "
+                        ></div>
+                        <div
+                          style="
+                            background-color: #f4f4f4;
+                            border-radius: 4px;
+                            flex-grow: 0;
+                            height: 14px;
+                            width: 144px;
+                          "
+                        ></div></div
+                    ></a>
+                    <p
+                      style="
+                        color: #c9c8cd;
+                        font-family: Arial, sans-serif;
+                        font-size: 14px;
+                        line-height: 17px;
+                        margin-bottom: 0;
+                        margin-top: 8px;
+                        overflow: hidden;
+                        padding: 8px 0 7px;
+                        text-align: center;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                      "
+                    >
+                      <a
+                        href="https://www.instagram.com/reel/DBb3_PzMOOi/?utm_source=ig_embed&amp;utm_campaign=loading"
+                        style="
+                          color: #c9c8cd;
+                          font-family: Arial, sans-serif;
+                          font-size: 14px;
+                          font-style: normal;
+                          font-weight: normal;
+                          line-height: 17px;
+                          text-decoration: none;
+                        "
+                        target="_blank"
+                        >Публикация от Vlad Ncl (@vladnicolaofficial)</a
+                      >
+                    </p>
+                  </div>
+                </blockquote>
+              </div>
+            </div>
+            <button class="header_nav-meet">Записаться</button>
+          </div>
         </div>
-      </div>
-    </section>
-    <section class="correction">
-      <div class="correction_wrapper">
-        <div class="correction_wrapper-content">
-          <h2 class="correction_wrapper-content--title">
-            Удаление татуировок в Кишиневе
-          </h2>
-          <p class="correction_wrapper-content--text">
-            Специализируюсь на коррекции, обновлении и исправлении татуировок,
-            включая неудачные работы, а также скрытие шрамов и физических
-            дефектов.
-          </p>
-          <p class="correction_wrapper-content--text">
-            Мой индивидуальный подход к каждой работе позволяет создавать
-            уникальные эскизы, учитывая особенности клиента и его желания, чтобы
-            достичь наилучшего результата и помочь каждому человеку
-            почувствовать себя уверенно и комфортно в своей коже.
-          </p>
+      </section>
+      <section class="price">
+        <div class="container">
+          <h3 class="price_title">Цена на тату в Кишиневе</h3>
+          <div class="price_wrapper">
+            <div class="price_wrapper-content">
+              <h2 class="price_wrapper-content--title">
+                Татуировки в Кишиневе:
+              </h2>
+              <ul class="price_wrapper-content--list">
+                <li class="price_wrapper-content--item">
+                  Черная татуировка: от 300 лей
+                </li>
+                <li class="price_wrapper-content--item">
+                  Черная татуировка с цветным контуром: от 400 лей
+                </li>
+                <li class="price_wrapper-content--item">
+                  Цветная татуировка с закрасом: от 600 лей
+                </li>
+              </ul>
+              <h2 class="price_wrapper-content--title">
+                Перманентный макияж в Кишиневе:
+              </h2>
+              <ul class="price_wrapper-content--list">
+                <li class="price_wrapper-content--item">
+                  Брови пудровый эффект: 600 лей
+                </li>
+                <li class="price_wrapper-content--item">
+                  Стрелки любая техника: 600 лей
+                </li>
+                <li class="price_wrapper-content--item">
+                  Губы любая техника: 600 лей
+                </li>
+              </ul>
+              <h3 class="price_wrapper-content--title">
+                Дополнительно включено в стоимость:
+              </h3>
+              <ul class="price_wrapper-content--list">
+                <li class="price_wrapper-content--item">
+                  В стоимость включена работа, даже если требуется более одного
+                  сеанса, это для сложных и больших работ.
+                </li>
+                <li class="price_wrapper-content--item">
+                  Используем обезболивающее при необходимости, чтобы обеспечить
+                  комфорт клиента во время процедуры.
+                </li>
+              </ul>
+            </div>
+            <div
+              class="price_wrapper-bg"
+              style="background-image: url(./img/price-bg.webp)"
+            ></div>
+          </div>
         </div>
-        <div
-          class="correction_wrapper-bg"
-          style="background-image: url(./img/correction-bg.webp)"
-        ></div>
-      </div>
-    </section>
-
-    <section class="location">
-      <div class="container">
-        <div class="location_wrapper">
-          <div class="location_content">
-            <h3 class="location_title">Тату салон в Кишиневе на карте</h3>
-            <p class="location_text">
-              Ищете лучший тату салон в Кишиневе? Посетите Trinkotattoo,
-              расположенный в самом центре города.
-            </p>
-            <p class="location_text">
-              Наши мастера обладают многолетним опытом и готовы воплотить любые
-              ваши идеи в реальность. Используйте карту ниже, чтобы найти нас
-              легко и быстро.
-            </p>
-            <h3 class="location_title">Почему стоит выбрать Trinkotattoo?</h3>
-            <ul class="location_list">
-              <li class="location_list-item">
-                <p class="location_list-text">
-                  Профессиональные мастера с многолетним опытом
-                </p>
+      </section>
+      <section class="course">
+        <div class="course_wrapper">
+          <div class="course_wrapper-content">
+            <h2 class="course_wrapper-content--title">
+              Курсы тату в Кишиневе!
+            </h2>
+            <ul class="course_wrapper-content--list">
+              <li class="course_wrapper-content--item">
+                Присоединяйтесь к нашим курсам тату в Кишиневе и станьте
+                профессионалом в мире татуирования! Обучение всестороннее за 400
+                евро. Курс включает один день теории и шесть дней интенсивной
+                практики.
               </li>
-              <li class="location_list-item">
-                <p class="location_list-text">
-                  Современное оборудование и безопасные материалы
-                </p>
+              <li class="course_wrapper-content--item">
+                Изучите все аспекты татуировки: от контура до теней с закрасом в
+                различных стилях.
               </li>
-              <li class="location_list-item">
-                <p class="location_list-text">
-                  Удобное расположение в центре Кишинева
-                </p>
+              <li class="course_wrapper-content--item">
+                Предоставляем все необходимое оборудование и расходные
+                материалы. Вы также научитесь правильному уходу за оборудованием
+                и стерилизации инструментов.
               </li>
-              <li class="location_list-item">
-                <p class="location_list-text">
-                  Индивидуальный подход к каждому клиенту
-                </p>
+              <li class="course_wrapper-content--item">
+                Начните свой захватывающий путь в мире татуировки прямо сейчас!
               </li>
             </ul>
           </div>
-          <div id="map"></div>
-          <div class="location_address">
-            <p class="location_text">
-              Наш адрес: ТЦ Атриум, ул. Албишоара 4, Кишинев
+        </div>
+      </section>
+      <section class="correction">
+        <div class="correction_wrapper">
+          <div class="correction_wrapper-content">
+            <h2 class="correction_wrapper-content--title">
+              Удаление татуировок в Кишиневе
+            </h2>
+            <p class="correction_wrapper-content--text">
+              Специализируюсь на коррекции, обновлении и исправлении татуировок,
+              включая неудачные работы, а также скрытие шрамов и физических
+              дефектов.
             </p>
-            <p class="location_text">
-              Мы всегда рады новым клиентам и готовы предложить вам лучшие
-              условия для создания вашего уникального тату. Не откладывайте,
-              запишитесь на консультацию прямо сейчас!
+            <p class="correction_wrapper-content--text">
+              Мой индивидуальный подход к каждой работе позволяет создавать
+              уникальные эскизы, учитывая особенности клиента и его желания,
+              чтобы достичь наилучшего результата и помочь каждому человеку
+              почувствовать себя уверенно и комфортно в своей коже.
             </p>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="reviews">
+      <section class="location">
+        <div class="container">
+          <div class="location_wrapper">
+            <div class="location_content">
+              <h3 class="location_title">Тату салон в Кишиневе на карте</h3>
+              <p class="location_text">
+                Ищете лучший тату салон в Кишиневе? Посетите Trinkotattoo,
+                расположенный в самом центре города.
+              </p>
+              <p class="location_text">
+                Наши мастера обладают многолетним опытом и готовы воплотить
+                любые ваши идеи в реальность. Используйте карту ниже, чтобы
+                найти нас легко и быстро.
+              </p>
+              <h3 class="location_title">Почему стоит выбрать Trinkotattoo?</h3>
+              <ul class="location_list">
+                <li class="location_list-item">
+                  <p class="location_list-text">
+                    Профессиональные мастера с многолетним опытом
+                  </p>
+                </li>
+                <li class="location_list-item">
+                  <p class="location_list-text">
+                    Современное оборудование и безопасные материалы
+                  </p>
+                </li>
+                <li class="location_list-item">
+                  <p class="location_list-text">
+                    Удобное расположение в центре Кишинева
+                  </p>
+                </li>
+                <li class="location_list-item">
+                  <p class="location_list-text">
+                    Индивидуальный подход к каждому клиенту
+                  </p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="location_address">
+              <p class="location_text">
+                Наш адрес: ТЦ Атриум, ул. Албишоара 4, Кишинев
+              </p>
+              <p class="location_text">
+                Мы всегда рады новым клиентам и готовы предложить вам лучшие
+                условия для создания вашего уникального тату. Не откладывайте,
+                запишитесь на консультацию прямо сейчас!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="reviews">
+        <div class="container">
+          <h4 class="reviews_title">Отзывы клиентов</h4>
+          <div class="reviews_wrapper">
+            <div class="reviews_wrapper-card">
+              <div class="reviews_wrapper-card--title">Виталий</div>
+              <div class="reviews_wrapper-card--text">
+                Я безумно доволен своей новой татуировкой! Вы воплотили мои идеи
+                в жизнь с невероятной техникой и вниманием к деталям. Очень
+                рекомендую!
+              </div>
+            </div>
+            <div class="reviews_wrapper-card">
+              <div class="reviews_wrapper-card--title">Вадим</div>
+              <div class="reviews_wrapper-card--text">
+                Спасибо большое за выполненную работу, очень сильно понравилось,
+                качество высший класс 😊 👌
+              </div>
+            </div>
+            <div class="reviews_wrapper-card">
+              <div class="reviews_wrapper-card--title">Аня</div>
+              <div class="reviews_wrapper-card--text">
+                Я очень довольна тобой, как мастером, и самой работой. Я рада
+                своей первой татуировке и атмосфере в салоне. Большое тебе
+                спасибо! 😘😘 А также, я не могу не отметить, как здорово было
+                провести время в процессе получения этой красивой татуировки.
+              </div>
+            </div>
+            <div class="reviews_wrapper-card">
+              <div class="reviews_wrapper-card--title">Аля</div>
+              <div class="reviews_wrapper-card--text">
+                Мастер отличный, с уверенной рукой. Учитывает все пожелания,
+                успокаивает если повизгиваешь, все стерильно, чистенько - в
+                целом все круть. Приходите, не бойтесь - однозначно рек 🙌✨
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about">
+        <div class="container">
+          <div class="about_wrapper">
+            <div class="about_wrapper-content">
+              <h2 class="about_wrapper-content--title">
+                Я - тату мастер из Кишинёва с пятилетним стажем в области
+                татуировок. Моя работа для меня не просто профессия, это
+                искусство, воплощение идей и эмоций в уникальных образах на
+                коже.
+              </h2>
+              <p class="about_wrapper-content--text">
+                Каждая татуировка - это возможность рассказать историю,
+                подчеркнуть индивидуальность, создать нечто поистине
+                неповторимое. В последнее время я все больше задумываюсь о
+                значимости нашего времени и того, как мы его используем. Каждая
+                работа, которую я делаю, отражает эту философию - она уникальна,
+                продумана и создана с любовью к деталям. Моя цель - не просто
+                сделать красивую татуировку, но и вложить в нее частичку моей
+                души, чтобы она стала частью жизни и вдохновляла своего
+                обладателя каждый день. Спасибо, что делитесь этим путешествием
+                со мной.
+                <span class="about_wrapper-content--span"> С любовью, Яна</span>
+              </p>
+              <button class="about_wrapper-btn">Записаться</button>
+            </div>
+          </div>
+          <div class="map" id="map"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
       <div class="container">
-        <h4 class="reviews_title">Отзывы клиентов</h4>
-        <div class="reviews_wrapper">
-          <div class="reviews_wrapper-card">
-            <div
-              class="reviews_wrapper-card--bg reviews-bg-1"
-              style="background-image: url(./img/reviews-1.webp)"
-            ></div>
-            <div class="reviews_wrapper-card--title">Виталий</div>
-            <div class="reviews_wrapper-card--text">
-              Я безумно доволен своей новой татуировкой! Вы воплотили мои идеи в
-              жизнь с невероятной техникой и вниманием к деталям. Очень
-              рекомендую!
-            </div>
-          </div>
-          <div class="reviews_wrapper-card">
-            <div
-              class="reviews_wrapper-card--bg reviews-bg-2"
-              style="background-image: url(./img/reviews-2.webp)"
-            ></div>
-            <div class="reviews_wrapper-card--title">Вадим</div>
-            <div class="reviews_wrapper-card--text">
-              Спасибо большое за выполненную работу, очень сильно понравилось,
-              качество высший класс 😊 👌
-            </div>
-          </div>
-          <div class="reviews_wrapper-card">
-            <div
-              class="reviews_wrapper-card--bg reviews-bg-3"
-              style="background-image: url(./img/reviews-3.webp)"
-            ></div>
-            <div class="reviews_wrapper-card--title">Аня</div>
-            <div class="reviews_wrapper-card--text">
-              Я очень довольна тобой, как мастером, и самой работой. Я рада
-              своей первой татуировке и атмосфере в салоне. Большое тебе
-              спасибо! 😘😘 А также, я не могу не отметить, как здорово было
-              провести время в процессе получения этой красивой татуировки.
-            </div>
-          </div>
-          <div class="reviews_wrapper-card">
-            <div
-              class="reviews_wrapper-card--bg reviews-bg-4"
-              style="background-image: url(./img/reviews-4.webp)"
-            ></div>
-            <div class="reviews_wrapper-card--title">Аля</div>
-            <div class="reviews_wrapper-card--text">
-              Мастер отличный, с уверенной рукой. Учитывает все пожелания,
-              успокаивает если повизгиваешь, все стерильно, чистенько - в целом
-              все круть. Приходите, не бойтесь - однозначно рек 🙌✨
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="portfolio" id="portfolio">
-      <h4 class="portfolio_title">Портфолио</h4>
-
-      <div class="swiper swiper_portfolio">
-        <div class="swiper-wrapper swiper-wrapper-portfolio">
-          <div class="swiper-slide">
-            <div class="swiper_portfolio-content">
-              <img
-                class="swiper_portfolio-content--img"
-                src="./img/portfolio-1.webp"
-                alt="тату девушка тату девушки эскиз Молдова"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper_portfolio-content">
-              <img
-                class="swiper_portfolio-content--img"
-                src="./img/portfolio-2.webp"
-                alt="тату змея тату цветы эскиз Молдова"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper_portfolio-content">
-              <img
-                class="swiper_portfolio-content--img"
-                src="./img/portfolio-3.webp"
-                alt="тату абстракт тату кота эскиз Молдова"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper_portfolio-content">
-              <img
-                class="swiper_portfolio-content--img"
-                src="./img/portfolio-4.webp"
-                alt="тату карп тату кой эскиз Молдова"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper_portfolio-content">
-              <img
-                class="swiper_portfolio-content--img"
-                src="./img/portfolio-5.webp"
-                alt="тату бабочек тату бабочка эскиз Молдова"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper_portfolio-content">
-              <img
-                class="swiper_portfolio-content--img"
-                src="./img/portfolio-6.webp"
-                alt="тату сердце тату сердца эскиз Молдова"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper_portfolio-content">
-              <img
-                class="swiper_portfolio-content--img"
-                src="./img/portfolio-7.webp"
-                alt="тату солнца тату луны эскиз Молдова"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper_portfolio-content">
-              <img
-                class="swiper_portfolio-content--img"
-                src="./img/portfolio-8.webp"
-                alt="тату птицы тату на плече эскиз Молдова"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper_portfolio-content">
-              <img
-                class="swiper_portfolio-content--img"
-                src="./img/portfolio-9.webp"
-                alt="тату абстракт эскиз Молдова"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper_portfolio-content">
-              <img
-                class="swiper_portfolio-content--img"
-                src="./img/portfolio-10.webp"
-                alt="тату мики маус тату дисней эскиз Молдова"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper_portfolio-content">
-              <img
-                class="swiper_portfolio-content--img"
-                src="./img/portfolio-11.webp"
-                alt="тату роза тату на руке эскиз Молдова"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper_portfolio-content">
-              <img
-                class="swiper_portfolio-content--img"
-                src="./img/portfolio-12.webp"
-                alt="тату сигарета тату рук эскиз Молдова"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper_portfolio-content">
-              <img
-                class="swiper_portfolio-content--img"
-                src="./img/portfolio-13.webp"
-                alt="тату надпись тату цветок эскиз Молдова"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper_portfolio-content">
-              <img
-                class="swiper_portfolio-content--img"
-                src="./img/portfolio-14.webp"
-                alt="тату бульдог тату мафия надпись эскиз Молдова"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper_portfolio-content">
-              <img
-                class="swiper_portfolio-content--img"
-                src="./img/portfolio-15.webp"
-                alt="тату граната тату на руке эскиз Молдова"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper_portfolio-content">
-              <img
-                class="swiper_portfolio-content--img"
-                src="./img/portfolio-16.webp"
-                alt="тату бабочек тату на руке эскиз Молдова"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper_portfolio-content">
-              <img
-                class="swiper_portfolio-content--img"
-                src="./img/portfolio-17.webp"
-                alt="тату дракона тату на руке эскиз Молдова"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper_portfolio-content">
-              <img
-                class="swiper_portfolio-content--img"
-                src="./img/portfolio-18.webp"
-                alt="тату череп тату цветы эскиз Молдова"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper_portfolio-content">
-              <img
-                class="swiper_portfolio-content--img"
-                src="./img/portfolio-19.webp"
-                alt="тату знак зодиака тату на рукеэскиз Молдова"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper_portfolio-content">
-              <img
-                class="swiper_portfolio-content--img"
-                src="./img/portfolio-20.webp"
-                alt="тату римский венок тату римские венки эскиз Молдова"
-                loading="lazy"
-              />
-            </div>
-          </div>
-        </div>
-        <div class="swiper-pagination"></div>
-      </div>
-
-      <div class="swiper swiper_portfolio-mobile">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="swiper_mobile-content">
-              <img
-                class="swiper_portfolio-content--img"
-                src="./img/portfolio-1.webp"
-                alt="тату девушка тату девушки эскиз Молдова"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper_mobile-content">
-              <img
-                class="swiper_mobile-content--img"
-                src="./img/portfolio-2.webp"
-                alt="тату змея тату цветы эскиз Молдова"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper_mobile-content">
-              <img
-                class="swiper_mobile-content--img"
-                src="./img/portfolio-3.webp"
-                alt="тату абстракт тату кота эскиз Молдова"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper_mobile-content">
-              <img
-                class="swiper_mobile-content--img"
-                src="./img/portfolio-4.webp"
-                alt="тату карп тату кой эскиз Молдова"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper_mobile-content">
-              <img
-                class="swiper_mobile-content--img"
-                src="./img/portfolio-5.webp"
-                alt="тату бабочек тату бабочка эскиз Молдова"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper_mobile-content">
-              <img
-                class="swiper_mobile-content--img"
-                src="./img/portfolio-6.webp"
-                alt="тату сердце тату сердца эскиз Молдова"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper_mobile-content">
-              <img
-                class="swiper_mobile-content--img"
-                src="./img/portfolio-7.webp"
-                alt="тату солнца тату луны эскиз Молдова"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper_mobile-content">
-              <img
-                class="swiper_mobile-content--img"
-                src="./img/portfolio-8.webp"
-                alt="тату птицы тату на плече эскиз Молдова"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper_mobile-content">
-              <img
-                class="swiper_mobile-content--img"
-                src="./img/portfolio-9.webp"
-                alt="тату абстракт эскиз Молдова"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper_mobile-content">
-              <img
-                class="swiper_mobile-content--img"
-                src="./img/portfolio-10.webp"
-                alt="тату мики маус тату дисней эскиз Молдова"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper_mobile-content">
-              <img
-                class="swiper_mobile-content--img"
-                src="./img/portfolio-11.webp"
-                alt="тату роза тату на руке эскиз Молдова"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper_mobile-content">
-              <img
-                class="swiper_mobile-content--img"
-                src="./img/portfolio-12.webp"
-                alt="тату сигарета тату рук эскиз Молдова"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper_mobile-content">
-              <img
-                class="swiper_mobile-content--img"
-                src="./img/portfolio-13.webp"
-                alt="тату надпись тату цветок эскиз Молдова"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper_mobile-content">
-              <img
-                class="swiper_mobile-content--img"
-                src="./img/portfolio-14.webp"
-                alt="тату бульдог тату мафия надпись эскиз Молдова"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper_mobile-content">
-              <img
-                class="swiper_mobile-content--img"
-                src="./img/portfolio-15.webp"
-                alt="тату граната тату на руке эскиз Молдова"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper_mobile-content">
-              <img
-                class="swiper_mobile-content--img"
-                src="./img/portfolio-16.webp"
-                alt="тату бабочек тату на руке эскиз Молдова"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper_mobile-content">
-              <img
-                class="swiper_mobile-content--img"
-                src="./img/portfolio-17.webp"
-                alt="тату дракона тату на руке эскиз Молдова"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper_mobile-content">
-              <img
-                class="swiper_mobile-content--img"
-                src="./img/portfolio-18.webp"
-                alt="тату череп тату цветы эскиз Молдова"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper_mobile-content">
-              <img
-                class="swiper_mobile-content--img"
-                src="./img/portfolio-19.webp"
-                alt="тату знак зодиака тату на рукеэскиз Молдова"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper_mobile-content">
-              <img
-                class="swiper_mobile-content--img"
-                src="./img/portfolio-20.webp"
-                alt="тату римский венок тату римские венки эскиз Молдова"
-                loading="lazy"
-              />
-            </div>
-          </div>
-        </div>
-        <div class="swiper-button-next portfolio-mobile-btn-prev">
-          <svg
-            fill="#000000"
-            width="24px"
-            height="24px"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-            stroke="#f24342"
-          >
-            <g stroke-width="0"></g>
-            <g stroke-linecap="round" stroke-linejoin="round"></g>
-            <g>
-              <path
-                d="M16.2928932,12 L13.1464466,8.85355339 C12.9511845,8.65829124 12.9511845,8.34170876 13.1464466,8.14644661 C13.3417088,7.95118446 13.6582912,7.95118446 13.8535534,8.14644661 L17.8535534,12.1464466 C18.0488155,12.3417088 18.0488155,12.6582912 17.8535534,12.8535534 L13.8535534,16.8535534 C13.6582912,17.0488155 13.3417088,17.0488155 13.1464466,16.8535534 C12.9511845,16.6582912 12.9511845,16.3417088 13.1464466,16.1464466 L16.2928932,13 L7.5,13 C7.22385763,13 7,12.7761424 7,12.5 C7,12.2238576 7.22385763,12 7.5,12 L16.2928932,12 Z M19.5,21 C20.3284271,21 21,20.3284271 21,19.5 L21,5.5 C21,4.67157288 20.3284271,4 19.4999725,4 L5.49305689,3.99922869 C4.66462977,3.99922869 3.99305689,4.67080157 3.99305689,5.49922869 L4.00000011,19.499807 C4.00031957,20.3280081 4.67179882,20.9992284 5.5,20.9992284 C5.50626743,20.9992284 10.1729341,20.9994856 19.5,21 Z M3.00000021,19.5002478 L2.99305708,5.50019301 C2.99305689,4.11851682 4.11234502,2.99922869 5.49308443,2.99922869 L19.5,3 C20.8807119,3 22,4.11928813 22,5.5 L22,19.5 C22,20.8807119 20.8807119,22 19.5,22 L5.5,22 C4.10278895,21.9822801 3.00052859,20.8700816 3.00000021,19.5002478 Z"
-              ></path>
-            </g>
-          </svg>
-        </div>
-        <div class="swiper-button-prev portfolio-mobile-btn-next">
-          <svg
-            fill="#000000"
-            width="24px"
-            height="24px"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-            stroke="#f24342"
-          >
-            <g stroke-width="0"></g>
-            <g stroke-linecap="round" stroke-linejoin="round"></g>
-            <g>
-              <path
-                d="M16.2928932,12 L13.1464466,8.85355339 C12.9511845,8.65829124 12.9511845,8.34170876 13.1464466,8.14644661 C13.3417088,7.95118446 13.6582912,7.95118446 13.8535534,8.14644661 L17.8535534,12.1464466 C18.0488155,12.3417088 18.0488155,12.6582912 17.8535534,12.8535534 L13.8535534,16.8535534 C13.6582912,17.0488155 13.3417088,17.0488155 13.1464466,16.8535534 C12.9511845,16.6582912 12.9511845,16.3417088 13.1464466,16.1464466 L16.2928932,13 L7.5,13 C7.22385763,13 7,12.7761424 7,12.5 C7,12.2238576 7.22385763,12 7.5,12 L16.2928932,12 Z M19.5,21 C20.3284271,21 21,20.3284271 21,19.5 L21,5.5 C21,4.67157288 20.3284271,4 19.4999725,4 L5.49305689,3.99922869 C4.66462977,3.99922869 3.99305689,4.67080157 3.99305689,5.49922869 L4.00000011,19.499807 C4.00031957,20.3280081 4.67179882,20.9992284 5.5,20.9992284 C5.50626743,20.9992284 10.1729341,20.9994856 19.5,21 Z M3.00000021,19.5002478 L2.99305708,5.50019301 C2.99305689,4.11851682 4.11234502,2.99922869 5.49308443,2.99922869 L19.5,3 C20.8807119,3 22,4.11928813 22,5.5 L22,19.5 C22,20.8807119 20.8807119,22 19.5,22 L5.5,22 C4.10278895,21.9822801 3.00052859,20.8700816 3.00000021,19.5002478 Z"
-              ></path>
-            </g>
-          </svg>
-        </div>
-        <div class="swiper-pagination"></div>
-      </div>
-    </section>
-
-    <footer class="footer" id="footer">
-      <div class="container">
-        <div class="footer_content">
-          <div class="footer_content-wrapper">
+        <div class="footer_wrapper">
+          <div class="footer_box">
             <a
-              class="footer_content-wrapper--copyrights"
-              href="./termsandconditions.html"
+              class="footer_box-copy"
+              href="./copyrights/terms.pdf"
               target="_blank"
               >Terms & Conditions</a
             >
             <a
-              class="footer_content-wrapper--privacy"
-              href="./privacypolicy.html"
+              class="footer_box-privacy"
+              href="./copyrights/privacy.pdf"
               target="_blank"
               >Privacy Policy</a
             >
           </div>
-          <div class="footer_content-social">
-            <a
-              class="social_footer-social--links"
-              href="https://t.me/Trinkonfox"
-              target="_blank"
-              ><svg
-                width="24px"
-                height="24px"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g stroke-width="0"></g>
-                <g stroke-linecap="round" stroke-linejoin="round"></g>
-                <g>
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M23.1117 4.49449C23.4296 2.94472 21.9074 1.65683 20.4317 2.227L2.3425 9.21601C0.694517 9.85273 0.621087 12.1572 2.22518 12.8975L6.1645 14.7157L8.03849 21.2746C8.13583 21.6153 8.40618 21.8791 8.74917 21.968C9.09216 22.0568 9.45658 21.9576 9.70712 21.707L12.5938 18.8203L16.6375 21.8531C17.8113 22.7334 19.5019 22.0922 19.7967 20.6549L23.1117 4.49449ZM3.0633 11.0816L21.1525 4.0926L17.8375 20.2531L13.1 16.6999C12.7019 16.4013 12.1448 16.4409 11.7929 16.7928L10.5565 18.0292L10.928 15.9861L18.2071 8.70703C18.5614 8.35278 18.5988 7.79106 18.2947 7.39293C17.9906 6.99479 17.4389 6.88312 17.0039 7.13168L6.95124 12.876L3.0633 11.0816ZM8.17695 14.4791L8.78333 16.6015L9.01614 15.321C9.05253 15.1209 9.14908 14.9366 9.29291 14.7928L11.5128 12.573L8.17695 14.4791Z"
-                    fill="#ffffff"
-                  ></path>
-                </g>
-              </svg>
-            </a>
-            <a
-              class="social_footer-social--links"
-              href="https://www.instagram.com/trinko_tattoo/"
-              target="_blank"
-            >
-              <svg
-                width="24px"
-                height="24px"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g stroke-width="0"></g>
-                <g stroke-linecap="round" stroke-linejoin="round"></g>
-                <g>
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"
-                    fill="#ffffff"
-                  ></path>
-                  <path
-                    d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z"
-                    fill="#ffffff"
-                  ></path>
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z"
-                    fill="#ffffff"
-                  ></path>
-                </g>
-              </svg>
-            </a>
-            <a
-              class="social_footer-social--links"
-              href="viber://chat?number=%2B37360833389"
-              target="_blank"
-            >
-              <svg
-                width="24px"
-                height="24px"
-                viewBox="0 0 24.00 24.00"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                stroke="#000000"
-                stroke-width="0.00024000000000000003"
-              >
-                <g stroke-width="0"></g>
-                <g stroke-linecap="round" stroke-linejoin="round"></g>
-                <g>
-                  <path
-                    d="M13 4C12.4477 4 12 4.44772 12 5C12 5.55228 12.4477 6 13 6C14.2728 6 15.2557 6.41989 15.9179 7.08211C16.5801 7.74433 17 8.72725 17 10C17 10.5523 17.4477 11 18 11C18.5523 11 19 10.5523 19 10C19 8.27275 18.4199 6.75567 17.3321 5.66789C16.2443 4.58011 14.7272 4 13 4Z"
-                    fill="#ffffff"
-                  ></path>
-                  <path
-                    d="M5.014 8.00613C5.12827 7.1024 6.30277 5.87414 7.23488 6.01043L7.23339 6.00894C8.01251 6.15699 8.65217 7.32965 9.07373 8.10246C9.14298 8.22942 9.20635 8.34559 9.26349 8.44465C9.55041 8.95402 9.3641 9.4701 9.09655 9.68787C9.06561 9.7128 9.03317 9.73855 8.9998 9.76504C8.64376 10.0477 8.18114 10.4149 8.28943 10.7834C8.5 11.5 11 14 12.2296 14.7107C12.6061 14.9283 12.8988 14.5057 13.1495 14.1438C13.2087 14.0583 13.2656 13.9762 13.3207 13.9067C13.5301 13.6271 14.0466 13.46 14.5548 13.736C15.3138 14.178 16.0288 14.6917 16.69 15.27C17.0202 15.546 17.0977 15.9539 16.8689 16.385C16.4659 17.1443 15.3003 18.1456 14.4542 17.9421C12.9764 17.5868 7 15.27 5.08033 8.55801C4.97981 8.26236 4.99645 8.13792 5.01088 8.02991L5.014 8.00613Z"
-                    fill="#ffffff"
-                  ></path>
-                  <path
-                    d="M13 7C12.4477 7 12 7.44772 12 8C12 8.55228 12.4477 9 13 9C13.1748 9 13.4332 9.09745 13.6679 9.33211C13.9025 9.56676 14 9.82523 14 10C14 10.5523 14.4477 11 15 11C15.5523 11 16 10.5523 16 10C16 9.17477 15.5975 8.43324 15.0821 7.91789C14.5668 7.40255 13.8252 7 13 7Z"
-                    fill="#ffffff"
-                  ></path>
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M7.51742 23.8312C7.54587 23.8469 7.57508 23.8612 7.60492 23.874C8.14762 24.1074 8.81755 23.5863 10.1574 22.5442L11.5 21.5C14.1884 21.589 16.514 21.2362 18.312 20.6071C20.3227 19.9035 21.9036 18.3226 22.6072 16.3119C23.5768 13.541 23.5768 8.45883 22.6072 5.68794C21.9036 3.67722 20.3227 2.0963 18.312 1.39271C15.1103 0.272407 8.82999 0.293306 5.68806 1.39271C3.67733 2.0963 2.09642 3.67722 1.39283 5.68794C0.423255 8.45883 0.423255 13.541 1.39283 16.3119C2.09642 18.3226 3.67733 19.9035 5.68806 20.6071C6.08252 20.7451 6.52371 20.8965 7 21C7 22.6974 7 23.5461 7.51742 23.8312ZM9 20.9107V19.7909C9 19.5557 8.836 19.3524 8.60597 19.3032C7.84407 19.1403 7.08676 18.9776 6.34862 18.7193C4.91238 18.2168 3.78316 17.0875 3.2806 15.6513C2.89871 14.5599 2.66565 12.8453 2.66565 10.9999C2.66565 9.15453 2.89871 7.43987 3.2806 6.3485C3.78316 4.91227 4.91238 3.78304 6.34862 3.28048C7.61625 2.83692 9.71713 2.56282 11.9798 2.56032C14.2422 2.55782 16.3561 2.82723 17.6514 3.28048C19.0876 3.78304 20.2169 4.91227 20.7194 6.3485C21.1013 7.43987 21.3344 9.15453 21.3344 10.9999C21.3344 12.8453 21.1013 14.5599 20.7194 15.6513C20.2169 17.0875 19.0876 18.2168 17.6514 18.7193C15.5197 19.4652 13.259 19.549 11.0239 19.4828C10.9071 19.4794 10.7926 19.5165 10.7004 19.5882L9 20.9107Z"
-                    fill="#ffffff"
-                  ></path>
-                </g>
-              </svg>
-            </a>
-            <a
-              class="social_footer-social--links"
-              href="https://wa.me/60833389"
-              target="_blank"
-            >
-              <svg
-                fill="#ffffff"
-                width="24px"
-                height="24px"
-                viewBox="0 0 32 32"
-                version="1.1"
-                xmlns="http://www.w3.org/2000/svg"
-                stroke="#ffffff"
-              >
-                <g stroke-width="0"></g>
-                <g stroke-linecap="round" stroke-linejoin="round"></g>
-                <g>
-                  <title>whatsapp</title>
-                  <path
-                    d="M26.576 5.363c-2.69-2.69-6.406-4.354-10.511-4.354-8.209 0-14.865 6.655-14.865 14.865 0 2.732 0.737 5.291 2.022 7.491l-0.038-0.070-2.109 7.702 7.879-2.067c2.051 1.139 4.498 1.809 7.102 1.809h0.006c8.209-0.003 14.862-6.659 14.862-14.868 0-4.103-1.662-7.817-4.349-10.507l0 0zM16.062 28.228h-0.005c-0 0-0.001 0-0.001 0-2.319 0-4.489-0.64-6.342-1.753l0.056 0.031-0.451-0.267-4.675 1.227 1.247-4.559-0.294-0.467c-1.185-1.862-1.889-4.131-1.889-6.565 0-6.822 5.531-12.353 12.353-12.353s12.353 5.531 12.353 12.353c0 6.822-5.53 12.353-12.353 12.353h-0zM22.838 18.977c-0.371-0.186-2.197-1.083-2.537-1.208-0.341-0.124-0.589-0.185-0.837 0.187-0.246 0.371-0.958 1.207-1.175 1.455-0.216 0.249-0.434 0.279-0.805 0.094-1.15-0.466-2.138-1.087-2.997-1.852l0.010 0.009c-0.799-0.74-1.484-1.587-2.037-2.521l-0.028-0.052c-0.216-0.371-0.023-0.572 0.162-0.757 0.167-0.166 0.372-0.434 0.557-0.65 0.146-0.179 0.271-0.384 0.366-0.604l0.006-0.017c0.043-0.087 0.068-0.188 0.068-0.296 0-0.131-0.037-0.253-0.101-0.357l0.002 0.003c-0.094-0.186-0.836-2.014-1.145-2.758-0.302-0.724-0.609-0.625-0.836-0.637-0.216-0.010-0.464-0.012-0.712-0.012-0.395 0.010-0.746 0.188-0.988 0.463l-0.001 0.002c-0.802 0.761-1.3 1.834-1.3 3.023 0 0.026 0 0.053 0.001 0.079l-0-0.004c0.131 1.467 0.681 2.784 1.527 3.857l-0.012-0.015c1.604 2.379 3.742 4.282 6.251 5.564l0.094 0.043c0.548 0.248 1.25 0.513 1.968 0.74l0.149 0.041c0.442 0.14 0.951 0.221 1.479 0.221 0.303 0 0.601-0.027 0.889-0.078l-0.031 0.004c1.069-0.223 1.956-0.868 2.497-1.749l0.009-0.017c0.165-0.366 0.261-0.793 0.261-1.242 0-0.185-0.016-0.366-0.047-0.542l0.003 0.019c-0.092-0.155-0.34-0.247-0.712-0.434z"
-                  ></path>
-                </g>
-              </svg>
-            </a>
-          </div>
-          <p class="footer_copyrights">© 2024 TrinkoTattoo</p>
+          <p class="footer_logo">&copy; 2024 TrinkoTattoo</p>
         </div>
       </div>
     </footer>
-    <div class="popup">
-      <form action="#" class="popup_form">
-        <button class="popup_form-close">
-          <svg
-            width="24px"
-            height="24px"
-            viewBox="-0.5 0 25 25"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g stroke-width="0"></g>
-            <g stroke-linecap="round" stroke-linejoin="round"></g>
-            <g>
-              <path
-                d="M3 21.32L21 3.32001"
-                stroke="#000000"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></path>
-              <path
-                d="M3 3.32001L21 21.32"
-                stroke="#000000"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></path>
-            </g>
-          </svg>
-        </button>
-        <h2 class="popup_form-title">Записаться</h2>
-        <div class="popup_form-wrapper">
-          <div class="popup_form-wrapper--item">
-            <label class="popup_form-wrapper--name" for="name">Имя*</label>
-            <input
-              class="popup_form-wrapper--input"
-              type="text"
-              id="name"
-              placeholder="Введите ваше имя*"
-            />
-          </div>
-          <div class="popup_form-wrapper--item">
-            <label class="popup_form-wrapper--tel" for="tel"
-              >Номер телефона*</label
-            >
-            <input
-              class="popup_form-wrapper--input"
-              type="text"
-              id="tel"
-              placeholder="Введите ваш номер телефона*"
-            />
-          </div>
-
-          <a
-            class="popup_form-submit popup_form-submit-link"
-            href="https://t.me/Trinkonfox"
-            target="_blank"
-            >Записаться</a
-          >
-        </div>
-      </form>
-    </div>
-    <div class="popup_overlay"></div>
     <div class="checkage">
       <div class="checkage_wrapper">
         <div class="checkage_wrapper-logo">
@@ -1586,62 +973,14 @@
         </div>
       </div>
     </div>
-    <a href="#social" class="link-scroll-top"
-      ><svg
-        width="36px"
-        height="36px"
-        viewBox="0 0 24 24"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <g stroke-width="0"></g>
-        <g stroke-linecap="round" stroke-linejoin="round"></g>
-        <g>
-          <path
-            d="M12 4L6 10M12 4L18 10M12 4L12 14.5M12 20V17.5"
-            stroke="#f24342"
-            stroke-width="1.5"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          ></path>
-        </g>
-      </svg>
+    <a href="#header" class="link-scroll-top">
+      <img
+        class="link-scroll-top--img"
+        src="./svg/arrow-top.svg"
+        loading="lazy"
+        alt="Стрелка вверх TrinkoTattoo"
+      />
     </a>
     <div class="checkage_overlay"></div>
-    <div class="promo">
-      <div class="promo_wrapper">
-        <button class="promo_wrapper-btn--close">
-          <svg
-            width="32px"
-            height="32px"
-            viewBox="0 0 1024 1024"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="#000000"
-          >
-            <g stroke-width="0"></g>
-            <g stroke-linecap="round" stroke-linejoin="round"></g>
-            <g>
-              <path
-                fill="#000000"
-                d="M764.288 214.592 512 466.88 259.712 214.592a31.936 31.936 0 0 0-45.12 45.12L466.752 512 214.528 764.224a31.936 31.936 0 1 0 45.12 45.184L512 557.184l252.288 252.288a31.936 31.936 0 0 0 45.12-45.12L557.12 512.064l252.288-252.352a31.936 31.936 0 1 0-45.12-45.184z"
-              ></path>
-            </g>
-          </svg>
-        </button>
-        <h3 class="promo_wrapper-title">Поздравляю, ты - настоящий кликер!</h3>
-        <p class="promo_wrapper-price">
-          В награду, вот промокод на татуировку со скидкой 15%!
-          <span class="promo_wrapper-price--span">duck15</span> Чтобы
-          активировать его, просто напиши мне в Директ промокод.
-        </p>
-        <a
-          class="promo_wrapper-link--accept"
-          href="https://t.me/Trinkonfox"
-          target="_blank"
-          >Получить</a
-        >
-      </div>
-    </div>
-    <div class="promo_overlay"></div>
   </body>
 </html>

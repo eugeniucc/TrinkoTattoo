@@ -3,37 +3,31 @@
 @import "../scss/animations/hover";
 
 .footer {
-  padding-bottom: 5rem;
+  padding: 3.2rem 0rem;
   background-color: $smoke75;
   &_wrapper {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding-bottom: 10rem;
+    justify-content: space-between;
   }
-  &_content {
+  &_box {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    @include font-montserrat-links;
-    color: $white;
-    &-wrapper {
-      display: flex;
-      gap: 2.4rem;
-      &--copyrights,
-      &--privacy {
-        color: $white;
-        text-decoration: none;
-        @include hover-brick;
-      }
+    gap: 3.2rem;
+    &-copy,
+    &-privacy {
+      @include montserrat-a;
+      @include hover-brick;
     }
-    &-social {
-      display: flex;
-      gap: 2.4rem;
-    }
+  }
+  &_logo {
+    @include montserrat-p;
   }
 }
 
-.social_footer-social--links {
-  text-decoration: none;
+.link-scroll-top {
+  position: fixed;
+  content: "";
+  width: 3.2rem;
+  bottom: 2rem;
+  left: 1.4rem;
 }

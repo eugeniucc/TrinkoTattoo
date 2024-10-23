@@ -2,22 +2,25 @@
 @import "../variables/variables";
 
 @mixin hover-brick {
+  transition: 0.4s;
   &:hover {
-    transition: 0.4s;
     color: $brick;
-  }
-  &:not(:hover) {
-    transition: 0.5s;
   }
 }
 
 @mixin hover-btn {
+  @include montserrat-btn;
+  color: $white;
+  margin: 0 auto;
+  background-color: $brick;
+  border: 0.1rem solid $brick;
+  cursor: pointer;
+  border-radius: 0.4rem;
+  padding: 1.6rem 4rem;
+  transition: 0.5s;
   &:hover {
     background-color: $white;
     color: $black;
-    transition: 0.5s;
-  }
-  &:not(:hover) {
     transition: 0.5s;
   }
 }

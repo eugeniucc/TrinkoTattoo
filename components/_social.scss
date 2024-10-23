@@ -3,42 +3,67 @@
 @import "../scss/animations/hover";
 
 .social {
-  padding: 2.4rem 0rem;
-  background: $smoke75;
-  &_title {
-    @include font-montserrat-section-title;
-    font-size: 3.4rem;
-    color: $white;
+  &_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
   }
-  &_nav {
-    &-wrapper {
+  &_title {
+    @include montserrat-h2;
+  }
+  &_list {
+    display: flex;
+    gap: 3.2rem;
+    justify-content: center;
+    align-items: center;
+    &-link {
       display: flex;
-      justify-content: space-between;
-    }
-    &-contacts {
-      display: flex;
-      gap: 2.4rem;
-
-      &--links {
-        color: $white;
-        text-decoration: none;
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-      }
-      &--span {
-        @include font-montserrat-links;
-        @include hover-brick;
-      }
-    }
-    &-social {
-      display: flex;
+      gap: 1.6rem;
+      justify-content: center;
       align-items: center;
-      gap: 2.4rem;
-      &--links {
-        text-decoration: none;
-        color: $black;
-      }
+      @include montserrat-a;
+      @include hover-brick;
     }
+    &-img {
+      width: 3.2rem;
+      height: 3.2rem;
+    }
+  }
+  &_galery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    max-width: 100%;
+    width: 50%;
+    &-img {
+      width: 20rem;
+      height: 20rem;
+      object-fit: cover;
+      border-radius: 0.4rem;
+    }
+  }
+}
+
+.instagram {
+  &_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &_embeded {
+    display: flex;
+    justify-content: center;
+    max-width: 50%;
+    width: 100%;
+  }
+  &-media {
+    max-width: 100% !important;
+    width: 50% !important;
+    overflow: hidden !important;
+    object-fit: cover !important;
+    border: none !important;
+    margin: unset !important;
+    min-width: fit-content !important;
+    border-radius: 0.4rem !important;
   }
 }

@@ -27,7 +27,6 @@
     }
     &-content {
       &--text {
-        @include font-montserrat-title;
         color: $white;
         padding-bottom: 3rem;
       }
@@ -38,7 +37,7 @@
       &--confirm,
       &--cancel {
         padding: 1rem 3rem;
-        @include font-montserrat-btn;
+
         cursor: pointer;
         border-radius: 3.5rem;
       }

@@ -1,0 +1,17 @@
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+
+.art {
+  &_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+  }
+  &_title {
+    @include montserrat-h2;
+  }
+}
+.swiper-pagination-bullet-active {
+  background-color: red;
+  opacity: 1; 
+}

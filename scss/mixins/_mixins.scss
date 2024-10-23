@@ -1,98 +1,53 @@
-@mixin font-montserrat {
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.6rem;
-  font-optical-sizing: auto;
+@mixin h1 {
+  font-family: "UnifrakturMaguntia", cursive;
   font-weight: 400;
+  font-size: 3.2rem;
   font-style: normal;
+  line-height: 4rem;
+  color: $white;
 }
-@mixin font-montserrat-presentation {
+
+@mixin montserrat-h2 {
   font-family: "Montserrat", sans-serif;
-  font-size: 4.4rem;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-}
-@mixin font-montserrat-section-title {
-  font-family: "Montserrat", sans-serif;
-  font-size: 4.6rem;
-  font-optical-sizing: auto;
   font-weight: 600;
-  font-style: normal;
-  text-align: center;
-  padding-bottom: 5rem;
-  @media (max-width: $breakpoint-xl) {
-    font-size: 3.6rem;
-    padding-bottom: 3rem;
-  }
-  @media (max-width: $breakpoint-md) {
-    font-size: 3rem;
-  }
-}
-@mixin font-montserrat-title {
-  font-family: "Montserrat", sans-serif;
-  font-size: 3.4rem;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-  text-align: center;
-  @media (max-width: $breakpoint-lg) {
-    font-size: 3rem;
-  }
-  @media (max-width: $breakpoint-smL) {
-    font-size: 2.6rem;
-  }
-}
-@mixin font-montserrat-links {
-  font-family: "Montserrat", sans-serif;
-  font-size: 2rem;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  @media (max-width: $breakpoint-md) {
-    font-size: 1.8rem;
-  }
-}
-@mixin font-montserrat-list {
-  font-family: "Montserrat", sans-serif;
-  font-size: 2rem;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  text-align: center;
-  @media (max-width: $breakpoint-lg) {
-    font-size: 1.8rem;
-    font-weight: 300;
-  }
-}
-@mixin font-montserrat-span {
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.8rem;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-@mixin font-montserrat-p {
-  font-family: "Montserrat", sans-serif;
-  font-size: 2rem;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-@mixin font-montserrat-btn {
-  font-family: "Montserrat", sans-serif;
   font-size: 2.6rem;
-  font-optical-sizing: auto;
-  font-weight: 600;
   font-style: normal;
-}
-@mixin font-montserrat-text {
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.8rem;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+  color: $white;
   text-align: center;
-  @media (max-width: $breakpoint-lg) {
-    font-weight: 300;
-  }
+}
+
+@mixin montserrat-h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 2.2rem;
+  font-style: normal;
+  color: $white;
+  text-align: center;
+}
+
+@mixin montserrat-h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  font-style: normal;
+  color: $white;
+  text-align: center;
+}
+@mixin montserrat-a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: $white;
+}
+@mixin montserrat-p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: $white;
+}
+@mixin montserrat-btn {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: $white;
 }

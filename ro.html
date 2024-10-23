@@ -121,28 +121,10 @@
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
     <meta name="msapplication-config" content="./icons/browserconfig.xml" />
-    <!-- LEAFLET -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-      crossorigin=""
-    />
-    <script
-      defer
-      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-      crossorigin=""
-    ></script>
-    <script defer src="./js/leaflet-ro.js"></script>
-    <!-- SCRIPTS SWIPER -->
-    <script
-      defer
-      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
-    ></script>
-    <script defer src="./js/swiper-portfolio.js"></script>
-    <script defer src="./js/portfolio-mobile.js"></script>
-    <script defer src="./js/swiper-nav.js"></script>
+    <!-- SWIPER SCRIPTS -->
+    <script defer src="./swiper/swiper.min.js"></script>
+    <!-- SWIPER STYLES -->
+    <link rel="stylesheet" href="./swiper/swiper.min.css" />
     <!-- MY SCRIPTS -->
     <script defer src="./js/modal.js"></script>
     <script defer src="./js/checkage.js"></script>
@@ -592,798 +574,279 @@
         </nav>
       </div>
     </header>
-    <section class="presentation" id="presentation">
-      <div class="swiper swiper-presentation">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="swiper-slide-presentation">
-              <div
-                class="swiper_presentation-wrapper swiper_presentation-bg--1"
-                style="background-image: url(./img/presentation-1.webp)"
-              >
-                <h1 class="swiper_presentation-title">
-                  Cel mai bun salon de tatuaje din Chișinău - TrinkoTattoo
-                </h1>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper-slide-presentation">
-              <div
-                class="swiper_presentation-wrapper swiper_presentation-bg--2"
-                style="background-image: url(./img/presentation-2.webp)"
-              >
-                <h2 class="swiper_presentation-title--2">
-                  Tatuaj artistic în orice stil și dimensiune, realizat de un
-                  profesionist în Moldova
-                </h2>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper-slide-presentation">
-              <div
-                class="swiper_presentation-wrapper swiper_presentation-bg--3"
-                style="background-image: url(./img/presentation-3.webp)"
-              >
-                <h2 class="swiper_presentation-title--3">
-                  Schițe individuale și programare pentru ședințe conform
-                  preferințelor dvs., fără așteptare
-                </h2>
-              </div>
+    <main class="main">
+      <h1 class="swiper_presentation-title">
+        Cel mai bun salon de tatuaje din Chișinău - TrinkoTattoo
+      </h1>
+      <h2 class="swiper_presentation-title--2">
+        Tatuaj artistic în orice stil și dimensiune, realizat de un profesionist
+        în Moldova
+      </h2>
+      <h2 class="swiper_presentation-title--3">
+        Schițe individuale și programare pentru ședințe conform preferințelor
+        dvs., fără așteptare
+      </h2>
+      <section class="about" id="about">
+        <div class="container">
+          <div class="about_wrapper">
+            <div class="about_wrapper-content">
+              <h2 class="about_wrapper-content--title">
+                Sunt un maestru tatuator din Chișinău cu o experiență de cinci
+                ani în domeniul tatuajelor. Pentru mine, munca nu este doar o
+                profesie, este artă, este transpunerea ideilor și emoțiilor în
+                imagini unice pe piele.
+              </h2>
+              <p class="about_wrapper-content--text">
+                Fiecare tatuaj este o oportunitate de a spune o poveste, de a
+                sublinia individualitatea, de a crea ceva cu adevărat unic. În
+                ultima vreme, reflect tot mai mult asupra semnificației timpului
+                nostru și a modului în care îl folosim. Fiecare lucrare pe care
+                o fac reflectă această filozofie - este unică, bine gândită și
+                creată cu dragoste pentru detalii. Scopul meu nu este doar să
+                fac un tatuaj frumos, ci și să îmi pun o parte din suflet în el,
+                pentru ca el să devină o parte din viața celui care îl poartă și
+                să îl inspire în fiecare zi. Mulțumesc că împărtășiți această
+                călătorie alături de mine.
+                <span class="about_wrapper-content--span">
+                  Cu dragoste, Iana</span
+                >
+              </p>
+              <button class="about_wrapper-btn">Programare</button>
             </div>
           </div>
         </div>
-        <div class="swiper-button-next presentation-btn-next">
-          <svg
-            fill="#000000"
-            width="24px"
-            height="24px"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-            stroke="#f24342"
-          >
-            <g stroke-width="0"></g>
-            <g stroke-linecap="round" stroke-linejoin="round"></g>
-            <g>
-              <path
-                d="M16.2928932,12 L13.1464466,8.85355339 C12.9511845,8.65829124 12.9511845,8.34170876 13.1464466,8.14644661 C13.3417088,7.95118446 13.6582912,7.95118446 13.8535534,8.14644661 L17.8535534,12.1464466 C18.0488155,12.3417088 18.0488155,12.6582912 17.8535534,12.8535534 L13.8535534,16.8535534 C13.6582912,17.0488155 13.3417088,17.0488155 13.1464466,16.8535534 C12.9511845,16.6582912 12.9511845,16.3417088 13.1464466,16.1464466 L16.2928932,13 L7.5,13 C7.22385763,13 7,12.7761424 7,12.5 C7,12.2238576 7.22385763,12 7.5,12 L16.2928932,12 Z M19.5,21 C20.3284271,21 21,20.3284271 21,19.5 L21,5.5 C21,4.67157288 20.3284271,4 19.4999725,4 L5.49305689,3.99922869 C4.66462977,3.99922869 3.99305689,4.67080157 3.99305689,5.49922869 L4.00000011,19.499807 C4.00031957,20.3280081 4.67179882,20.9992284 5.5,20.9992284 C5.50626743,20.9992284 10.1729341,20.9994856 19.5,21 Z M3.00000021,19.5002478 L2.99305708,5.50019301 C2.99305689,4.11851682 4.11234502,2.99922869 5.49308443,2.99922869 L19.5,3 C20.8807119,3 22,4.11928813 22,5.5 L22,19.5 C22,20.8807119 20.8807119,22 19.5,22 L5.5,22 C4.10278895,21.9822801 3.00052859,20.8700816 3.00000021,19.5002478 Z"
-              ></path>
-            </g>
-          </svg>
-        </div>
-        <div class="swiper-button-prev presentation-btn-prev">
-          <svg
-            fill="#000000"
-            width="24px"
-            height="24px"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-            stroke="#f24342"
-          >
-            <g stroke-width="0"></g>
-            <g stroke-linecap="round" stroke-linejoin="round"></g>
-            <g>
-              <path
-                d="M16.2928932,12 L13.1464466,8.85355339 C12.9511845,8.65829124 12.9511845,8.34170876 13.1464466,8.14644661 C13.3417088,7.95118446 13.6582912,7.95118446 13.8535534,8.14644661 L17.8535534,12.1464466 C18.0488155,12.3417088 18.0488155,12.6582912 17.8535534,12.8535534 L13.8535534,16.8535534 C13.6582912,17.0488155 13.3417088,17.0488155 13.1464466,16.8535534 C12.9511845,16.6582912 12.9511845,16.3417088 13.1464466,16.1464466 L16.2928932,13 L7.5,13 C7.22385763,13 7,12.7761424 7,12.5 C7,12.2238576 7.22385763,12 7.5,12 L16.2928932,12 Z M19.5,21 C20.3284271,21 21,20.3284271 21,19.5 L21,5.5 C21,4.67157288 20.3284271,4 19.4999725,4 L5.49305689,3.99922869 C4.66462977,3.99922869 3.99305689,4.67080157 3.99305689,5.49922869 L4.00000011,19.499807 C4.00031957,20.3280081 4.67179882,20.9992284 5.5,20.9992284 C5.50626743,20.9992284 10.1729341,20.9994856 19.5,21 Z M3.00000021,19.5002478 L2.99305708,5.50019301 C2.99305689,4.11851682 4.11234502,2.99922869 5.49308443,2.99922869 L19.5,3 C20.8807119,3 22,4.11928813 22,5.5 L22,19.5 C22,20.8807119 20.8807119,22 19.5,22 L5.5,22 C4.10278895,21.9822801 3.00052859,20.8700816 3.00000021,19.5002478 Z"
-              ></path>
-            </g>
-          </svg>
-        </div>
-      </div>
-    </section>
-    <section class="about" id="about">
-      <div class="container">
-        <div class="about_wrapper">
-          <div class="about_wrapper-content">
-            <h2 class="about_wrapper-content--title">
-              Sunt un maestru tatuator din Chișinău cu o experiență de cinci ani
-              în domeniul tatuajelor. Pentru mine, munca nu este doar o
-              profesie, este artă, este transpunerea ideilor și emoțiilor în
-              imagini unice pe piele.
+      </section>
+      <section class="price" id="price">
+        <h3 class="price_title">Prețuri</h3>
+        <div class="price_wrapper">
+          <div class="price_wrapper-content">
+            <h2 class="price_wrapper-content--title">Tatuaje în Chișinău:</h2>
+            <ul class="price_wrapper-content--list">
+              <li class="price_wrapper-content--item">
+                Tatuaj negru: de la 300 lei
+              </li>
+              <li class="price_wrapper-content--item">
+                Tatuaj negru cu contur colorat: de la 400 lei
+              </li>
+              <li class="price_wrapper-content--item">
+                Tatuaj colorat cu umplere: de la 600 lei
+              </li>
+            </ul>
+            <h2 class="price_wrapper-content--title">
+              Machiaj permanent în Chișinău:
             </h2>
-            <p class="about_wrapper-content--text">
-              Fiecare tatuaj este o oportunitate de a spune o poveste, de a
-              sublinia individualitatea, de a crea ceva cu adevărat unic. În
-              ultima vreme, reflect tot mai mult asupra semnificației timpului
-              nostru și a modului în care îl folosim. Fiecare lucrare pe care o
-              fac reflectă această filozofie - este unică, bine gândită și
-              creată cu dragoste pentru detalii. Scopul meu nu este doar să fac
-              un tatuaj frumos, ci și să îmi pun o parte din suflet în el,
-              pentru ca el să devină o parte din viața celui care îl poartă și
-              să îl inspire în fiecare zi. Mulțumesc că împărtășiți această
-              călătorie alături de mine.
-              <span class="about_wrapper-content--span">
-                Cu dragoste, Iana</span
-              >
-            </p>
-            <button class="about_wrapper-btn">Programare</button>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="price" id="price">
-      <h3 class="price_title">Prețuri</h3>
-      <div class="price_wrapper">
-        <div class="price_wrapper-content">
-          <h2 class="price_wrapper-content--title">Tatuaje în Chișinău:</h2>
-          <ul class="price_wrapper-content--list">
-            <li class="price_wrapper-content--item">
-              Tatuaj negru: de la 300 lei
-            </li>
-            <li class="price_wrapper-content--item">
-              Tatuaj negru cu contur colorat: de la 400 lei
-            </li>
-            <li class="price_wrapper-content--item">
-              Tatuaj colorat cu umplere: de la 600 lei
-            </li>
-          </ul>
-          <h2 class="price_wrapper-content--title">
-            Machiaj permanent în Chișinău:
-          </h2>
-          <ul class="price_wrapper-content--list">
-            <li class="price_wrapper-content--item">
-              Sprâncene efect pudrat: 600 lei
-            </li>
-            <li class="price_wrapper-content--item">
-              Eyeliner orice tehnică: 600 lei
-            </li>
-            <li class="price_wrapper-content--item">
-              Buze orice tehnică: 600 lei
-            </li>
-          </ul>
-          <h3 class="price_wrapper-content--title">Inclus în preț:</h3>
-          <ul class="price_wrapper-content--list">
-            <li class="price_wrapper-content--item">
-              Lucrarea este inclusă în preț, chiar și în cazul în care sunt
-              necesare mai multe ședințe, pentru lucrări complexe și mari.
-            </li>
-            <li class="price_wrapper-content--item">
-              Utilizăm anestezic local după necesitate pentru a asigura
-              confortul clientului în timpul procedurii.
-            </li>
-          </ul>
-        </div>
-        <div
-          class="price_wrapper-bg"
-          style="background-image: url(./img/price-bg.webp)"
-        ></div>
-      </div>
-    </section>
-    <section class="course" id="course">
-      <div class="course_wrapper">
-        <div
-          class="course_wrapper-bg"
-          style="background-image: url(./img/course-img.webp)"
-        ></div>
-        <div class="course_wrapper-content">
-          <h2 class="course_wrapper-content--title">
-            Cursuri de tatuaj în Chișinău!
-          </h2>
-          <ul class="course_wrapper-content--list">
-            <li class="course_wrapper-content--item">
-              Înscrieți-vă la cursurile noastre de tatuaj în Chișinău și
-              deveniți profesionist în lumea tatuajelor! Formare cuprinzătoare
-              pentru 400 de euro. Cursul include o zi de teorie și șase zile de
-              practică intensivă.
-            </li>
-            <li class="course_wrapper-content--item">
-              Învățați toate aspectele tatuajului: de la contur la umbre cu
-              umplere în diferite stiluri.
-            </li>
-            <li class="course_wrapper-content--item">
-              Furnizăm toate echipamentele necesare și materialele consumabile.
-              Veți învăța, de asemenea, cum să aveți grijă corectă de
-              echipamente și sterilizarea instrumentelor.
-            </li>
-            <li class="course_wrapper-content--item">
-              Începeți călătoria captivantă în lumea tatuajului chiar acum!
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <section class="correction">
-      <div class="correction_wrapper">
-        <div class="correction_wrapper-content">
-          <h2 class="correction_wrapper-content--title">
-            Eliminarea tatuajelor în Chișinău
-          </h2>
-          <p class="correction_wrapper-content--text">
-            Mă specializez în corectarea, actualizarea și îndreptarea
-            tatuajelor, inclusiv a lucrărilor nereușite, precum și ascunderea
-            cicatricilor și defectelor fizice.
-          </p>
-          <p class="correction_wrapper-content--text">
-            Abordarea mea individuală pentru fiecare lucrare permite crearea de
-            desene unice, luând în considerare caracteristicile clientului și
-            dorințele sale, pentru a obține cel mai bun rezultat și a ajuta
-            fiecare persoană să se simtă încrezătoare și confortabilă în propria
-            piele.
-          </p>
-        </div>
-        <div
-          class="correction_wrapper-bg"
-          style="background-image: url(./img/correction-bg.webp)"
-        ></div>
-      </div>
-    </section>
-
-    <section class="location">
-      <div class="container">
-        <div class="location_wrapper">
-          <div class="location_content">
-            <h3 class="location_title">
-              Salon de tatuaje în Chișinău pe hartă
-            </h3>
-            <p class="location_text">
-              Căutați cel mai bun salon de tatuaje din Chișinău? Vizitați
-              Trinkotattoo, situat chiar în centrul orașului.
-            </p>
-            <p class="location_text">
-              Maeștrii noștri au ani de experiență și sunt gata să transforme
-              orice idee a voastră în realitate. Folosiți harta de mai jos
-              pentru a ne găsi ușor și rapid.
-            </p>
-            <h3 class="location_title">De ce să alegeți Trinkotattoo?</h3>
-            <ul class="location_list">
-              <li class="location_list-item">
-                <p class="location_list-text">
-                  Maeștri profesioniști cu ani de experiență
-                </p>
+            <ul class="price_wrapper-content--list">
+              <li class="price_wrapper-content--item">
+                Sprâncene efect pudrat: 600 lei
               </li>
-              <li class="location_list-item">
-                <p class="location_list-text">
-                  Echipamente moderne și materiale sigure
-                </p>
+              <li class="price_wrapper-content--item">
+                Eyeliner orice tehnică: 600 lei
               </li>
-              <li class="location_list-item">
-                <p class="location_list-text">
-                  Locație convenabilă în centrul Chișinăului
-                </p>
+              <li class="price_wrapper-content--item">
+                Buze orice tehnică: 600 lei
               </li>
-              <li class="location_list-item">
-                <p class="location_list-text">
-                  Abordare individuală pentru fiecare client
-                </p>
+            </ul>
+            <h3 class="price_wrapper-content--title">Inclus în preț:</h3>
+            <ul class="price_wrapper-content--list">
+              <li class="price_wrapper-content--item">
+                Lucrarea este inclusă în preț, chiar și în cazul în care sunt
+                necesare mai multe ședințe, pentru lucrări complexe și mari.
+              </li>
+              <li class="price_wrapper-content--item">
+                Utilizăm anestezic local după necesitate pentru a asigura
+                confortul clientului în timpul procedurii.
               </li>
             </ul>
           </div>
-          <div id="map"></div>
-          <div class="location_address">
-            <p class="location_text">
-              Adresa noastră: CC Atrium, str. Albisoara 4, Chișinău
+          <div
+            class="price_wrapper-bg"
+            style="background-image: url(./img/price-bg.webp)"
+          ></div>
+        </div>
+      </section>
+      <section class="course" id="course">
+        <div class="course_wrapper">
+          <div
+            class="course_wrapper-bg"
+            style="background-image: url(./img/course-img.webp)"
+          ></div>
+          <div class="course_wrapper-content">
+            <h2 class="course_wrapper-content--title">
+              Cursuri de tatuaj în Chișinău!
+            </h2>
+            <ul class="course_wrapper-content--list">
+              <li class="course_wrapper-content--item">
+                Înscrieți-vă la cursurile noastre de tatuaj în Chișinău și
+                deveniți profesionist în lumea tatuajelor! Formare cuprinzătoare
+                pentru 400 de euro. Cursul include o zi de teorie și șase zile
+                de practică intensivă.
+              </li>
+              <li class="course_wrapper-content--item">
+                Învățați toate aspectele tatuajului: de la contur la umbre cu
+                umplere în diferite stiluri.
+              </li>
+              <li class="course_wrapper-content--item">
+                Furnizăm toate echipamentele necesare și materialele
+                consumabile. Veți învăța, de asemenea, cum să aveți grijă
+                corectă de echipamente și sterilizarea instrumentelor.
+              </li>
+              <li class="course_wrapper-content--item">
+                Începeți călătoria captivantă în lumea tatuajului chiar acum!
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="correction">
+        <div class="correction_wrapper">
+          <div class="correction_wrapper-content">
+            <h2 class="correction_wrapper-content--title">
+              Eliminarea tatuajelor în Chișinău
+            </h2>
+            <p class="correction_wrapper-content--text">
+              Mă specializez în corectarea, actualizarea și îndreptarea
+              tatuajelor, inclusiv a lucrărilor nereușite, precum și ascunderea
+              cicatricilor și defectelor fizice.
             </p>
-            <p class="location_text">
-              Suntem întotdeauna bucuroși de noi clienți și pregătiți să vă
-              oferim cele mai bune condiții pentru crearea tatuajului vostru
-              unic. Nu amânați, programați o consultație chiar acum!
+            <p class="correction_wrapper-content--text">
+              Abordarea mea individuală pentru fiecare lucrare permite crearea
+              de desene unice, luând în considerare caracteristicile clientului
+              și dorințele sale, pentru a obține cel mai bun rezultat și a ajuta
+              fiecare persoană să se simtă încrezătoare și confortabilă în
+              propria piele.
             </p>
           </div>
+          <div
+            class="correction_wrapper-bg"
+            style="background-image: url(./img/correction-bg.webp)"
+          ></div>
         </div>
-      </div>
-    </section>
+      </section>
+      <section class="location">
+        <div class="container">
+          <div class="location_wrapper">
+            <div class="location_content">
+              <h3 class="location_title">
+                Salon de tatuaje în Chișinău pe hartă
+              </h3>
+              <p class="location_text">
+                Căutați cel mai bun salon de tatuaje din Chișinău? Vizitați
+                Trinkotattoo, situat chiar în centrul orașului.
+              </p>
+              <p class="location_text">
+                Maeștrii noștri au ani de experiență și sunt gata să transforme
+                orice idee a voastră în realitate. Folosiți harta de mai jos
+                pentru a ne găsi ușor și rapid.
+              </p>
+              <h3 class="location_title">De ce să alegeți Trinkotattoo?</h3>
+              <ul class="location_list">
+                <li class="location_list-item">
+                  <p class="location_list-text">
+                    Maeștri profesioniști cu ani de experiență
+                  </p>
+                </li>
+                <li class="location_list-item">
+                  <p class="location_list-text">
+                    Echipamente moderne și materiale sigure
+                  </p>
+                </li>
+                <li class="location_list-item">
+                  <p class="location_list-text">
+                    Locație convenabilă în centrul Chișinăului
+                  </p>
+                </li>
+                <li class="location_list-item">
+                  <p class="location_list-text">
+                    Abordare individuală pentru fiecare client
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div class="location_address">
+              <p class="location_text">
+                Adresa noastră: CC Atrium, str. Albisoara 4, Chișinău
+              </p>
+              <p class="location_text">
+                Suntem întotdeauna bucuroși de noi clienți și pregătiți să vă
+                oferim cele mai bune condiții pentru crearea tatuajului vostru
+                unic. Nu amânați, programați o consultație chiar acum!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="reviews">
+        <div class="container">
+          <h4 class="reviews_title">Recenzii de la clienți</h4>
+          <div class="reviews_wrapper">
+            <div class="reviews_wrapper-card">
+              <div
+                class="reviews_wrapper-card--bg reviews-bg-1"
+                style="background-image: url(./img/reviews-1.webp)"
+              ></div>
+              <div class="reviews_wrapper-card--title">Vitalie</div>
+              <div class="reviews_wrapper-card--text">
+                Sunt extrem de mulțumit de noul meu tatuaj! Ai transformat
+                ideile mele în realitate cu o tehnică incredibilă și o atenție
+                deosebită la detalii. Recomand cu căldură!
+              </div>
+            </div>
+            <div class="reviews_wrapper-card">
+              <div
+                class="reviews_wrapper-card--bg reviews-bg-2"
+                style="background-image: url(./img/reviews-2.webp)"
+              ></div>
+              <div class="reviews_wrapper-card--title">Vadim</div>
+              <div class="reviews_wrapper-card--text">
+                Mulțumesc foarte mult pentru munca efectuată, mi-a plăcut foarte
+                mult, calitatea este de clasă superioară 😊👌
+              </div>
+            </div>
+            <div class="reviews_wrapper-card">
+              <div
+                class="reviews_wrapper-card--bg reviews-bg-3"
+                style="background-image: url(./img/reviews-3.webp)"
+              ></div>
+              <div class="reviews_wrapper-card--title">Anya</div>
+              <div class="reviews_wrapper-card--text">
+                Sunt foarte mulțumită de tine ca maestru și de lucrarea în sine.
+                Sunt încântată de primul meu tatuaj și de atmosfera din salon.
+                Mulțumesc mult! 😘😘 Și nu pot să nu menționez cât de minunat a
+                fost să petrec timpul în procesul obținerii acestui tatuaj
+                frumos.
+              </div>
+            </div>
+            <div class="reviews_wrapper-card">
+              <div
+                class="reviews_wrapper-card--bg reviews-bg-4"
+                style="background-image: url(./img/reviews-4.webp)"
+              ></div>
+              <div class="reviews_wrapper-card--title">Alia</div>
+              <div class="reviews_wrapper-card--text">
+                Maestrul este excelent, cu mână sigură. Ia în considerare toate
+                dorințele, te liniștește dacă ești cam îngrijorat, totul este
+                steril, curat - în general, totul este minunat. Vino fără teamă
+                - recomand cu siguranță 🙌✨
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
-    <section class="reviews">
-      <div class="container">
-        <h4 class="reviews_title">Recenzii de la clienți</h4>
-        <div class="reviews_wrapper">
-          <div class="reviews_wrapper-card">
-            <div
-              class="reviews_wrapper-card--bg reviews-bg-1"
-              style="background-image: url(./img/reviews-1.webp)"
-            ></div>
-            <div class="reviews_wrapper-card--title">Vitalie</div>
-            <div class="reviews_wrapper-card--text">
-              Sunt extrem de mulțumit de noul meu tatuaj! Ai transformat ideile
-              mele în realitate cu o tehnică incredibilă și o atenție deosebită
-              la detalii. Recomand cu căldură!
-            </div>
-          </div>
-          <div class="reviews_wrapper-card">
-            <div
-              class="reviews_wrapper-card--bg reviews-bg-2"
-              style="background-image: url(./img/reviews-2.webp)"
-            ></div>
-            <div class="reviews_wrapper-card--title">Vadim</div>
-            <div class="reviews_wrapper-card--text">
-              Mulțumesc foarte mult pentru munca efectuată, mi-a plăcut foarte
-              mult, calitatea este de clasă superioară 😊👌
-            </div>
-          </div>
-          <div class="reviews_wrapper-card">
-            <div
-              class="reviews_wrapper-card--bg reviews-bg-3"
-              style="background-image: url(./img/reviews-3.webp)"
-            ></div>
-            <div class="reviews_wrapper-card--title">Anya</div>
-            <div class="reviews_wrapper-card--text">
-              Sunt foarte mulțumită de tine ca maestru și de lucrarea în sine.
-              Sunt încântată de primul meu tatuaj și de atmosfera din salon.
-              Mulțumesc mult! 😘😘 Și nu pot să nu menționez cât de minunat a
-              fost să petrec timpul în procesul obținerii acestui tatuaj frumos.
-            </div>
-          </div>
-          <div class="reviews_wrapper-card">
-            <div
-              class="reviews_wrapper-card--bg reviews-bg-4"
-              style="background-image: url(./img/reviews-4.webp)"
-            ></div>
-            <div class="reviews_wrapper-card--title">Alia</div>
-            <div class="reviews_wrapper-card--text">
-              Maestrul este excelent, cu mână sigură. Ia în considerare toate
-              dorințele, te liniștește dacă ești cam îngrijorat, totul este
-              steril, curat - în general, totul este minunat. Vino fără teamă -
-              recomand cu siguranță 🙌✨
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="portfolio" id="portfolio">
-      <h4 class="portfolio_title">Portofoliu</h4>
-
-      <div class="swiper swiper_portfolio">
-        <div class="swiper-wrapper swiper-wrapper-portfolio">
-          <div class="swiper-slide">
-            <div class="swiper_portfolio-content">
-              <img
-                class="swiper_portfolio-content--img"
-                src="./img/portfolio-1.webp"
-                alt="tatuaj fete tatuaj femei schiță Chișinău"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper_portfolio-content">
-              <img
-                class="swiper_portfolio-content--img"
-                src="./img/portfolio-2.webp"
-                alt="tatuaj șarpe tatuaj flori schiță Chișinău"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper_portfolio-content">
-              <img
-                class="swiper_portfolio-content--img"
-                src="./img/portfolio-3.webp"
-                alt="tatuaj abstract tatuaj pisică schiță Chișinău"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper_portfolio-content">
-              <img
-                class="swiper_portfolio-content--img"
-                src="./img/portfolio-4.webp"
-                alt="tatuajul cu crap tatuajul cu peste coi schiță Chișinău"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper_portfolio-content">
-              <img
-                class="swiper_portfolio-content--img"
-                src="./img/portfolio-5.webp"
-                alt="tatu fluturi tatuaj fluture schiță Chișinău"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper_portfolio-content">
-              <img
-                class="swiper_portfolio-content--img"
-                src="./img/portfolio-6.webp"
-                alt="tatu inimă tatuaj inimă schiță Chișinău"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper_portfolio-content">
-              <img
-                class="swiper_portfolio-content--img"
-                src="./img/portfolio-7.webp"
-                alt="tatuaj soare tatuaj lună schiță Chișinău"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper_portfolio-content">
-              <img
-                class="swiper_portfolio-content--img"
-                src="./img/portfolio-8.webp"
-                alt="tatuaj pasăre tatuaj pe umăr schiță Chișinău"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper_portfolio-content">
-              <img
-                class="swiper_portfolio-content--img"
-                src="./img/portfolio-9.webp"
-                alt="tatuaj abstract schiță Chișinău"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper_portfolio-content">
-              <img
-                class="swiper_portfolio-content--img"
-                src="./img/portfolio-10.webp"
-                alt="tatuaj Mickey Mouse tatuaj Disney schiță Chișinău"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper_portfolio-content">
-              <img
-                class="swiper_portfolio-content--img"
-                src="./img/portfolio-11.webp"
-                alt="tatuaj trandafir tatuaj pe braț schiță Chișinău"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper_portfolio-content">
-              <img
-                class="swiper_portfolio-content--img"
-                src="./img/portfolio-12.webp"
-                alt="tatuaj țigară tatuaj pe mână schiță Chișinău"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper_portfolio-content">
-              <img
-                class="swiper_portfolio-content--img"
-                src="./img/portfolio-13.webp"
-                alt="tatuaj inscripție tatuaj floare schiță Chișinău"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper_portfolio-content">
-              <img
-                class="swiper_portfolio-content--img"
-                src="./img/portfolio-14.webp"
-                alt="tatuaj buldog tatuaj mafie inscripție schiță Chișinău"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper_portfolio-content">
-              <img
-                class="swiper_portfolio-content--img"
-                src="./img/portfolio-15.webp"
-                alt="tatuaj grenadă tatuaj pe braț schiță Chișinău"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper_portfolio-content">
-              <img
-                class="swiper_portfolio-content--img"
-                src="./img/portfolio-16.webp"
-                alt="tatuaj fluturi tatuaj pe braț schiță Chișinău"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper_portfolio-content">
-              <img
-                class="swiper_portfolio-content--img"
-                src="./img/portfolio-17.webp"
-                alt="tatuaj dragon tatuaj pe braț schiță Chișinău"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper_portfolio-content">
-              <img
-                class="swiper_portfolio-content--img"
-                src="./img/portfolio-18.webp"
-                alt="tatuaj craniu tatuaj flori schiță Chișinău"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper_portfolio-content">
-              <img
-                class="swiper_portfolio-content--img"
-                src="./img/portfolio-19.webp"
-                alt="tatuaj semn zodiacal tatuaj pe braț schiță Chișinău"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper_portfolio-content">
-              <img
-                class="swiper_portfolio-content--img"
-                src="./img/portfolio-20.webp"
-                alt="tatuaj coroană romană tatuaj coroane romane schiță Chișinău"
-                loading="lazy"
-              />
-            </div>
-          </div>
-        </div>
-        <div class="swiper-pagination"></div>
-      </div>
-
-      <div class="swiper swiper_portfolio-mobile">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="swiper_mobile-content">
-              <img
-                class="swiper_portfolio-content--img"
-                src="./img/portfolio-1.webp"
-                alt="tatuaj fete tatuaj femei schiță Chișinău"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper_mobile-content">
-              <img
-                class="swiper_mobile-content--img"
-                src="./img/portfolio-2.webp"
-                alt="tatuaj șarpe tatuaj flori schiță Chișinău"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper_mobile-content">
-              <img
-                class="swiper_mobile-content--img"
-                src="./img/portfolio-3.webp"
-                alt="tatuaj abstract tatuaj pisică schiță Chișinău"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper_mobile-content">
-              <img
-                class="swiper_mobile-content--img"
-                src="./img/portfolio-4.webp"
-                alt="tatuajul cu crap tatuajul cu peste coi schiță Chișinău"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper_mobile-content">
-              <img
-                class="swiper_mobile-content--img"
-                src="./img/portfolio-5.webp"
-                alt="tatu fluturi tatuaj fluture schiță Chișinău"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper_mobile-content">
-              <img
-                class="swiper_mobile-content--img"
-                src="./img/portfolio-6.webp"
-                alt="tatu inimă tatuaj inimă schiță Chișinău"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper_mobile-content">
-              <img
-                class="swiper_mobile-content--img"
-                src="./img/portfolio-7.webp"
-                alt="tatuaj soare tatuaj lună schiță Chișinău"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper_mobile-content">
-              <img
-                class="swiper_mobile-content--img"
-                src="./img/portfolio-8.webp"
-                alt="tatuaj pasăre tatuaj pe umăr schiță Chișinău"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper_mobile-content">
-              <img
-                class="swiper_mobile-content--img"
-                src="./img/portfolio-9.webp"
-                alt="tatuaj abstract schiță Chișinău"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper_mobile-content">
-              <img
-                class="swiper_mobile-content--img"
-                src="./img/portfolio-10.webp"
-                alt="tatuaj Mickey Mouse tatuaj Disney schiță Chișinău"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper_mobile-content">
-              <img
-                class="swiper_mobile-content--img"
-                src="./img/portfolio-11.webp"
-                alt="tatuaj trandafir tatuaj pe braț schiță Chișinău"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper_mobile-content">
-              <img
-                class="swiper_mobile-content--img"
-                src="./img/portfolio-12.webp"
-                alt="tatuaj țigară tatuaj pe mână schiță Chișinău"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper_mobile-content">
-              <img
-                class="swiper_mobile-content--img"
-                src="./img/portfolio-13.webp"
-                alt="tatuaj inscripție tatuaj floare schiță Chișinău"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper_mobile-content">
-              <img
-                class="swiper_mobile-content--img"
-                src="./img/portfolio-14.webp"
-                alt="tatuaj buldog tatuaj mafie inscripție schiță Chișinău"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper_mobile-content">
-              <img
-                class="swiper_mobile-content--img"
-                src="./img/portfolio-15.webp"
-                alt="tatuaj grenadă tatuaj pe braț schiță Chișinău"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper_mobile-content">
-              <img
-                class="swiper_mobile-content--img"
-                src="./img/portfolio-16.webp"
-                alt="tatuaj fluturi tatuaj pe braț schiță Chișinău"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper_mobile-content">
-              <img
-                class="swiper_mobile-content--img"
-                src="./img/portfolio-17.webp"
-                alt="tatuaj dragon tatuaj pe braț schiță Chișinău"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper_mobile-content">
-              <img
-                class="swiper_mobile-content--img"
-                src="./img/portfolio-18.webp"
-                alt="tatuaj craniu tatuaj flori schiță Chișinău"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper_mobile-content">
-              <img
-                class="swiper_mobile-content--img"
-                src="./img/portfolio-19.webp"
-                alt="tatuaj semn zodiacal tatuaj pe braț schiță Chișinău"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper_mobile-content">
-              <img
-                class="swiper_mobile-content--img"
-                src="./img/portfolio-20.webp"
-                alt="tatuaj coroană romană tatuaj coroane romane schiță Chișinău"
-                loading="lazy"
-              />
-            </div>
-          </div>
-        </div>
-        <div class="swiper-button-next portfolio-mobile-btn-prev">
-          <svg
-            fill="#000000"
-            width="24px"
-            height="24px"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-            stroke="#f24342"
-          >
-            <g stroke-width="0"></g>
-            <g stroke-linecap="round" stroke-linejoin="round"></g>
-            <g>
-              <path
-                d="M16.2928932,12 L13.1464466,8.85355339 C12.9511845,8.65829124 12.9511845,8.34170876 13.1464466,8.14644661 C13.3417088,7.95118446 13.6582912,7.95118446 13.8535534,8.14644661 L17.8535534,12.1464466 C18.0488155,12.3417088 18.0488155,12.6582912 17.8535534,12.8535534 L13.8535534,16.8535534 C13.6582912,17.0488155 13.3417088,17.0488155 13.1464466,16.8535534 C12.9511845,16.6582912 12.9511845,16.3417088 13.1464466,16.1464466 L16.2928932,13 L7.5,13 C7.22385763,13 7,12.7761424 7,12.5 C7,12.2238576 7.22385763,12 7.5,12 L16.2928932,12 Z M19.5,21 C20.3284271,21 21,20.3284271 21,19.5 L21,5.5 C21,4.67157288 20.3284271,4 19.4999725,4 L5.49305689,3.99922869 C4.66462977,3.99922869 3.99305689,4.67080157 3.99305689,5.49922869 L4.00000011,19.499807 C4.00031957,20.3280081 4.67179882,20.9992284 5.5,20.9992284 C5.50626743,20.9992284 10.1729341,20.9994856 19.5,21 Z M3.00000021,19.5002478 L2.99305708,5.50019301 C2.99305689,4.11851682 4.11234502,2.99922869 5.49308443,2.99922869 L19.5,3 C20.8807119,3 22,4.11928813 22,5.5 L22,19.5 C22,20.8807119 20.8807119,22 19.5,22 L5.5,22 C4.10278895,21.9822801 3.00052859,20.8700816 3.00000021,19.5002478 Z"
-              ></path>
-            </g>
-          </svg>
-        </div>
-        <div class="swiper-button-prev portfolio-mobile-btn-next">
-          <svg
-            fill="#000000"
-            width="24px"
-            height="24px"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-            stroke="#f24342"
-          >
-            <g stroke-width="0"></g>
-            <g stroke-linecap="round" stroke-linejoin="round"></g>
-            <g>
-              <path
-                d="M16.2928932,12 L13.1464466,8.85355339 C12.9511845,8.65829124 12.9511845,8.34170876 13.1464466,8.14644661 C13.3417088,7.95118446 13.6582912,7.95118446 13.8535534,8.14644661 L17.8535534,12.1464466 C18.0488155,12.3417088 18.0488155,12.6582912 17.8535534,12.8535534 L13.8535534,16.8535534 C13.6582912,17.0488155 13.3417088,17.0488155 13.1464466,16.8535534 C12.9511845,16.6582912 12.9511845,16.3417088 13.1464466,16.1464466 L16.2928932,13 L7.5,13 C7.22385763,13 7,12.7761424 7,12.5 C7,12.2238576 7.22385763,12 7.5,12 L16.2928932,12 Z M19.5,21 C20.3284271,21 21,20.3284271 21,19.5 L21,5.5 C21,4.67157288 20.3284271,4 19.4999725,4 L5.49305689,3.99922869 C4.66462977,3.99922869 3.99305689,4.67080157 3.99305689,5.49922869 L4.00000011,19.499807 C4.00031957,20.3280081 4.67179882,20.9992284 5.5,20.9992284 C5.50626743,20.9992284 10.1729341,20.9994856 19.5,21 Z M3.00000021,19.5002478 L2.99305708,5.50019301 C2.99305689,4.11851682 4.11234502,2.99922869 5.49308443,2.99922869 L19.5,3 C20.8807119,3 22,4.11928813 22,5.5 L22,19.5 C22,20.8807119 20.8807119,22 19.5,22 L5.5,22 C4.10278895,21.9822801 3.00052859,20.8700816 3.00000021,19.5002478 Z"
-              ></path>
-            </g>
-          </svg>
-        </div>
-        <div class="swiper-pagination"></div>
-      </div>
-    </section>
     <footer class="footer" id="footer">
       <div class="container">
         <div class="footer_content">
           <div class="footer_content-wrapper">
             <a
               class="footer_content-wrapper--copyrights"
-              href="./termsandconditions.html"
+              href="./copyrights/terms.pdf"
               target="_blank"
               >Terms & Conditions</a
             >
             <a
               class="footer_content-wrapper--privacy"
-              href="./privacypolicy.html"
+              href="./copyrights/privacy.pdf"
               target="_blank"
               >Privacy Policy</a
             >

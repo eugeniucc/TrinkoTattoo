@@ -1,47 +1,43 @@
-// COMPONENTS
-@import "../components/social";
-@import "../components/header";
-@import "../components/presentation";
-@import "../components/about";
-@import "../components/price";
-@import "../components/course";
-@import "../components/correction";
-@import "../components/reviews";
-@import "../components/portfolio";
-@import "../components/footer";
-@import "../components/checkage";
-@import "../components/popup";
-@import "../components/link-scroll-top";
-@import "../components/promo";
-@import "../components/location";
-
-// MEDIA QUERIES COMPONENTS
-@import "../media-queries/media-social";
-@import "../media-queries/media-header";
-@import "../media-queries/media-presentation";
-@import "../media-queries/media-about";
-@import "../media-queries/media-course";
-@import "../media-queries/media-correction";
-@import "../media-queries/media-reviews";
-@import "../media-queries/media-portfolio";
-@import "../media-queries/media-price";
-@import "../media-queries/media-footer";
-@import "../media-queries/media-popup";
-@import "../media-queries/media-checkage";
-@import "../media-queries/media-promo";
-@import "../media-queries/media-location";
-
 // MIXINS
 @import "../scss/mixins/mixins";
 
 // VARIABLES
 @import "../scss/variables/variables";
 
-// HOVER
+// ANIMATIONS
 @import "../scss/animations/hover";
+@import "../scss/animations/keyframes";
 
-// FONTS
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
+// COMPONENTS
+@import "../components/social";
+@import "../components/header";
+@import "../components/about";
+@import "../components/course";
+@import "../components/correction";
+@import "../components/footer";
+@import "../components/checkage";
+@import "../components/promo";
+@import "../components/location";
+@import "../components/primary";
+@import "../components/main";
+@import "../components/art";
+@import "../components/individual";
+
+// GOOGLE MAPS
+@import "../components/map";
+
+// MEDIA QUERIES COMPONENTS
+@import "../media-queries/media-social";
+@import "../media-queries/media-header";
+@import "../media-queries/media-about";
+@import "../media-queries/media-course";
+@import "../media-queries/media-correction";
+@import "../media-queries/media-footer";
+@import "../media-queries/media-checkage";
+@import "../media-queries/media-promo";
+@import "../media-queries/media-location";
+@import "../media-queries/media-primary";
+@import "../media-queries/media-main";
 
 // HTML
 
@@ -50,10 +46,54 @@ html {
   scroll-behavior: smooth;
 }
 
+a,
+img {
+  display: block;
+}
+a {
+  all: unset;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+  border-radius: 0.4rem;
+}
+
+// FONTS
+@font-face {
+  font-family: "Montserrat";
+  src: url("../../fonts/Montserrat-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../../fonts/Montserrat-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../../fonts/Montserrat-Bold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "UnifrakturMaguntia", cursive;
+  src: url("../../UnifrakturMaguntia-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
 // BODY
 
 body {
-  @include font-montserrat;
+  background-color: $smoke50;
 }
 
 // CONTAINER
