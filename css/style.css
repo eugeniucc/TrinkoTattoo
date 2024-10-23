@@ -167,10 +167,8 @@
   cursor: pointer;
 }
 .header_nav-lang {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2.4rem;
+  width: 2.5rem;
+  height: 2.5rem;
 }
 .header_nav-link {
   max-width: 2.5rem;
