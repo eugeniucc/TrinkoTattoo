@@ -10,8 +10,13 @@
   &_title {
     @include montserrat-h2;
   }
+  &_swiper {
+    &-mobile {
+      display: none;
+    }
+  }
 }
 .swiper-pagination-bullet-active {
   background-color: red;
-  opacity: 1; 
+  opacity: 1;
 }

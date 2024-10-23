@@ -1,0 +1,14 @@
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+
+@media (max-width: $breakpoint-lg) {
+  .reviews {
+    &_wrapper {
+      flex-wrap: wrap;
+      justify-content: center;
+      &-card {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,2 +1,40 @@
 @import "../scss/mixins/mixins";
 @import "../scss/variables/variables";
+
+@media (max-width: $breakpoint-xxl) {
+  .instagram_embeded {
+    max-width: 40%;
+  }
+}
+@media (max-width: 1300px) {
+  .social {
+    &_galery {
+      width: 90%;
+      justify-content: center;
+    }
+  }
+  .instagram {
+    &_wrapper {
+      flex-direction: column;
+      gap: 3.2rem;
+    }
+  }
+}
+@media (max-width: 678px) {
+  .social {
+    &_list {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1.6rem;
+      &-item {
+        max-width: 15rem;
+        width: 100%;
+      }
+      &-link {
+        gap: unset;
+        justify-content: space-between;
+      }
+    }
+  }
+}

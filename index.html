@@ -97,14 +97,13 @@
     <!-- MY SCRIPTS -->
     <script defer src="./js/first.js"></script>
     <!-- MY STYLES -->
-    <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/min_css/style.min.css" />
   </head>
   <body>
     <header class="header" id="header">
       <div class="container">
         <nav class="header_nav">
-          <a href="./index.html" class="header_nav-logo">
+          <a href="./" class="header_nav-logo">
             <img
               class="header_nav-logo--img"
               src="./icons/logo.webp"
@@ -112,16 +111,16 @@
             />
           </a>
           <ul class="header_nav-list">
-            <a class="header_nav-list--links" href="#">
-              <span class="header_nav-list--span">Обо мне</span>
+            <a class="header_nav-list--links" href="#about">
+              <span class="header_nav-list--span">О тату</span>
             </a>
-            <a class="header_nav-list--links" href="#">
+            <a class="header_nav-list--links" href="#individual">
               <span class="header_nav-list--span">Портфолио</span>
             </a>
-            <a class="header_nav-list--links" href="#">
+            <a class="header_nav-list--links" href="#price">
               <span class="header_nav-list--span">Цены</span>
             </a>
-            <a class="header_nav-list--links" href="#">
+            <a class="header_nav-list--links" href="#course">
               <span class="header_nav-list--span">Курсы тату</span>
             </a>
             <span
@@ -134,7 +133,7 @@
             Записаться
           </button>
           <div class="header_nav-lang">
-            <a href="./index.html" class="header_nav-link">
+            <a href="./" class="header_nav-link">
               <img
                 class="header_nav-img"
                 src="./svg/flag-ru.svg"
@@ -149,6 +148,23 @@
             /></a>
           </div>
         </nav>
+        <div class="header_nav-mobile">
+          <a href="./" class="header_nav-logo">
+            <img
+              class="header_nav-logo--img"
+              src="./icons/logo.webp"
+              alt="TrinkoTattoo"
+            />
+          </a>
+          <button class="header_nav-meet header_nav-meet-excl">
+            Записаться
+          </button>
+          <div class="ham_menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
       </div>
     </header>
     <main class="main">
@@ -200,11 +216,33 @@
                 <div class="swiper-pagination"></div>
               </div>
             </div>
+            <div class="art_swiper-mobile">
+              <div class="swiper artSwiperMobile">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./img/portfolio-1.webp" alt="" loading="lazy" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/portfolio-2.webp" alt="" loading="lazy" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/portfolio-3.webp" alt="" loading="lazy" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/portfolio-4.webp" alt="" loading="lazy" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/portfolio-5.webp" alt="" loading="lazy" />
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
             <button class="header_nav-meet">Записаться</button>
           </div>
         </div>
       </section>
-      <section class="individual">
+      <section class="individual" id="individual">
         <div class="container">
           <div class="individual_wrapper">
             <h2 class="individual_title">
@@ -708,110 +746,225 @@
           </div>
         </div>
       </section>
-      <section class="price">
+      <section class="price" id="price">
         <div class="container">
-          <h3 class="price_title">Цена на тату в Кишиневе</h3>
           <div class="price_wrapper">
-            <div class="price_wrapper-content">
-              <h2 class="price_wrapper-content--title">
-                Татуировки в Кишиневе:
-              </h2>
-              <ul class="price_wrapper-content--list">
-                <li class="price_wrapper-content--item">
-                  Черная татуировка: от 300 лей
-                </li>
-                <li class="price_wrapper-content--item">
-                  Черная татуировка с цветным контуром: от 400 лей
-                </li>
-                <li class="price_wrapper-content--item">
-                  Цветная татуировка с закрасом: от 600 лей
-                </li>
-              </ul>
-              <h2 class="price_wrapper-content--title">
-                Перманентный макияж в Кишиневе:
-              </h2>
-              <ul class="price_wrapper-content--list">
-                <li class="price_wrapper-content--item">
-                  Брови пудровый эффект: 600 лей
-                </li>
-                <li class="price_wrapper-content--item">
-                  Стрелки любая техника: 600 лей
-                </li>
-                <li class="price_wrapper-content--item">
-                  Губы любая техника: 600 лей
-                </li>
-              </ul>
-              <h3 class="price_wrapper-content--title">
-                Дополнительно включено в стоимость:
-              </h3>
-              <ul class="price_wrapper-content--list">
-                <li class="price_wrapper-content--item">
+            <h2 class="price_title">Цена на тату в Кишиневе</h2>
+            <div class="price_box">
+              <div class="price_show">
+                <img src="./img/correction-bg.webp" loading="lazy" alt="" />
+              </div>
+              <div class="price_content">
+                <h3 class="price_wrapper-title">Татуировки в Кишиневе:</h3>
+                <ul class="price_wrapper-list">
+                  <li class="price_wrapper-item">
+                    <p class="price_wrapper-text">
+                      Черная татуировка: от 300 лей
+                    </p>
+                  </li>
+                  <li class="price_wrapper-item">
+                    <p class="price_wrapper-text">
+                      Черная татуировка с цветным контуром: от 400 лей
+                    </p>
+                  </li>
+                  <li class="price_wrapper-item">
+                    <p class="price_wrapper-text">
+                      Цветная татуировка с закрасом: от 600 лей
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="price_box price_box-reverse">
+              <div class="price_content">
+                <h3 class="price_wrapper-title">
+                  Перманентный макияж в Кишиневе:
+                </h3>
+                <ul class="price_wrapper-list">
+                  <li class="price_wrapper-item">
+                    <p class="price_wrapper-text">
+                      Брови пудровый эффект: 600 лей
+                    </p>
+                  </li>
+                  <li class="price_wrapper-item">
+                    <p class="price_wrapper-text">
+                      Стрелки любая техника: 600 лей
+                    </p>
+                  </li>
+                  <li class="price_wrapper-item">
+                    <p class="price_wrapper-text">
+                      Губы любая техника: 600 лей
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div class="price_show">
+                <img src="./img/correction-bg.webp" loading="lazy" alt="" />
+              </div>
+            </div>
+            <h3 class="price_wrapper-title">
+              Дополнительно включено в стоимость:
+            </h3>
+            <ul class="price_wrapper-list">
+              <li class="price_wrapper-item">
+                <p class="price_wrapper-text">
                   В стоимость включена работа, даже если требуется более одного
                   сеанса, это для сложных и больших работ.
-                </li>
-                <li class="price_wrapper-content--item">
+                </p>
+              </li>
+              <li class="price_wrapper-item">
+                <p class="price_wrapper-text">
                   Используем обезболивающее при необходимости, чтобы обеспечить
                   комфорт клиента во время процедуры.
+                </p>
+              </li>
+            </ul>
+            <button class="header_nav-meet">Записаться</button>
+          </div>
+        </div>
+      </section>
+      <section class="course" id="course">
+        <div class="container">
+          <div class="course_wrapper">
+            <div class="course_content">
+              <h2 class="course_wrapper-title">Курсы тату в Кишиневе!</h2>
+              <ul class="course_wrapper-list">
+                <li class="course_wrapper-item">
+                  <p class="course_wrapper-text">
+                    Присоединяйтесь к нашим курсам тату в Кишиневе и станьте
+                    профессионалом в мире татуирования! Обучение всестороннее за
+                    400 евро. Курс включает один день теории и шесть дней
+                    интенсивной практики.
+                  </p>
+                </li>
+                <li class="course_wrapper-item">
+                  <p class="course_wrapper-text">
+                    Изучите все аспекты татуировки: от контура до теней с
+                    закрасом в различных стилях.
+                  </p>
+                </li>
+                <li class="course_wrapper-item">
+                  <p class="course_wrapper-text">
+                    Предоставляем все необходимое оборудование и расходные
+                    материалы. Вы также научитесь правильному уходу за
+                    оборудованием и стерилизации инструментов.
+                  </p>
+                </li>
+                <li class="course_wrapper-item">
+                  <p class="course_wrapper-text">
+                    Начните свой захватывающий путь в мире татуировки прямо
+                    сейчас!
+                  </p>
                 </li>
               </ul>
             </div>
-            <div
-              class="price_wrapper-bg"
-              style="background-image: url(./img/price-bg.webp)"
-            ></div>
+            <video class="individual_video" autoplay muted loop preload="auto">
+              <source src="./video/course.mp4" type="video/mp4" />
+              Ваш браузер не поддерживает видео.
+            </video>
           </div>
-        </div>
-      </section>
-      <section class="course">
-        <div class="course_wrapper">
-          <div class="course_wrapper-content">
-            <h2 class="course_wrapper-content--title">
-              Курсы тату в Кишиневе!
-            </h2>
-            <ul class="course_wrapper-content--list">
-              <li class="course_wrapper-content--item">
-                Присоединяйтесь к нашим курсам тату в Кишиневе и станьте
-                профессионалом в мире татуирования! Обучение всестороннее за 400
-                евро. Курс включает один день теории и шесть дней интенсивной
-                практики.
-              </li>
-              <li class="course_wrapper-content--item">
-                Изучите все аспекты татуировки: от контура до теней с закрасом в
-                различных стилях.
-              </li>
-              <li class="course_wrapper-content--item">
-                Предоставляем все необходимое оборудование и расходные
-                материалы. Вы также научитесь правильному уходу за оборудованием
-                и стерилизации инструментов.
-              </li>
-              <li class="course_wrapper-content--item">
-                Начните свой захватывающий путь в мире татуировки прямо сейчас!
-              </li>
-            </ul>
-          </div>
+          <button class="header_nav-meet">Курсы тату</button>
         </div>
       </section>
       <section class="correction">
-        <div class="correction_wrapper">
-          <div class="correction_wrapper-content">
-            <h2 class="correction_wrapper-content--title">
-              Удаление татуировок в Кишиневе
-            </h2>
-            <p class="correction_wrapper-content--text">
-              Специализируюсь на коррекции, обновлении и исправлении татуировок,
-              включая неудачные работы, а также скрытие шрамов и физических
-              дефектов.
-            </p>
-            <p class="correction_wrapper-content--text">
-              Мой индивидуальный подход к каждой работе позволяет создавать
-              уникальные эскизы, учитывая особенности клиента и его желания,
-              чтобы достичь наилучшего результата и помочь каждому человеку
-              почувствовать себя уверенно и комфортно в своей коже.
-            </p>
+        <div class="container">
+          <div class="correction_wrapper">
+            <video class="individual_video" autoplay muted loop preload="auto">
+              <source src="./video/laser.mp4" type="video/mp4" />
+              Ваш браузер не поддерживает видео.
+            </video>
+            <div class="correction_content">
+              <h2 class="correction_title">Удаление татуировок в Кишиневе:</h2>
+              <p class="correction_text">
+                Специализируюсь на коррекции, обновлении и исправлении
+                татуировок, включая неудачные работы, а также скрытие шрамов и
+                физических дефектов.
+              </p>
+              <p class="correction_text">
+                Мой индивидуальный подход к каждой работе позволяет создавать
+                уникальные эскизы, учитывая особенности клиента и его желания,
+                чтобы достичь наилучшего результата и помочь каждому человеку
+                почувствовать себя уверенно и комфортно в своей коже.
+              </p>
+            </div>
           </div>
+          <button class="header_nav-meet">Коррекция тату</button>
         </div>
       </section>
-
+      <section class="reviews">
+        <div class="container">
+          <h4 class="reviews_title">
+            Отзывы клиентов о тату салоне в Кишиневе
+          </h4>
+          <div class="reviews_wrapper">
+            <div class="reviews_wrapper-card">
+              <div class="reviews_wrapper-card--photo">
+                <img
+                  class="reviews_wrapper-card--img"
+                  src="./img/reviews-1.webp"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="reviews_wrapper-card--title">Виталий</div>
+              <div class="reviews_wrapper-card--text">
+                Я безумно доволен своей новой татуировкой! Вы воплотили мои идеи
+                в жизнь с невероятной техникой и вниманием к деталям. Очень
+                рекомендую!
+              </div>
+            </div>
+            <div class="reviews_wrapper-card">
+              <div class="reviews_wrapper-card--photo">
+                <img
+                  class="reviews_wrapper-card--img"
+                  src="./img/reviews-2.webp"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="reviews_wrapper-card--title">Вадим</div>
+              <div class="reviews_wrapper-card--text">
+                Спасибо большое за выполненную работу, очень сильно понравилось,
+                качество высший класс 😊 👌
+              </div>
+            </div>
+            <div class="reviews_wrapper-card">
+              <div class="reviews_wrapper-card--photo">
+                <img
+                  class="reviews_wrapper-card--img"
+                  src="./img/reviews-3.webp"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="reviews_wrapper-card--title">Аня</div>
+              <div class="reviews_wrapper-card--text">
+                Я очень довольна тобой, как мастером, и самой работой. Я рада
+                своей первой татуировке и атмосфере в салоне. Большое тебе
+                спасибо! 😘😘 А также, я не могу не отметить, как здорово было
+                провести время в процессе получения этой красивой татуировки.
+              </div>
+            </div>
+            <div class="reviews_wrapper-card">
+              <div class="reviews_wrapper-card--photo">
+                <img
+                  class="reviews_wrapper-card--img"
+                  src="./img/reviews-4.webp"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="reviews_wrapper-card--title">Аля</div>
+              <div class="reviews_wrapper-card--text">
+                Мастер отличный, с уверенной рукой. Учитывает все пожелания,
+                успокаивает если повизгиваешь, все стерильно, чистенько - в
+                целом все круть. Приходите, не бойтесь - однозначно рек 🙌✨
+              </div>
+            </div>
+          </div>
+          <button class="header_nav-meet">Записаться</button>
+        </div>
+      </section>
       <section class="location">
         <div class="container">
           <div class="location_wrapper">
@@ -826,110 +979,237 @@
                 любые ваши идеи в реальность. Используйте карту ниже, чтобы
                 найти нас легко и быстро.
               </p>
-              <h3 class="location_title">Почему стоит выбрать Trinkotattoo?</h3>
-              <ul class="location_list">
-                <li class="location_list-item">
-                  <p class="location_list-text">
-                    Профессиональные мастера с многолетним опытом
-                  </p>
-                </li>
-                <li class="location_list-item">
-                  <p class="location_list-text">
-                    Современное оборудование и безопасные материалы
-                  </p>
-                </li>
-                <li class="location_list-item">
-                  <p class="location_list-text">
-                    Удобное расположение в центре Кишинева
-                  </p>
-                </li>
-                <li class="location_list-item">
-                  <p class="location_list-text">
-                    Индивидуальный подход к каждому клиенту
-                  </p>
-                </li>
-              </ul>
             </div>
-
             <div class="location_address">
-              <p class="location_text">
+              <a
+                href="https://www.google.com/maps/place/Atrium/@47.0146631,28.8558081,15z/data=!4m2!3m1!1s0x0:0xb2be30290be18925?sa=X&ved=1t:2428&ictx=111"
+                target="_blank"
+                class="location_link"
+              >
                 Наш адрес: ТЦ Атриум, ул. Албишоара 4, Кишинев
-              </p>
+              </a>
               <p class="location_text">
                 Мы всегда рады новым клиентам и готовы предложить вам лучшие
                 условия для создания вашего уникального тату. Не откладывайте,
                 запишитесь на консультацию прямо сейчас!
               </p>
             </div>
-          </div>
-        </div>
-      </section>
-      <section class="reviews">
-        <div class="container">
-          <h4 class="reviews_title">Отзывы клиентов</h4>
-          <div class="reviews_wrapper">
-            <div class="reviews_wrapper-card">
-              <div class="reviews_wrapper-card--title">Виталий</div>
-              <div class="reviews_wrapper-card--text">
-                Я безумно доволен своей новой татуировкой! Вы воплотили мои идеи
-                в жизнь с невероятной техникой и вниманием к деталям. Очень
-                рекомендую!
-              </div>
-            </div>
-            <div class="reviews_wrapper-card">
-              <div class="reviews_wrapper-card--title">Вадим</div>
-              <div class="reviews_wrapper-card--text">
-                Спасибо большое за выполненную работу, очень сильно понравилось,
-                качество высший класс 😊 👌
-              </div>
-            </div>
-            <div class="reviews_wrapper-card">
-              <div class="reviews_wrapper-card--title">Аня</div>
-              <div class="reviews_wrapper-card--text">
-                Я очень довольна тобой, как мастером, и самой работой. Я рада
-                своей первой татуировке и атмосфере в салоне. Большое тебе
-                спасибо! 😘😘 А также, я не могу не отметить, как здорово было
-                провести время в процессе получения этой красивой татуировки.
-              </div>
-            </div>
-            <div class="reviews_wrapper-card">
-              <div class="reviews_wrapper-card--title">Аля</div>
-              <div class="reviews_wrapper-card--text">
-                Мастер отличный, с уверенной рукой. Учитывает все пожелания,
-                успокаивает если повизгиваешь, все стерильно, чистенько - в
-                целом все круть. Приходите, не бойтесь - однозначно рек 🙌✨
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="about">
-        <div class="container">
-          <div class="about_wrapper">
-            <div class="about_wrapper-content">
-              <h2 class="about_wrapper-content--title">
-                Я - тату мастер из Кишинёва с пятилетним стажем в области
-                татуировок. Моя работа для меня не просто профессия, это
-                искусство, воплощение идей и эмоций в уникальных образах на
-                коже.
-              </h2>
-              <p class="about_wrapper-content--text">
-                Каждая татуировка - это возможность рассказать историю,
-                подчеркнуть индивидуальность, создать нечто поистине
-                неповторимое. В последнее время я все больше задумываюсь о
-                значимости нашего времени и того, как мы его используем. Каждая
-                работа, которую я делаю, отражает эту философию - она уникальна,
-                продумана и создана с любовью к деталям. Моя цель - не просто
-                сделать красивую татуировку, но и вложить в нее частичку моей
-                души, чтобы она стала частью жизни и вдохновляла своего
-                обладателя каждый день. Спасибо, что делитесь этим путешествием
-                со мной.
-                <span class="about_wrapper-content--span"> С любовью, Яна</span>
-              </p>
-              <button class="about_wrapper-btn">Записаться</button>
-            </div>
+            <button class="header_nav-meet header_nav-meet-excl">
+              Записаться
+            </button>
           </div>
           <div class="map" id="map"></div>
+        </div>
+      </section>
+      <section class="about" id="about">
+        <div class="container">
+          <div class="about_wrapper">
+            <h2 class="about_title">
+              Вопросы и ответы о нанесении тату в Кишиневе
+            </h2>
+            <div class="about_content">
+              <div class="about_faq">
+                <div class="about_box">
+                  <h3 class="about_quest">
+                    Как проходит процесс нанесения тату в Кишиневе?
+                  </h3>
+                  <img
+                    class="about_box-img"
+                    src="./svg/arrow-down.svg"
+                    alt="Стрелка вниз TrinkoTattoo"
+                    loading="lazy"
+                  />
+                </div>
+                <p class="about_answr">
+                  Процесс нанесения тату в Кишиневе начинается с консультации с
+                  тату мастером, который поможет вам выбрать подходящий дизайн и
+                  размер. Затем создается эскиз, который будет использоваться
+                  для нанесения татуировки.
+                </p>
+              </div>
+
+              <div class="about_faq">
+                <div class="about_box">
+                  <h3 class="about_quest">
+                    Как сделать эскиз тату в Кишиневе?
+                  </h3>
+                  <img
+                    class="about_box-img"
+                    src="./svg/arrow-down.svg"
+                    alt="Стрелка вниз TrinkoTattoo"
+                    loading="lazy"
+                  />
+                </div>
+
+                <p class="about_answr">
+                  Чтобы сделать эскиз тату в Кишиневе, вам нужно обратиться к
+                  профессиональному тату мастеру, который создаст индивидуальный
+                  дизайн на основе ваших предпочтений и идей.
+                </p>
+              </div>
+
+              <div class="about_faq">
+                <div class="about_box">
+                  <h3 class="about_quest">
+                    Как выбрать тату мастера в Кишиневе?
+                  </h3>
+                  <img
+                    class="about_box-img"
+                    src="./svg/arrow-down.svg"
+                    alt="Стрелка вниз TrinkoTattoo"
+                    loading="lazy"
+                  />
+                </div>
+
+                <p class="about_answr">
+                  Выбор тату мастера в Кишиневе стоит основывать на их
+                  портфолио, отзывах клиентов и опыте. Рекомендуется посетить
+                  несколько салонов, чтобы найти мастера, который соответствует
+                  вашему стилю.
+                </p>
+              </div>
+
+              <div class="about_faq">
+                <div class="about_box">
+                  <h3 class="about_quest">Где найти тату салон в Молдове?</h3>
+                  <img
+                    class="about_box-img"
+                    src="./svg/arrow-down.svg"
+                    alt="Стрелка вниз TrinkoTattoo"
+                    loading="lazy"
+                  />
+                </div>
+
+                <p class="about_answr">
+                  Тату салоны в Молдове можно найти в интернете, используя
+                  поисковые системы или социальные сети. Также полезно
+                  спрашивать рекомендации у знакомых, которые уже сделали тату.
+                </p>
+              </div>
+
+              <div class="about_faq">
+                <div class="about_box">
+                  <h3 class="about_quest">
+                    Сколько стоит нанесение тату в Кишиневе?
+                  </h3>
+                  <img
+                    class="about_box-img"
+                    src="./svg/arrow-down.svg"
+                    alt="Стрелка вниз TrinkoTattoo"
+                    loading="lazy"
+                  />
+                </div>
+
+                <p class="about_answr">
+                  Цена на нанесение тату в Кишиневе зависит от сложности
+                  дизайна, размеров и опыта тату мастера. В среднем, стоимость
+                  может варьироваться от 300 до 1000 лей.
+                </p>
+              </div>
+
+              <div class="about_faq">
+                <div class="about_box">
+                  <h3 class="about_quest">
+                    Какие материалы используются для нанесения тату?
+                  </h3>
+                  <img
+                    class="about_box-img"
+                    src="./svg/arrow-down.svg"
+                    alt="Стрелка вниз TrinkoTattoo"
+                    loading="lazy"
+                  />
+                </div>
+
+                <p class="about_answr">
+                  Для нанесения тату используются стерильные иглы, красители, а
+                  также обезболивающие средства для обеспечения комфорта клиента
+                  во время процедуры.
+                </p>
+              </div>
+
+              <div class="about_faq">
+                <div class="about_box">
+                  <h3 class="about_quest">
+                    Как ухаживать за татуировкой после нанесения?
+                  </h3>
+                  <img
+                    class="about_box-img"
+                    src="./svg/arrow-down.svg"
+                    alt="Стрелка вниз TrinkoTattoo"
+                    loading="lazy"
+                  />
+                </div>
+
+                <p class="about_answr">
+                  Уход за татуировкой после нанесения включает в себя регулярное
+                  очищение, использование специального крема и избегание
+                  попадания прямых солнечных лучей на место тату.
+                </p>
+              </div>
+
+              <div class="about_faq">
+                <div class="about_box">
+                  <h3 class="about_quest">
+                    Есть ли возрастные ограничения для нанесения тату в
+                    Кишиневе?
+                  </h3>
+                  <img
+                    class="about_box-img"
+                    src="./svg/arrow-down.svg"
+                    alt="Стрелка вниз TrinkoTattoo"
+                    loading="lazy"
+                  />
+                </div>
+
+                <p class="about_answr">
+                  В Кишиневе для нанесения тату необходимо быть старше 18 лет.
+                  Если вы младше, потребуется разрешение родителей или опекунов.
+                </p>
+              </div>
+
+              <div class="about_faq">
+                <div class="about_box">
+                  <h3 class="about_quest">
+                    Как выбрать место для татуировки на теле?
+                  </h3>
+                  <img
+                    class="about_box-img"
+                    src="./svg/arrow-down.svg"
+                    alt="Стрелка вниз TrinkoTattoo"
+                    loading="lazy"
+                  />
+                </div>
+
+                <p class="about_answr">
+                  Выбор места для татуировки зависит от ваших предпочтений и
+                  образа жизни. Татуировки на видимых местах могут быть более
+                  заметными, в то время как скрытые тату могут быть легче
+                  скрыть.
+                </p>
+              </div>
+
+              <div class="about_faq">
+                <div class="about_box">
+                  <h3 class="about_quest">
+                    Что делать, если татуировка не соответствует ожиданиям?
+                  </h3>
+                  <img
+                    class="about_box-img"
+                    src="./svg/arrow-down.svg"
+                    alt="Стрелка вниз TrinkoTattoo"
+                    loading="lazy"
+                  />
+                </div>
+
+                <p class="about_answr">
+                  Если татуировка не соответствует вашим ожиданиям,
+                  рекомендуется обратиться к тату мастеру для обсуждения
+                  возможных вариантов исправления или корректировки.
+                </p>
+              </div>
+            </div>
+          </div>
+          <button class="header_nav-meet">Записаться</button>
         </div>
       </section>
     </main>
@@ -955,24 +1235,6 @@
         </div>
       </div>
     </footer>
-    <div class="checkage">
-      <div class="checkage_wrapper">
-        <div class="checkage_wrapper-logo">
-          <img
-            class="checkage_wrapper-logo--img"
-            src="./icons/logo.webp"
-            alt="TrinkoTattoo"
-          />
-        </div>
-        <div class="checkage_wrapper-content">
-          <p class="checkage_wrapper-content--text">Вам исплонилось 18 ?</p>
-          <div class="checkage_wrapper-btn">
-            <button class="checkage_wrapper-btn--confirm">Да</button>
-            <button class="checkage_wrapper-btn--cancel">Нет</button>
-          </div>
-        </div>
-      </div>
-    </div>
     <a href="#header" class="link-scroll-top">
       <img
         class="link-scroll-top--img"
@@ -981,6 +1243,5 @@
         alt="Стрелка вверх TrinkoTattoo"
       />
     </a>
-    <div class="checkage_overlay"></div>
   </body>
 </html>

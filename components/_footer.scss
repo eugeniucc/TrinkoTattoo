@@ -26,6 +26,7 @@
 
 .link-scroll-top {
   position: fixed;
+  z-index: 2;
   content: "";
   width: 3.2rem;
   bottom: 2rem;

@@ -11,6 +11,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    &-mobile {
+      display: none;
+    }
     &-meet {
       @include hover-btn;
       animation: buttonUp 2s ease-in-out infinite;

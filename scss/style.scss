@@ -15,14 +15,13 @@
 @import "../components/course";
 @import "../components/correction";
 @import "../components/footer";
-@import "../components/checkage";
-@import "../components/promo";
 @import "../components/location";
 @import "../components/primary";
 @import "../components/main";
 @import "../components/art";
 @import "../components/individual";
-
+@import "../components/price";
+@import "../components/reviews";
 // GOOGLE MAPS
 @import "../components/map";
 
@@ -33,33 +32,13 @@
 @import "../media-queries/media-course";
 @import "../media-queries/media-correction";
 @import "../media-queries/media-footer";
-@import "../media-queries/media-checkage";
-@import "../media-queries/media-promo";
 @import "../media-queries/media-location";
 @import "../media-queries/media-primary";
 @import "../media-queries/media-main";
-
-// HTML
-
-html {
-  font-size: $base-font-size;
-  scroll-behavior: smooth;
-}
-
-a,
-img {
-  display: block;
-}
-a {
-  all: unset;
-  cursor: pointer;
-}
-
-img {
-  max-width: 100%;
-  width: 100%;
-  border-radius: 0.4rem;
-}
+@import "../media-queries/media-art";
+@import "../media-queries/media-individual";
+@import "../media-queries/media-price";
+@import "../media-queries/media-reviews";
 
 // FONTS
 @font-face {
@@ -101,4 +80,167 @@ body {
 .container {
   max-width: 132rem;
   margin: 0 auto;
+}
+
+// RESET
+
+// HTML
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* BORDER BOX */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* BUTTONS */
+button {
+  all: unset;
+}
+
+html {
+  font-size: $base-font-size;
+  scroll-behavior: smooth;
+}
+
+a,
+img {
+  display: block;
+}
+a {
+  all: unset;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+  border-radius: 0.4rem;
+}
+
+button {
+  display: block;
 }

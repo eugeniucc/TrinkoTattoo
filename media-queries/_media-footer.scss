@@ -1,79 +1,25 @@
 @import "../scss/mixins/mixins";
 @import "../scss/variables/variables";
 
-@media (max-width: 1360px) {
+@media (max-width: $breakpoint-xxl) {
   .footer {
-    &_content {
-      padding: 0rem 3rem;
-    }
+    padding: 3.2rem 1.6rem;
   }
 }
-
-@media (max-width: $breakpoint-lg) {
+@media (max-width: 600px) {
   .footer {
-    padding-bottom: 3rem;
-    &_content {
-      font-size: 1.6rem;
-    }
-  }
-}
-
-@media (max-width: 870px) {
-  .footer {
-    &_content {
+    &_wrapper {
       flex-direction: column;
-      gap: 3rem;
+      gap: 3.2rem;
     }
   }
 }
-@media (max-width: $breakpoint-md) {
+@media (max-width: $breakpoint-sm) {
   .footer {
-    padding-bottom: 3rem;
-    &_content {
+    &_box {
       flex-direction: column;
-      gap: 3rem;
-    }
-  }
-}
-
-@media (max-width: $breakpoint-smL) {
-  .footer {
-    &_content {
-      flex-direction: column;
-      gap: 3rem;
-    }
-    &_copyrights {
       text-align: center;
-    }
-  }
-}
-
-@media (max-width: $breakpoint-smM) {
-  .footer {
-    &_content {
-      flex-direction: column;
-      gap: 3rem;
-      &-wrapper {
-        gap: 1rem;
-      }
-    }
-    &_copyrights {
-      text-align: center;
-    }
-  }
-}
-@media (max-width: $breakpoint-smS) {
-  .footer {
-    &_content {
-      &-wrapper {
-        &--copyrights,
-        &--privacy {
-          font-size: 1.4rem;
-        }
-      }
-    }
-    &_copyrights {
-      font-size: 1.4rem;
+      gap: 3.2rem;
     }
   }
 }

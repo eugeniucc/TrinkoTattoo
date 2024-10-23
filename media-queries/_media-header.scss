@@ -1,76 +1,63 @@
 @import "../scss/mixins/mixins";
 @import "../scss/variables/variables";
 
-@media (max-width: $breakpoint-xl) {
+@media (max-width: $breakpoint-xxl) {
   .header {
-    padding: 3rem;
+    padding: 1.6rem;
   }
 }
 @media (max-width: $breakpoint-lg) {
   .header {
     &_nav {
-      &-menu {
-        width: 70%;
-        flex-wrap: wrap;
-      }
-    }
-  }
-}
-@media (max-width: 875px) {
-  .header {
-    &_nav {
-      gap: 4rem;
-      &-menu {
-        width: 75%;
-      }
-    }
-  }
-}
-@media (max-width: $breakpoint-md) {
-  .header {
-    &_nav {
-      &-menu {
-        width: 60%;
-      }
-    }
-  }
-}
-@media (max-width: 660px) {
-  .header {
-    &_nav {
-      flex-direction: column;
-      gap: 5rem;
-      &-menu {
-        justify-content: center;
-      }
-    }
-  }
-}
-@media (max-width: 514px) {
-  .header {
-    &_nav {
-      &-menu {
-        width: 65%;
-      }
-    }
-  }
-}
-@media (max-width: $breakpoint-smL) {
-  .header {
-    &_nav {
-      flex-direction: column;
-      gap: 3rem;
-      &-logo {
-        &--img {
-          width: 10rem;
-        }
-      }
-      &-menu {
-        width: 100%;
-        flex-direction: column;
+      display: none;
+      &-mobile {
+        display: flex;
+        justify-content: space-between;
         align-items: center;
-        gap: 2.4rem;
-        flex-wrap: wrap;
+      }
+    }
+  }
+  .ham_menu {
+    height: 3.2rem;
+    width: 3.2rem;
+    position: relative;
+    cursor: pointer;
+  }
+  .ham_menu span {
+    height: 0.2rem;
+    width: 100%;
+    background-color: red;
+    border-radius: 2.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease-in-out;
+  }
+  .ham_menu span:nth-child(1) {
+    top: 25%;
+  }
+  .ham_menu span:nth-child(3) {
+    top: 75%;
+  }
+  .ham_menu.active span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  .ham_menu.active span:nth-child(2) {
+    opacity: 0;
+  }
+  .ham_menu.active span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+}
+
+@media (max-width: 425px) {
+  .header {
+    &_nav {
+      &-meet-excl {
+        padding: 1.6rem 2.4rem;
       }
     }
   }

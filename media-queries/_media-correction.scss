@@ -1,55 +1,11 @@
 @import "../scss/mixins/mixins";
 @import "../scss/variables/variables";
 
-@media (max-width: $breakpoint-xxl) {
+@media (max-width: 1320px) {
   .correction {
     &_wrapper {
-      &-bg {
-        background-size: 100%;
-        background-position-x: 0rem;
-      }
-    }
-  }
-}
-@media (max-width: $breakpoint-lg) {
-  .correction {
-    &_wrapper {
-      padding-bottom: 5rem;
-    }
-  }
-}
-@media (max-width: $breakpoint-md) {
-  .correction {
-    &_wrapper {
-      flex-direction: column;
-      gap: 3rem;
-      &-content {
-        width: 90%;
-        padding-left: 0;
-      }
-      &-bg {
-        width: 90%;
-      }
-    }
-  }
-}
-
-@media (max-width: 565px) {
-  .correction {
-    &_wrapper {
-      &-bg {
-        height: 30rem;
-      }
-    }
-  }
-}
-
-@media (max-width: $breakpoint-smL) {
-  .correction {
-    &_wrapper {
-      &-bg {
-        filter: none;
-      }
+      flex-direction: column-reverse;
+      gap: 3.2rem;
     }
   }
 }

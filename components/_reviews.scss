@@ -1,0 +1,32 @@
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+
+.reviews {
+  &_title {
+    @include montserrat-h4;
+    margin-bottom: 3.2rem;
+  }
+  &_wrapper {
+    display: flex;
+    margin-bottom: 3.2rem;
+    gap: 2.4rem;
+    &-card {
+      width: calc(25% - 2.4rem);
+      &--img {
+        height: 30rem;
+        object-fit: cover;
+      }
+      display: flex;
+      flex-direction: column;
+
+      gap: 1.6rem;
+      &--title {
+        @include montserrat-h4;
+      }
+      &--text {
+        text-align: center;
+        @include montserrat-p;
+      }
+    }
+  }
+}

@@ -1,13 +1,13 @@
 @import "../scss/mixins/mixins";
 @import "../scss/variables/variables";
 
-@media (max-width: $breakpoint-xxl) {
-  .main {
-    margin: 0rem 1.6rem 8rem 1.6rem;
-  }
-}
 @media (max-width: $breakpoint-sm) {
-  .main {
-    gap: 6rem;
+  .art {
+    &_swiper {
+      display: none;
+      &-mobile {
+        display: block;
+      }
+    }
   }
 }

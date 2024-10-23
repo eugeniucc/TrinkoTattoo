@@ -1,3 +1,25 @@
 @import "../scss/mixins/mixins";
 @import "../scss/variables/variables";
 
+.correction {
+  &_wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    margin-bottom: 3.2rem;
+  }
+  &_title {
+    @include montserrat-h2;
+  }
+  &_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3.2rem;
+  }
+  &_text {
+    text-align: center;
+    @include montserrat-p;
+  }
+}

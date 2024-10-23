@@ -3,4 +3,48 @@
 @import "../scss/animations/keyframes";
 
 .about {
+  &_title {
+    @include montserrat-h3;
+    margin-bottom: 3.2rem;
+  }
+  &_content {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    margin-bottom: 3.2rem;
+  }
+  &_faq {
+    background-color: $smoke25;
+    border-radius: 1.6rem;
+    cursor: pointer;
+    padding: 1.6rem;
+  }
+  &_quest {
+    @include montserrat-h3;
+    text-align: left;
+  }
+  &_answr {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    @include montserrat-p;
+  }
+  &_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-img {
+      width: 3.2rem;
+      height: 3.2rem;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+}
+
+.about_answr.active {
+  padding-top: 1rem;
+  max-height: 10rem;
+}
+.about_box-img.active {
+  transform: rotate(-90deg);
 }

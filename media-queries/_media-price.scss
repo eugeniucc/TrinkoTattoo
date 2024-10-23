@@ -1,0 +1,25 @@
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+
+@media (max-width: $breakpoint-md) {
+  .price {
+    &_box {
+      flex-direction: column;
+      gap: 3.2rem;
+      &-reverse {
+        flex-direction: column-reverse;
+      }
+    }
+    &_show {
+      max-width: 100%;
+    }
+    &_content {
+      max-width: 100%;
+    }
+    &_wrapper {
+      &-list {
+        text-align: center;
+      }
+    }
+  }
+}

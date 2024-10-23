@@ -1,28 +1,41 @@
 @import "../scss/mixins/mixins";
 @import "../scss/variables/variables";
 
-.course {
+.price {
+  &_title {
+    @include montserrat-h2;
+  }
   &_wrapper {
     display: flex;
-    align-items: center;
-    padding: 3.2rem 0rem;
+    flex-direction: column;
     gap: 3.2rem;
     &-title {
-      @include montserrat-h2;
+      @include montserrat-h3;
     }
     &-list {
       display: flex;
       flex-direction: column;
+      align-items: center;
       gap: 1.6rem;
     }
     &-text {
-      text-align: center;
       @include montserrat-p;
     }
   }
   &_content {
     display: flex;
     flex-direction: column;
+    gap: 2.4rem;
+    max-width: 50%;
+    width: 100%;
+  }
+  &_show {
+    max-width: 50%;
+    width: 100%;
+  }
+  &_box {
+    display: flex;
+    align-items: center;
     gap: 1.6rem;
   }
 }

@@ -1,32 +1,3 @@
-// Проверка возраста
-
-// const checkAgeForm = document.querySelector(".checkage");
-// const checkAgeOverlay = document.querySelector(".checkage_overlay");
-// const confirm = document.querySelector(".checkage_wrapper-btn--confirm");
-// const cancel = document.querySelector(".checkage_wrapper-btn--cancel");
-
-// function showCheckAgeForm() {
-//   checkAgeForm.classList.add("checkage_show");
-//   checkAgeOverlay.classList.add("checkage_show");
-// }
-
-// setTimeout(showCheckAgeForm, 1000);
-
-// function checkAgeConfirm() {
-//   checkAgeForm.classList.remove("checkage_show");
-//   checkAgeOverlay.classList.remove("checkage_show");
-// }
-// confirm.addEventListener("click", checkAgeConfirm);
-
-// function checkAgeCancel() {
-//   alert(
-//     "Вы несовершеннолетний. Скоро будете перенаправлены на другую страницу."
-//   );
-//   window.location.href = "http://www.google.com";
-// }
-
-// cancel.addEventListener("click", checkAgeCancel);
-
 // Звук утки на кнопке
 
 const duckAudio = new Audio("./sounds/duck.mp3");
@@ -35,9 +6,9 @@ document.getElementById("duck-sound-onclick").addEventListener("click", () => {
   duckAudio.play();
 });
 
-// Скрытие внутренних ссылок
+// Скрытие внутренних ссылок нужен id секциям
 
-const headerLink = document.querySelectorAll(".header_nav-menu--links");
+const headerLink = document.querySelectorAll(".header_nav-list--links");
 for (const link of headerLink) {
   link.addEventListener("click", function (event) {
     event.preventDefault();
@@ -49,7 +20,7 @@ for (const link of headerLink) {
   });
 }
 
-// google api maps
+// Google api maps
 
 function initMap() {
   const destination = { lat: 47.0146631, lng: 28.8558081 };
@@ -100,8 +71,42 @@ var swiper = new Swiper(".artSwiper", {
   },
 });
 
+// ART MOBILE
+
+var swiper = new Swiper(".artSwiperMobile", {
+  pagination: {
+    el: ".swiper-pagination",
+    dynamicBullets: true,
+  },
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+  },
+});
+
 // FANCYBOX
 
 Fancybox.bind("[data-fancybox='gallery']", {
   zoom: true,
+});
+
+// список в FAQ
+
+const faqEl = document.querySelectorAll(".about_faq");
+
+faqEl.forEach((faq) => {
+  faq.addEventListener("click", () => {
+    const answrEl = faq.querySelector(".about_answr");
+    const arrowEl = faq.querySelector(".about_box-img");
+    answrEl.classList.toggle("active");
+    arrowEl.classList.toggle("active");
+  });
+});
+
+// бургер
+
+const hamMenuEl = document.querySelector(".ham_menu");
+
+hamMenuEl.addEventListener("click", () => {
+  hamMenuEl.classList.toggle("active");
 });
