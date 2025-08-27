@@ -16,49 +16,6 @@
       gtag("js", new Date());
       gtag("config", "G-L0J29744YQ", { cookie_flags: "SameSite=None; Secure" });
     </script>
-    <!-- Yandex.Metrika counter -->
-    <script type="text/javascript">
-      (function (m, e, t, r, i, k, a) {
-        m[i] =
-          m[i] ||
-          function () {
-            (m[i].a = m[i].a || []).push(arguments);
-          };
-        m[i].l = 1 * new Date();
-        for (var j = 0; j < document.scripts.length; j++) {
-          if (document.scripts[j].src === r) {
-            return;
-          }
-        }
-        (k = e.createElement(t)),
-          (a = e.getElementsByTagName(t)[0]),
-          (k.async = 1),
-          (k.src = r),
-          a.parentNode.insertBefore(k, a);
-      })(
-        window,
-        document,
-        "script",
-        "https://mc.yandex.ru/metrika/tag.js",
-        "ym"
-      );
-
-      ym(97777745, "init", {
-        clickmap: true,
-        trackLinks: true,
-        accurateTrackBounce: true,
-        webvisor: true,
-      });
-    </script>
-    <noscript
-      ><div>
-        <img
-          src="https://mc.yandex.ru/watch/97777745"
-          style="position: absolute; left: -9999px"
-          alt=""
-        /></div
-    ></noscript>
-    <!-- /Yandex.Metrika counter -->
     <!-- CANONICAL LINK -->
     <link rel="canonical" href="https://www.trinkotattoo.ink/" />
     <!-- GENERAL METAGRAPH -->
@@ -68,7 +25,7 @@
       content="Лучший тату салон в Кишиневе - TrinkoTattoo"
     />
     <meta property="og:url" content="https://www.trinkotattoo.ink" />
-    <meta property="og:image" content="./icons/logo.webp" />
+    <meta property="og:image" content="./icons/icon.png" />
     <meta
       property="og:description"
       content="Лучший тату салон в Кишиневе - TrinkoTattoo. Профессиональные мастера, качественные материалы, татуировки любого размера и сложности. Запишитесь на сеанс прямо сейчас!"
@@ -88,7 +45,7 @@
       property="twitter:title"
       content="Лучший тату салон в Кишиневе - TrinkoTattoo"
     />
-    <meta name="twitter:image" content="./icons/logo.webp" />
+    <meta name="twitter:image" content="./icons/icon.png" />
     <meta
       property="twitter:description"
       content="Лучший тату салон в Кишиневе - TrinkoTattoo. Профессиональные мастера, качественные материалы, татуировки любого размера и сложности. Запишитесь на сеанс прямо сейчас!"
@@ -107,27 +64,11 @@
     <link
       rel="icon"
       type="image/png"
-      sizes="32x32"
-      href="./icons/favicon-32x32.png"
+      sizes="96x96"
+      href="./icons/favicon-96x96.png"
     />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./icons/favicon-16x16.png"
-    />
-    <link rel="manifest" href="./icons/site.webmanifest" />
-    <link rel="icon" href="./favicon.ico" />
-    <!-- Подключение mask icon -->
-    <link
-      rel="mask-icon"
-      href="./icons/safari-pinned-tab.svg"
-      color="#5bbad5"
-    />
-    <!-- FOR MS APP -->
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" />
-    <meta name="msapplication-config" content="./icons/browserconfig.xml" />
+    <link rel="manifest" href="./icons/manifest.json" />
+    <link rel="icon" href="./icons/favicon.ico" />
     <!-- LEAFLET -->
     <link
       rel="stylesheet"
@@ -151,10 +92,7 @@
     <script defer src="./js/portfolio-mobile.js"></script>
     <script defer src="./js/swiper-nav.js"></script>
     <!-- MY SCRIPTS -->
-    <script defer src="./js/modal.js"></script>
-    <script defer src="./js/checkage.js"></script>
     <script defer src="./js/duck.js"></script>
-    <script defer src="./js/promo.js"></script>
     <script defer src="./js/sectionhref.js"></script>
     <!-- MY STYLES -->
     <link rel="stylesheet" href="./css/reset.css" />
@@ -171,7 +109,8 @@
             <div class="social_nav-contacts">
               <a
                 class="social_nav-contacts--links"
-                href="https://t.me/Trinkonfox"
+                href="https://t.me/TrinkoTattoo"
+                rel="noopener noreferrer"
                 target="_blank"
                 ><svg
                   width="24px"
@@ -201,12 +140,13 @@
                     ></path>
                   </g>
                 </svg>
-                <span class="social_nav-contacts--span">+373 60 833 389</span>
+                <span class="social_nav-contacts--span">+373 79 146 506</span>
               </a>
               <a
                 class="social_nav-contacts--links social_nav-contacts-nolocation--425px"
-                href="https://maps.app.goo.gl/AQCTQYeW79ZsMuM29"
+                href="https://www.google.com/maps/dir/46.9958656,28.8456704/''/@46.995836,28.7632699,12z/data=!4m9!4m8!1m1!4e1!1m5!1m1!1s0x40c97dfa3f2aeca3:0x506cbca590704cdd!2m2!1d28.8557773!2d47.0147268?entry=ttu&g_ep=EgoyMDI1MDgxMy4wIKXMDSoASAFQAw%3D%3D"
                 target="_blank"
+                rel="noopener noreferrer"
                 ><svg
                   width="24px"
                   height="24px"
@@ -246,6 +186,7 @@
               <a
                 class="social_nav-contacts--links social_nav-contacts-location--425px"
                 href="https://maps.app.goo.gl/AQCTQYeW79ZsMuM29"
+                rel="noopener noreferrer"
                 target="_blank"
                 ><svg
                   width="24px"
@@ -288,8 +229,9 @@
               </a>
               <a
                 class="social_nav-contacts--links"
-                href="https://t.me/Trinkonfox"
+                href="https://t.me/TrinkoTattoo"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <svg
                   width="24px"
@@ -315,6 +257,7 @@
                 class="social_nav-contacts--links"
                 href="https://www.instagram.com/trinko_tattoo/"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <svg
                   width="24px"
@@ -350,7 +293,8 @@
             <div class="social_nav-social">
               <a
                 class="social_nav-social--links"
-                href="https://t.me/Trinkonfox"
+                href="https://t.me/TrinkoTattoo"
+                rel="noopener noreferrer"
                 target="_blank"
                 ><svg
                   width="24px"
@@ -375,6 +319,7 @@
                 class="social_nav-social--links"
                 href="https://www.instagram.com/trinko_tattoo/"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <svg
                   width="24px"
@@ -407,8 +352,9 @@
               </a>
               <a
                 class="social_nav-social--links"
-                href="viber://chat?number=%2B37360833389"
+                href="viber://chat?number=%2B37379146506"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <svg
                   width="24px"
@@ -445,8 +391,9 @@
               </a>
               <a
                 class="social_nav-social--links"
-                href="https://wa.me/60833389"
+                href="https://wa.me/79146506"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <svg
                   fill="#ffffff"
@@ -478,7 +425,7 @@
           <div class="header_nav-logo">
             <img
               class="header_nav-logo--img"
-              src="./icons/logo.webp"
+              src="./icons/icon.png"
               alt="TrinkoTattoo"
             />
           </div>
@@ -595,262 +542,712 @@
       <div class="swiper swiper-presentation">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <div class="swiper-slide-presentation">
-              <div
-                class="swiper_presentation-wrapper swiper_presentation-bg--1"
-                style="background-image: url(./img/presentation-1.webp)"
-              >
-                <h1 class="swiper_presentation-title">
-                  Профессиональный тату салон в Кишиневе: TrinkoTattoo
-                </h1>
+            <div
+              class="slide-content"
+              style="background-image: url('./img/presentation-1.webp')"
+            >
+              <div class="slide-overlay"></div>
+              <div class="slide-text">
+                <h2 class="slide-title">
+                  Профессиональный тату салон в Кишиневе
+                </h2>
+                <p class="slide-subtitle">
+                  TrinkoTattoo — искусство на вашей коже
+                </p>
+                <a
+                  href="https://t.me/TrinkoTattoo"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  class="slide-button"
+                  >Записаться на консультацию</a
+                >
               </div>
             </div>
           </div>
+
           <div class="swiper-slide">
-            <div class="swiper-slide-presentation">
-              <div
-                class="swiper_presentation-wrapper swiper_presentation-bg--2"
-                style="background-image: url(./img/presentation-2.webp)"
-              >
-                <h2 class="swiper_presentation-title--2">
-                  Художественная татуировка в любом стиле и размере, выполненная
-                  профессионалом в Молдове
+            <div
+              class="slide-content"
+              style="background-image: url('./img/presentation-2.webp')"
+            >
+              <div class="slide-overlay"></div>
+              <div class="slide-text">
+                <h2 class="slide-title">
+                  Художественная татуировка в любом стиле
                 </h2>
+                <p class="slide-subtitle">
+                  Индивидуальный подход к каждому клиенту
+                </p>
+                <a href="#portfolio" class="slide-button">Посмотреть работы</a>
               </div>
             </div>
           </div>
+
           <div class="swiper-slide">
-            <div class="swiper-slide-presentation">
-              <div
-                class="swiper_presentation-wrapper swiper_presentation-bg--3"
-                style="background-image: url(./img/presentation-3.webp)"
-              >
-                <h2 class="swiper_presentation-title--3">
-                  Индивидуальные эскизы и запись на сеанс по вашим
-                  предпочтениям, без очередей
+            <div
+              class="slide-content"
+              style="background-image: url('./img/presentation-3.webp')"
+            >
+              <div class="slide-overlay"></div>
+              <div class="slide-text">
+                <h2 class="slide-title">
+                  Индивидуальные эскизы по вашим предпочтениям
                 </h2>
+                <p class="slide-subtitle">Без очередей, только по записи</p>
+                <a
+                  href="https://t.me/TrinkoTattoo"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  class="slide-button"
+                  class="slide-button"
+                  >Оставить заявку</a
+                >
               </div>
             </div>
           </div>
         </div>
-        <div class="swiper-button-next presentation-btn-next">
+
+        <div class="swiper-button-next">
           <svg
-            fill="#000000"
-            width="24px"
-            height="24px"
+            width="24"
+            height="24"
             viewBox="0 0 24 24"
+            fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            stroke="#f24342"
           >
-            <g stroke-width="0"></g>
-            <g stroke-linecap="round" stroke-linejoin="round"></g>
-            <g>
-              <path
-                d="M16.2928932,12 L13.1464466,8.85355339 C12.9511845,8.65829124 12.9511845,8.34170876 13.1464466,8.14644661 C13.3417088,7.95118446 13.6582912,7.95118446 13.8535534,8.14644661 L17.8535534,12.1464466 C18.0488155,12.3417088 18.0488155,12.6582912 17.8535534,12.8535534 L13.8535534,16.8535534 C13.6582912,17.0488155 13.3417088,17.0488155 13.1464466,16.8535534 C12.9511845,16.6582912 12.9511845,16.3417088 13.1464466,16.1464466 L16.2928932,13 L7.5,13 C7.22385763,13 7,12.7761424 7,12.5 C7,12.2238576 7.22385763,12 7.5,12 L16.2928932,12 Z M19.5,21 C20.3284271,21 21,20.3284271 21,19.5 L21,5.5 C21,4.67157288 20.3284271,4 19.4999725,4 L5.49305689,3.99922869 C4.66462977,3.99922869 3.99305689,4.67080157 3.99305689,5.49922869 L4.00000011,19.499807 C4.00031957,20.3280081 4.67179882,20.9992284 5.5,20.9992284 C5.50626743,20.9992284 10.1729341,20.9994856 19.5,21 Z M3.00000021,19.5002478 L2.99305708,5.50019301 C2.99305689,4.11851682 4.11234502,2.99922869 5.49308443,2.99922869 L19.5,3 C20.8807119,3 22,4.11928813 22,5.5 L22,19.5 C22,20.8807119 20.8807119,22 19.5,22 L5.5,22 C4.10278895,21.9822801 3.00052859,20.8700816 3.00000021,19.5002478 Z"
-              ></path>
-            </g>
+            <path
+              d="M9 18L15 12L9 6"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
           </svg>
         </div>
-        <div class="swiper-button-prev presentation-btn-prev">
+        <div class="swiper-button-prev">
           <svg
-            fill="#000000"
-            width="24px"
-            height="24px"
+            width="24"
+            height="24"
             viewBox="0 0 24 24"
+            fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            stroke="#f24342"
           >
-            <g stroke-width="0"></g>
-            <g stroke-linecap="round" stroke-linejoin="round"></g>
-            <g>
-              <path
-                d="M16.2928932,12 L13.1464466,8.85355339 C12.9511845,8.65829124 12.9511845,8.34170876 13.1464466,8.14644661 C13.3417088,7.95118446 13.6582912,7.95118446 13.8535534,8.14644661 L17.8535534,12.1464466 C18.0488155,12.3417088 18.0488155,12.6582912 17.8535534,12.8535534 L13.8535534,16.8535534 C13.6582912,17.0488155 13.3417088,17.0488155 13.1464466,16.8535534 C12.9511845,16.6582912 12.9511845,16.3417088 13.1464466,16.1464466 L16.2928932,13 L7.5,13 C7.22385763,13 7,12.7761424 7,12.5 C7,12.2238576 7.22385763,12 7.5,12 L16.2928932,12 Z M19.5,21 C20.3284271,21 21,20.3284271 21,19.5 L21,5.5 C21,4.67157288 20.3284271,4 19.4999725,4 L5.49305689,3.99922869 C4.66462977,3.99922869 3.99305689,4.67080157 3.99305689,5.49922869 L4.00000011,19.499807 C4.00031957,20.3280081 4.67179882,20.9992284 5.5,20.9992284 C5.50626743,20.9992284 10.1729341,20.9994856 19.5,21 Z M3.00000021,19.5002478 L2.99305708,5.50019301 C2.99305689,4.11851682 4.11234502,2.99922869 5.49308443,2.99922869 L19.5,3 C20.8807119,3 22,4.11928813 22,5.5 L22,19.5 C22,20.8807119 20.8807119,22 19.5,22 L5.5,22 C4.10278895,21.9822801 3.00052859,20.8700816 3.00000021,19.5002478 Z"
-              ></path>
-            </g>
+            <path
+              d="M15 18L9 12L15 6"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
           </svg>
         </div>
+
+        <div class="swiper-pagination"></div>
       </div>
     </section>
     <section class="about" id="about">
       <div class="container">
-        <div class="about_wrapper">
-          <div class="about_wrapper-content">
-            <h2 class="about_wrapper-content--title">
-              Я - тату мастер из Кишинёва с пятилетним стажем в области
-              татуировок. Моя работа для меня не просто профессия, это
-              искусство, воплощение идей и эмоций в уникальных образах на коже.
-            </h2>
-            <p class="about_wrapper-content--text">
-              Каждая татуировка - это возможность рассказать историю,
-              подчеркнуть индивидуальность, создать нечто поистине неповторимое.
-              В последнее время я все больше задумываюсь о значимости нашего
-              времени и того, как мы его используем. Каждая работа, которую я
-              делаю, отражает эту философию - она уникальна, продумана и создана
-              с любовью к деталям. Моя цель - не просто сделать красивую
-              татуировку, но и вложить в нее частичку моей души, чтобы она стала
-              частью жизни и вдохновляла своего обладателя каждый день. Спасибо,
-              что делитесь этим путешествием со мной.
-              <span class="about_wrapper-content--span"> С любовью, Яна</span>
-            </p>
-            <button class="about_wrapper-btn">Записаться</button>
+        <div class="about__wrapper">
+          <div class="about__content">
+            <div class="about__header">
+              <span class="about__subtitle">Мастер татуировки</span>
+              <h2 class="about__title">Тату-мастер из Кишинёва</h2>
+              <div class="about__experience">
+                <svg
+                  class="about__experience-icon"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M12 6V12L16 14"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <span>6 лет профессионального опыта</span>
+              </div>
+            </div>
+
+            <div class="about__text">
+              <p class="about__paragraph">
+                Для меня татуировка — это не просто работа, а настоящее
+                искусство, способ воплотить идеи и эмоции в уникальных образах
+                на коже. Каждая работа — это история, рассказанная через линии и
+                тени, отражение индивидуальности человека.
+              </p>
+
+              <p class="about__paragraph">
+                В своём творчестве я уделяю особое внимание философии времени —
+                тому, как мы его используем и что оставляем после себя. Каждая
+                татуировка создаётся с любовью к деталям, продумывается до
+                мелочей, чтобы стать не просто украшением, а частью жизненного
+                пути.
+              </p>
+
+              <blockquote class="about__quote">
+                "Моя цель — не просто сделать красивое тату, а вложить в него
+                частичку души, чтобы оно вдохновляло своего обладателя каждый
+                день"
+              </blockquote>
+            </div>
+
+            <a
+              href="https://t.me/TrinkoTattoo"
+              rel="noopener noreferrer"
+              target="_blank"
+              class="about__button"
+              >Записаться на консультацию</a
+            >
           </div>
         </div>
       </div>
     </section>
     <section class="price" id="price">
-      <h3 class="price_title">Прайс</h3>
-      <div class="price_wrapper">
-        <div class="price_wrapper-content">
-          <h2 class="price_wrapper-content--title">Татуировки в Кишиневе:</h2>
-          <ul class="price_wrapper-content--list">
-            <li class="price_wrapper-content--item">
-              Черная татуировка: от 300 лей
-            </li>
-            <li class="price_wrapper-content--item">
-              Черная татуировка с цветным контуром: от 400 лей
-            </li>
-            <li class="price_wrapper-content--item">
-              Цветная татуировка с закрасом: от 600 лей
-            </li>
-          </ul>
-          <h2 class="price_wrapper-content--title">
-            Перманентный макияж в Кишиневе:
-          </h2>
-          <ul class="price_wrapper-content--list">
-            <li class="price_wrapper-content--item">
-              Брови пудровый эффект: 600 лей
-            </li>
-            <li class="price_wrapper-content--item">
-              Стрелки любая техника: 600 лей
-            </li>
-            <li class="price_wrapper-content--item">
-              Губы любая техника: 600 лей
-            </li>
-          </ul>
-          <h3 class="price_wrapper-content--title">
-            Дополнительно включено в стоимость:
-          </h3>
-          <ul class="price_wrapper-content--list">
-            <li class="price_wrapper-content--item">
-              В стоимость включена работа, даже если требуется более одного
-              сеанса, это для сложных и больших работ.
-            </li>
-            <li class="price_wrapper-content--item">
-              Используем обезболивающее при необходимости, чтобы обеспечить
-              комфорт клиента во время процедуры.
-            </li>
-          </ul>
+      <div class="container">
+        <h2 class="price__title">Наши цены</h2>
+
+        <div class="price__grid">
+          <div class="price__content">
+            <div class="price__category">
+              <h3 class="price__category-title">Татуировки в Кишиневе</h3>
+              <ul class="price__list">
+                <li class="price__item">
+                  <span class="price__service">Черная татуировка</span>
+                  <span class="price__value">от 400 лей</span>
+                </li>
+                <li class="price__item">
+                  <span class="price__service">Тату 10 см диапазон</span>
+                  <span class="price__value">600 – 1500 лей</span>
+                </li>
+                <li class="price__item">
+                  <span class="price__service">Тату браслет</span>
+                  <span class="price__value">от 900 лей</span>
+                </li>
+                <li class="price__item">
+                  <span class="price__service">Перекрытие тату</span>
+                  <span class="price__value">от 700 лей</span>
+                </li>
+                <li class="price__item">
+                  <span class="price__service"
+                    >Черная татуировка с цветным контуром</span
+                  >
+                  <span class="price__value">от 500 лей</span>
+                </li>
+                <li class="price__item">
+                  <span class="price__service"
+                    >Цветная татуировка с закрасом</span
+                  >
+                  <span class="price__value">от 700 лей</span>
+                </li>
+                <li class="price__item price__item--highlight">
+                  <span class="price__service">Тату всего рукава</span>
+                  <span class="price__value">от 15 000 лей</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="price__category">
+              <h3 class="price__category-title">Перманентный макияж</h3>
+              <ul class="price__list">
+                <li class="price__item">
+                  <span class="price__service">Брови пудровый эффект</span>
+                  <span class="price__value">900 лей</span>
+                </li>
+                <li class="price__item">
+                  <span class="price__service">Стрелки (любая техника)</span>
+                  <span class="price__value">900 лей</span>
+                </li>
+                <li class="price__item">
+                  <span class="price__service">Губы (любая техника)</span>
+                  <span class="price__value">900 лей</span>
+                </li>
+                <li class="price__item">
+                  <span class="price__service">Коррекция перманента</span>
+                  <span class="price__value">700 лей</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="price__info">
+              <h4 class="price__info-title">Что включено в стоимость:</h4>
+              <ul class="price__benefits">
+                <li class="price__benefit">
+                  Работа включена, даже если требуется несколько сеансов
+                </li>
+                <li class="price__benefit">
+                  Бесплатное обезболивание для вашего комфорта
+                </li>
+                <li class="price__benefit">
+                  Профессиональные материалы и пигменты
+                </li>
+                <li class="price__benefit">
+                  Консультация и уход после процедуры
+                </li>
+              </ul>
+            </div>
+
+            <a
+              href="https://t.me/TrinkoTattoo"
+              rel="noopener noreferrer"
+              target="_blank"
+              class="course__button"
+              >Записаться на тату</a
+            >
+          </div>
+
+          <div class="price__image">
+            <img
+              src="./img/price-bg.webp"
+              alt="Примеры наших работ"
+              class="price__img"
+            />
+          </div>
         </div>
-        <div
-          class="price_wrapper-bg"
-          style="background-image: url(./img/price-bg.webp)"
-        ></div>
       </div>
     </section>
     <section class="course" id="course">
-      <div class="course_wrapper">
-        <div
-          class="course_wrapper-bg"
-          style="background-image: url(./img/course-img.webp)"
-        ></div>
-        <div class="course_wrapper-content">
-          <h2 class="course_wrapper-content--title">Курсы тату в Кишиневе!</h2>
-          <ul class="course_wrapper-content--list">
-            <li class="course_wrapper-content--item">
-              Присоединяйтесь к нашим курсам тату в Кишиневе и станьте
-              профессионалом в мире татуирования! Обучение всестороннее за 400
-              евро. Курс включает один день теории и шесть дней интенсивной
-              практики.
-            </li>
-            <li class="course_wrapper-content--item">
-              Изучите все аспекты татуировки: от контура до теней с закрасом в
-              различных стилях.
-            </li>
-            <li class="course_wrapper-content--item">
-              Предоставляем все необходимое оборудование и расходные материалы.
-              Вы также научитесь правильному уходу за оборудованием и
-              стерилизации инструментов.
-            </li>
-            <li class="course_wrapper-content--item">
-              Начните свой захватывающий путь в мире татуировки прямо сейчас!
-            </li>
-          </ul>
+      <div class="container">
+        <div class="course__grid">
+          <div class="course__image">
+            <img
+              src="./img/course-img.webp"
+              alt="Обучение татуировке"
+              class="course__img"
+            />
+          </div>
+
+          <div class="course__content">
+            <h2 class="course__title">Курсы тату в Кишинёве</h2>
+
+            <div class="course__highlights">
+              <div class="course__highlight">
+                <span class="course__highlight-label">Стоимость:</span>
+                <span class="course__highlight-value">450 €</span>
+              </div>
+              <div class="course__highlight">
+                <span class="course__highlight-label">Длительность:</span>
+                <span class="course__highlight-value">7 дней</span>
+              </div>
+            </div>
+
+            <p class="course__description">
+              Курс создан специально для начинающих, которые хотят освоить
+              профессию тату-мастера с нуля.
+            </p>
+
+            <div class="course__program">
+              <div class="course__day">
+                <h3 class="course__day-title">1-й день: Теория</h3>
+                <ul class="course__day-list">
+                  <li class="course__day-item">Правила ухода и стерилизации</li>
+                  <li class="course__day-item">Настройка оборудования</li>
+                  <li class="course__day-item">
+                    Основы работы с инструментами
+                  </li>
+                  <li class="course__day-item">Техника безопасности</li>
+                </ul>
+              </div>
+
+              <div class="course__day">
+                <h3 class="course__day-title">2-7 дни: Практика</h3>
+                <ul class="course__day-list">
+                  <li class="course__day-item">Отработка контуров</li>
+                  <li class="course__day-item">Техника теней и закраски</li>
+                  <li class="course__day-item">Работа с цветом</li>
+                  <li class="course__day-item">Практика на реальных моделях</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="course__benefits">
+              <h3 class="course__benefits-title">Что вы получите:</h3>
+              <ul class="course__benefits-list">
+                <li class="course__benefits-item">
+                  <svg
+                    class="course__benefits-icon"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M20 6L9 17L4 12"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  Все необходимые материалы и оборудование
+                </li>
+                <li class="course__benefits-item">
+                  <svg
+                    class="course__benefits-icon"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M20 6L9 17L4 12"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  Поддержку наставника после курса
+                </li>
+                <li class="course__benefits-item">
+                  <svg
+                    class="course__benefits-icon"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M20 6L9 17L4 12"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  Обучающий журнал с конспектами
+                </li>
+                <li class="course__benefits-item">
+                  <svg
+                    class="course__benefits-icon"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M20 6L9 17L4 12"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  Международный диплом на 2-х языках
+                </li>
+              </ul>
+            </div>
+
+            <a
+              href="https://t.me/TrinkoTattoo"
+              rel="noopener noreferrer"
+              target="_blank"
+              class="course__button"
+              >Записаться на курс</a
+            >
+          </div>
         </div>
       </div>
     </section>
-    <section class="correction">
-      <div class="correction_wrapper">
-        <div class="correction_wrapper-content">
-          <h2 class="correction_wrapper-content--title">
-            Удаление татуировок в Кишиневе
-          </h2>
-          <p class="correction_wrapper-content--text">
-            Специализируюсь на коррекции, обновлении и исправлении татуировок,
-            включая неудачные работы, а также скрытие шрамов и физических
-            дефектов.
-          </p>
-          <p class="correction_wrapper-content--text">
-            Мой индивидуальный подход к каждой работе позволяет создавать
-            уникальные эскизы, учитывая особенности клиента и его желания, чтобы
-            достичь наилучшего результата и помочь каждому человеку
-            почувствовать себя уверенно и комфортно в своей коже.
-          </p>
+    <section class="correction" id="correction">
+      <div class="container">
+        <div class="correction__grid">
+          <div class="correction__content">
+            <h2 class="correction__title">
+              <span class="correction__title-highlight">Удаление</span>
+              и коррекция татуировок в Кишиневе
+            </h2>
+
+            <div class="correction__features">
+              <div class="correction__feature">
+                <svg
+                  class="correction__feature-icon"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 13L9 17L19 7"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <span>Коррекция и обновление старых тату</span>
+              </div>
+
+              <div class="correction__feature">
+                <svg
+                  class="correction__feature-icon"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 13L9 17L19 7"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <span>Исправление неудачных работ</span>
+              </div>
+
+              <div class="correction__feature">
+                <svg
+                  class="correction__feature-icon"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 13L9 17L19 7"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <span>Маскировка шрамов и дефектов кожи</span>
+              </div>
+            </div>
+
+            <p class="correction__text">
+              Специализируюсь на коррекции, обновлении и исправлении татуировок,
+              включая неудачные работы, а также скрытие шрамов и физических
+              дефектов.
+            </p>
+
+            <p class="correction__text">
+              Мой индивидуальный подход к каждой работе позволяет создавать
+              уникальные эскизы, учитывая особенности клиента и его желания,
+              чтобы достичь наилучшего результата.
+            </p>
+
+            <a
+              href="https://t.me/TrinkoTattoo"
+              rel="noopener noreferrer"
+              target="_blank"
+              class="correction__button"
+              >Записаться на консультацию</a
+            >
+          </div>
+
+          <div class="correction__image">
+            <div class="correction__image-wrapper">
+              <img
+                src="./img/correction-bg.webp"
+                alt="Пример коррекции татуировки"
+                class="correction__img"
+              />
+              <div class="correction__image-badge">До/После</div>
+            </div>
+          </div>
         </div>
-        <div
-          class="correction_wrapper-bg"
-          style="background-image: url(./img/correction-bg.webp)"
-        ></div>
       </div>
     </section>
 
-    <section class="location">
+    <section class="location" id="location">
       <div class="container">
-        <div class="location_wrapper">
-          <div class="location_content">
-            <h3 class="location_title">Тату салон в Кишиневе на карте</h3>
-            <p class="location_text">
-              Ищете лучший тату салон в Кишиневе? Посетите Trinkotattoo,
-              расположенный в самом центре города.
-            </p>
-            <p class="location_text">
-              Наши мастера обладают многолетним опытом и готовы воплотить любые
-              ваши идеи в реальность. Используйте карту ниже, чтобы найти нас
-              легко и быстро.
-            </p>
-            <h3 class="location_title">Почему стоит выбрать Trinkotattoo?</h3>
-            <ul class="location_list">
-              <li class="location_list-item">
-                <p class="location_list-text">
+        <div class="location__header">
+          <h2 class="location__main-title">Наш тату салон в Кишиневе</h2>
+          <p class="location__slogan">
+            Искусство, которое останется с вами навсегда
+          </p>
+        </div>
+
+        <div class="location__grid">
+          <div class="location__info">
+            <div class="location__card">
+              <h3 class="location__title">Лучший тату-салон Trinkotattoo</h3>
+              <p class="location__text">
+                Мы расположены в самом сердце Кишинева, в ТЦ "Атриум". Наши
+                мастера обладают многолетним опытом и готовы воплотить любые
+                ваши идеи в уникальные татуировки.
+              </p>
+
+              <div class="location__features">
+                <div class="location__feature">
+                  <svg
+                    class="location__feature-icon"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M12 8V12L15 15"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <span>Ежедневно с 10:00 до 20:00</span>
+                </div>
+
+                <p class="location__cta-text">
+                  Работаем только по предварительной записи.
+                </p>
+
+                <div class="location__feature">
+                  <svg
+                    class="location__feature-icon"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <span>ТЦ "Атриум", ул. Албишоара 4</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="location__advantages">
+              <h3 class="location__title">Почему выбирают Trinkotattoo?</h3>
+              <ul class="location__list">
+                <li class="location__list-item">
+                  <svg
+                    class="location__list-icon"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M20 6L9 17L4 12"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
                   Профессиональные мастера с многолетним опытом
-                </p>
-              </li>
-              <li class="location_list-item">
-                <p class="location_list-text">
+                </li>
+                <li class="location__list-item">
+                  <svg
+                    class="location__list-icon"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M20 6L9 17L4 12"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
                   Современное оборудование и безопасные материалы
-                </p>
-              </li>
-              <li class="location_list-item">
-                <p class="location_list-text">
-                  Удобное расположение в центре Кишинева
-                </p>
-              </li>
-              <li class="location_list-item">
-                <p class="location_list-text">
+                </li>
+                <li class="location__list-item">
+                  <svg
+                    class="location__list-icon"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M20 6L9 17L4 12"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  Удобное расположение в центре города
+                </li>
+                <li class="location__list-item">
+                  <svg
+                    class="location__list-icon"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M20 6L9 17L4 12"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
                   Индивидуальный подход к каждому клиенту
-                </p>
-              </li>
-            </ul>
+                </li>
+              </ul>
+            </div>
+
+            <div class="location__cta">
+              <p class="location__cta-text">
+                Работаем только по предварительной записи.
+              </p>
+              <a
+                href="https://t.me/TrinkoTattoo"
+                rel="noopener noreferrer"
+                target="_blank"
+                class="location__button"
+                >Записаться на консультацию</a
+              >
+            </div>
           </div>
-          <div id="map"></div>
-          <div class="location_address">
-            <p class="location_text">
-              Наш адрес: ТЦ Атриум, ул. Албишоара 4, Кишинев
-            </p>
-            <p class="location_text">
-              Мы всегда рады новым клиентам и готовы предложить вам лучшие
-              условия для создания вашего уникального тату. Не откладывайте,
-              запишитесь на консультацию прямо сейчас!
-            </p>
+
+          <div class="location__map-container">
+            <div id="map" class="location__map"></div>
           </div>
         </div>
       </div>
@@ -1366,24 +1763,11 @@
     <footer class="footer" id="footer">
       <div class="container">
         <div class="footer_content">
-          <div class="footer_content-wrapper">
-            <a
-              class="footer_content-wrapper--copyrights"
-              href="./termsandconditions.html"
-              target="_blank"
-              >Terms & Conditions</a
-            >
-            <a
-              class="footer_content-wrapper--privacy"
-              href="./privacypolicy.html"
-              target="_blank"
-              >Privacy Policy</a
-            >
-          </div>
           <div class="footer_content-social">
             <a
               class="social_footer-social--links"
-              href="https://t.me/Trinkonfox"
+              href="https://t.me/TrinkoTattoo"
+              rel="noopener noreferrer"
               target="_blank"
               ><svg
                 width="24px"
@@ -1407,6 +1791,7 @@
             <a
               class="social_footer-social--links"
               href="https://www.instagram.com/trinko_tattoo/"
+              rel="noopener noreferrer"
               target="_blank"
             >
               <svg
@@ -1440,8 +1825,9 @@
             </a>
             <a
               class="social_footer-social--links"
-              href="viber://chat?number=%2B37360833389"
+              href="viber://chat?number=%2B37379146506"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <svg
                 width="24px"
@@ -1478,7 +1864,8 @@
             </a>
             <a
               class="social_footer-social--links"
-              href="https://wa.me/60833389"
+              href="https://wa.me/79146506"
+              rel="noopener noreferrer"
               target="_blank"
             >
               <svg
@@ -1501,91 +1888,10 @@
               </svg>
             </a>
           </div>
-          <p class="footer_copyrights">© 2024 TrinkoTattoo</p>
+          <p class="footer_copyrights">© 2025 TrinkoTattoo</p>
         </div>
       </div>
     </footer>
-    <div class="popup">
-      <form action="#" class="popup_form">
-        <button class="popup_form-close">
-          <svg
-            width="24px"
-            height="24px"
-            viewBox="-0.5 0 25 25"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g stroke-width="0"></g>
-            <g stroke-linecap="round" stroke-linejoin="round"></g>
-            <g>
-              <path
-                d="M3 21.32L21 3.32001"
-                stroke="#000000"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></path>
-              <path
-                d="M3 3.32001L21 21.32"
-                stroke="#000000"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></path>
-            </g>
-          </svg>
-        </button>
-        <h2 class="popup_form-title">Записаться</h2>
-        <div class="popup_form-wrapper">
-          <div class="popup_form-wrapper--item">
-            <label class="popup_form-wrapper--name" for="name">Имя*</label>
-            <input
-              class="popup_form-wrapper--input"
-              type="text"
-              id="name"
-              placeholder="Введите ваше имя*"
-            />
-          </div>
-          <div class="popup_form-wrapper--item">
-            <label class="popup_form-wrapper--tel" for="tel"
-              >Номер телефона*</label
-            >
-            <input
-              class="popup_form-wrapper--input"
-              type="text"
-              id="tel"
-              placeholder="Введите ваш номер телефона*"
-            />
-          </div>
-
-          <a
-            class="popup_form-submit popup_form-submit-link"
-            href="https://t.me/Trinkonfox"
-            target="_blank"
-            >Записаться</a
-          >
-        </div>
-      </form>
-    </div>
-    <div class="popup_overlay"></div>
-    <div class="checkage">
-      <div class="checkage_wrapper">
-        <div class="checkage_wrapper-logo">
-          <img
-            class="checkage_wrapper-logo--img"
-            src="./icons/logo.webp"
-            alt="TrinkoTattoo"
-          />
-        </div>
-        <div class="checkage_wrapper-content">
-          <p class="checkage_wrapper-content--text">Вам исплонилось 18 ?</p>
-          <div class="checkage_wrapper-btn">
-            <button class="checkage_wrapper-btn--confirm">Да</button>
-            <button class="checkage_wrapper-btn--cancel">Нет</button>
-          </div>
-        </div>
-      </div>
-    </div>
     <a href="#social" class="link-scroll-top"
       ><svg
         width="36px"
@@ -1607,41 +1913,5 @@
         </g>
       </svg>
     </a>
-    <div class="checkage_overlay"></div>
-    <div class="promo">
-      <div class="promo_wrapper">
-        <button class="promo_wrapper-btn--close">
-          <svg
-            width="32px"
-            height="32px"
-            viewBox="0 0 1024 1024"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="#000000"
-          >
-            <g stroke-width="0"></g>
-            <g stroke-linecap="round" stroke-linejoin="round"></g>
-            <g>
-              <path
-                fill="#000000"
-                d="M764.288 214.592 512 466.88 259.712 214.592a31.936 31.936 0 0 0-45.12 45.12L466.752 512 214.528 764.224a31.936 31.936 0 1 0 45.12 45.184L512 557.184l252.288 252.288a31.936 31.936 0 0 0 45.12-45.12L557.12 512.064l252.288-252.352a31.936 31.936 0 1 0-45.12-45.184z"
-              ></path>
-            </g>
-          </svg>
-        </button>
-        <h3 class="promo_wrapper-title">Поздравляю, ты - настоящий кликер!</h3>
-        <p class="promo_wrapper-price">
-          В награду, вот промокод на татуировку со скидкой 15%!
-          <span class="promo_wrapper-price--span">duck15</span> Чтобы
-          активировать его, просто напиши мне в Директ промокод.
-        </p>
-        <a
-          class="promo_wrapper-link--accept"
-          href="https://t.me/Trinkonfox"
-          target="_blank"
-          >Получить</a
-        >
-      </div>
-    </div>
-    <div class="promo_overlay"></div>
   </body>
 </html>

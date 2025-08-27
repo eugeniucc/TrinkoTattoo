@@ -1,120 +1,205 @@
 @import "../scss/mixins/mixins";
 @import "../scss/variables/variables";
 
-// SWIPER PRESENTATION
+.presentation {
+  position: relative;
+  height: 100vh;
+  max-height: 800px;
+  overflow: hidden;
 
-.swiper_presentation-wrapper {
-  height: 50rem;
-}
-.swiper_presentation-title {
-  @include font-montserrat-presentation;
-  color: $white;
-  font-size: 4.4rem;
-  font-weight: 700;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  z-index: 1;
-  &::after {
+  .swiper-presentation {
+    height: 100%;
+    width: 100%;
+  }
+
+  .swiper-slide {
+    position: relative;
+  }
+
+  .slide-content {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .slide-overlay {
     position: absolute;
-    content: "";
-    width: 120%;
-    height: 120%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      135deg,
+      rgba($black, 0.6) 0%,
+      rgba($brick, 0.3) 100%
+    );
+    z-index: 1;
+  }
+
+  .slide-text {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 0 2rem;
+    max-width: 1200px;
+    color: $white;
+  }
+
+  .slide-title {
+    @include font-montserrat-title;
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 2rem;
+    text-shadow: 0 2px 4px rgba($black, 0.5);
+    animation: fadeInUp 0.8s ease;
+  }
+
+  .slide-subtitle {
+    @include font-montserrat-text;
+    font-size: clamp(1.6rem, 2.5vw, 2.4rem);
+    margin-bottom: 3rem;
+    opacity: 0.9;
+    text-shadow: 0 1px 2px rgba($black, 0.5);
+    animation: fadeInUp 0.8s ease 0.2s forwards;
+    opacity: 0;
+  }
+
+  .slide-button {
+    @include font-montserrat-btn;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
     background-color: $brick;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-    opacity: 0.5;
-  }
-  &--2 {
-    @include font-montserrat-title;
     color: $white;
-    font-size: 4rem;
-    font-weight: 700;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+    border: none;
+    padding: 1.5rem 3.5rem;
+    font-size: 1.6rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
     z-index: 1;
-    &::after {
-      position: absolute;
-      content: "";
-      width: 120%;
-      height: 120%;
-      background-color: $brick;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      z-index: -1;
-      opacity: 0.7;
+    animation: fadeInUp 0.8s ease 0.4s forwards;
+    opacity: 0;
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba($brick, 0.4);
+
+      &::before {
+        left: 0;
+      }
     }
   }
-  &--3 {
-    @include font-montserrat-title;
-    color: $white;
-    font-size: 4rem;
-    font-weight: 700;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    z-index: 1;
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 5rem;
+    height: 5rem;
+    background: rgba($white, 0.1);
+    backdrop-filter: blur(5px);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+
     &::after {
-      position: absolute;
-      content: "";
-      width: 120%;
-      height: 120%;
-      background-color: $brick;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      z-index: -1;
-      opacity: 0.7;
+      display: none;
+    }
+
+    svg {
+      width: 2.4rem;
+      height: 2.4rem;
+      color: $white;
+    }
+
+    &:hover {
+      background: rgba($brick, 0.7);
+      transform: scale(1.1);
     }
   }
-  text-shadow: 0 0 2px rgba(0, 0, 0, 1);
-  &--2,
-  &--3 {
-    text-shadow: 0 0 2px rgba(0, 0, 0, 1);
+
+  .swiper-pagination {
+    bottom: 3rem !important;
+
+    .swiper-pagination-bullet {
+      width: 1.2rem;
+      height: 1.2rem;
+      background: $white;
+      opacity: 0.5;
+      transition: all 0.3s ease;
+
+      &-active {
+        background: $brick;
+        opacity: 1;
+        transform: scale(1.2);
+      }
+    }
   }
-}
-.presentation-btn-next {
-  width: 4.5rem;
-  height: 4.5rem;
-  &::after {
-    content: "";
-  }
-}
-.presentation-btn-prev {
-  width: 4.5rem;
-  height: 4.5rem;
-  &::after {
-    content: "";
-  }
-  transform: rotate(180deg);
-}
-.swiper_presentation-wrapper {
-  background-repeat: no-repeat;
-  background-size: 100%;
-}
-.swiper_presentation-bg--1 {
-  background-position-y: -70rem;
-}
-.swiper_presentation-bg--2 {
-  background-position-y: -10rem;
-}
-.swiper_presentation-bg--3 {
-  background-position-y: -20rem;
 }
 
-.lazy-bg {
-  min-height: 200px;
-  background-color: #f0f0f0;
-  background-size: cover;
-  background-position: center;
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .presentation {
+    max-height: 600px;
+
+    .slide-title {
+      font-size: 2.8rem;
+    }
+
+    .slide-subtitle {
+      font-size: 1.8rem;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      width: 4rem;
+      height: 4rem;
+
+      svg {
+        width: 2rem;
+        height: 2rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .presentation {
+    .swiper-button-next,
+    .swiper-button-prev {
+      top: auto !important;
+      bottom: 1rem;
+      z-index: 10;
+    }
+
+    .swiper-button-prev {
+      left: 1rem !important;
+    }
+
+    .swiper-button-next {
+      left: 6rem !important;
+      right: auto !important;
+    }
+
+    .swiper-pagination {
+      bottom: 6.5rem !important;
+    }
+  }
 }

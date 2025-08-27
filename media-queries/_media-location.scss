@@ -1,12 +1,6 @@
 @import "../scss/mixins/mixins";
 @import "../scss/variables/variables";
 
-@media (max-width: 1365px) {
-  #map {
-    width: 92%;
-  }
-}
-
 @media (max-width: $breakpoint-lg) {
   .location {
     padding-bottom: 5rem;

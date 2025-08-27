@@ -2,39 +2,172 @@
 @import "../scss/variables/variables";
 
 .about {
-  padding: 12rem 0rem;
-  &_wrapper {
-    &-content {
-      display: flex;
-      flex-direction: column;
-      gap: 0.5rem;
-      align-items: center;
-      &--title {
-        @include font-montserrat-title;
-        font-size: 2.6rem;
-        max-width: 60rem;
-        text-align: center;
-      }
-      &--text {
-        @include font-montserrat-p;
-        font-weight: 300;
-        color: $smoke50;
-        text-align: center;
-      }
-      &--span {
-        display: block;
-        padding-top: 2rem;
+  padding: 10rem 0;
+  max-width: 100%;
+  width: 100%;
+  background: linear-gradient(
+    135deg,
+    rgba($black, 0.95) 0%,
+    rgba($black, 0.9) 100%
+  );
+  position: relative;
+  overflow: hidden;
+
+  &__wrapper {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  &__header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  &__subtitle {
+    @include font-montserrat-text;
+    font-size: 1.6rem;
+    color: $brick;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: block;
+    margin-bottom: 1.5rem;
+  }
+
+  &__title {
+    @include font-montserrat-title;
+    font-size: 3.2rem;
+    line-height: 1.3;
+    color: $white;
+    margin-bottom: 2rem;
+
+    &-highlight {
+      color: $brick;
+      position: relative;
+    }
+  }
+
+  &__experience {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    @include font-montserrat-text;
+    font-size: 1.6rem;
+    color: rgba($white, 0.8);
+    padding: 1rem 2rem;
+    background: rgba($white, 0.05);
+    border-radius: 50px;
+  }
+
+  &__experience-icon {
+    color: $brick;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  &__paragraph {
+    @include font-montserrat-text;
+    font-size: 1.8rem;
+    line-height: 1.7;
+    color: rgba($white, 0.85);
+    text-align: center;
+  }
+
+  &__quote {
+    @include font-montserrat-text;
+    font-size: 2rem;
+    font-style: italic;
+    color: $white;
+    padding: 3rem;
+    border-left: 3px solid $brick;
+    background: rgba($white, 0.03);
+    margin: 3rem 0;
+    position: relative;
+
+    &::before {
+      content: '"';
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      font-size: 5rem;
+      color: rgba($brick, 0.2);
+      font-family: serif;
+      line-height: 1;
+    }
+  }
+
+  &__signature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    &-text {
+      @include font-montserrat-text;
+      font-size: 1.6rem;
+      color: rgba($white, 0.7);
+    }
+
+    &-icon {
+      color: $brick;
+      opacity: 0.8;
+    }
+  }
+
+  &__button {
+    @include font-montserrat-btn;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    background-color: $brick;
+    color: $white;
+    border: none;
+    padding: 1.5rem 3.5rem;
+    font-size: 1.6rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    animation: fadeInUp 0.8s ease 0.4s forwards;
+    opacity: 0;
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba($brick, 0.4);
+
+      &::before {
+        left: 0;
       }
     }
-    &-btn {
-      @include font-montserrat-btn;
-      color: $white;
-      background-color: $brick;
-      border: 1px solid $brick;
-      cursor: pointer;
-      padding: 1.6rem 4rem;
-      margin-top: 3rem;
-      @include hover-btn;
+  }
+
+  @media (max-width: 768px) {
+    padding: 8rem 0;
+
+    &__title {
+      font-size: 2.6rem;
+    }
+
+    &__paragraph {
+      font-size: 1.6rem;
+    }
+
+    &__quote {
+      font-size: 1.8rem;
+      padding: 2rem;
     }
   }
 }

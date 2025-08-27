@@ -9,10 +9,7 @@
 @import "../components/reviews";
 @import "../components/portfolio";
 @import "../components/footer";
-@import "../components/checkage";
-@import "../components/popup";
 @import "../components/link-scroll-top";
-@import "../components/promo";
 @import "../components/location";
 
 // MEDIA QUERIES COMPONENTS
@@ -26,9 +23,6 @@
 @import "../media-queries/media-portfolio";
 @import "../media-queries/media-price";
 @import "../media-queries/media-footer";
-@import "../media-queries/media-popup";
-@import "../media-queries/media-checkage";
-@import "../media-queries/media-promo";
 @import "../media-queries/media-location";
 
 // MIXINS
@@ -61,4 +55,5 @@ body {
 .container {
   max-width: 132rem;
   margin: 0 auto;
+  padding: 0 16px;
 }
