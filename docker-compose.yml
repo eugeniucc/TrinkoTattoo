@@ -24,7 +24,7 @@ services:
       - /home/pi/TrinkoTattoo:/usr/share/nginx/html:ro
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.trinko.rule=Host(`trinkotattoo.ink`, `www.trinkotattoo.ink`)"
+      - "traefik.http.routers.trinko.rule=Host(`trinkotattoo.ink`)"
       - "traefik.http.routers.trinko.entrypoints=web"
       - "traefik.http.services.trinko.loadbalancer.server.port=80"
     ports:
@@ -42,7 +42,7 @@ services:
       - /home/pi/MakakaTattoo:/usr/share/nginx/html:ro
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.makaka.rule=Host(`makaka.tattoo`, `www.makaka.tattoo`)"
+      - "traefik.http.routers.makaka.rule=Host(`makaka.tattoo`)"
       - "traefik.http.routers.makaka.entrypoints=web"
       - "traefik.http.services.makaka.loadbalancer.server.port=80"
     ports:
@@ -71,12 +71,6 @@ services:
     command: tunnel --no-autoupdate run --token ${MAKAKA_TATTOO_TOKEN}
     networks:
       - web
-
-  cloudflared_ssh:
-    image: cloudflare/cloudflared:latest
-    container_name: cloudflared_ssh
-    restart: always
-    command: tunnel --no-autoupdate run --token YOUR_SSH_TUNNEL_TOKEN
 
 
 networks:
