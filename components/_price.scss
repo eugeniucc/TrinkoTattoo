@@ -43,7 +43,7 @@
   &__category {
     &-title {
       @include font-montserrat-title;
-      font-size: 2.2rem;
+      font-size: 3.2rem;
       margin-bottom: 2.5rem;
     }
   }
@@ -69,11 +69,13 @@
   }
 
   &__service {
+    font-size: 1.4rem;
     flex: 1;
   }
 
   &__value {
     font-weight: 600;
+    font-size: 1.6rem;
     margin-left: 2rem;
   }
 
@@ -82,7 +84,7 @@
     padding: 2.5rem;
     border-radius: 8px;
     margin-top: 2rem;
-
+    font-size: 1.6rem;
     &-title {
       @include font-montserrat-title;
       font-size: 1.8rem;

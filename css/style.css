@@ -656,7 +656,7 @@
   font-weight: 600;
   font-style: normal;
   text-align: center;
-  font-size: 2.2rem;
+  font-size: 3.2rem;
   margin-bottom: 2.5rem;
 }
 @media (max-width: 1024px) {
@@ -685,10 +685,12 @@
   font-weight: 700;
 }
 .price__service {
+  font-size: 1.4rem;
   flex: 1;
 }
 .price__value {
   font-weight: 600;
+  font-size: 1.6rem;
   margin-left: 2rem;
 }
 .price__info {
@@ -696,6 +698,7 @@
   padding: 2.5rem;
   border-radius: 8px;
   margin-top: 2rem;
+  font-size: 1.6rem;
 }
 .price__info-title {
   font-family: "Montserrat", sans-serif;
@@ -2269,7 +2272,7 @@
 }
 @font-face {
   font-family: "Montserrat";
-  src: url("/fonts/Montserrat-Regular.woff2") format("woff2"), url("/fonts/Montserrat-Regular.woff") format("woff");
+  src: url("/fonts/Montserrat-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
