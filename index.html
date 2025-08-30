@@ -4,23 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- GOOGLE ANALYTICS SCRIPT -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-L0J29744YQ"
-    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
         dataLayer.push(arguments);
       }
-      gtag("js", new Date());
-      gtag("config", "G-L0J29744YQ", { cookie_flags: "SameSite=None; Secure" });
+      window.addEventListener("load", function () {
+        var gtagScript = document.createElement("script");
+        gtagScript.src =
+          "https://www.googletagmanager.com/gtag/js?id=G-L0J29744YQ";
+        gtagScript.async = true;
+        document.head.appendChild(gtagScript);
+
+        gtag("js", new Date());
+        gtag("config", "G-L0J29744YQ", {
+          cookie_flags: "SameSite=None; Secure",
+        });
+      });
     </script>
+
     <!-- CANONICAL LINK -->
     <link rel="canonical" href="https://trinkotattoo.ink/" />
     <link rel="alternate" hreflang="ru" href="https://trinkotattoo.ink/" />
-    <link rel="alternate" hreflang="ro" href="https://trinkotattoo.ink/ro.html" />
-    <link rel="alternate" hreflang="x-default" href="https://trinkotattoo.ink/" />
+    <link
+      rel="alternate"
+      hreflang="ro"
+      href="https://trinkotattoo.ink/ro.html"
+    />
+    <link
+      rel="alternate"
+      hreflang="x-default"
+      href="https://trinkotattoo.ink/"
+    />
     <!-- GENERAL METAGRAPH -->
     <meta property="og:type" content="website" />
     <meta
@@ -28,7 +43,7 @@
       content="Лучший тату салон в Кишиневе - TrinkoTattoo"
     />
     <meta property="og:url" content="https://trinkotattoo.ink/" />
-    <meta property="og:image" content="./icons/icon.png" />
+    <meta property="og:image" content="./logo.png" />
     <meta
       property="og:description"
       content="Лучший тату салон в Кишиневе - TrinkoTattoo. Профессиональные мастера, качественные материалы, татуировки любого размера и сложности. Запишитесь на сеанс прямо сейчас!"
@@ -37,63 +52,120 @@
       name="description"
       content="Лучший тату салон в Кишиневе - TrinkoTattoo. Профессиональные мастера, качественные материалы, татуировки любого размера и сложности. Запишитесь на сеанс прямо сейчас!"
     />
-    <!-- KEYWORDS -->
-    <meta
-      name="keywords"
-      content="тату салон, татуировка, тату, Кишинев, Trinkotattoo, tattoo salon, tattoo, Chisinau, тату салоны Кишинев, профессиональные тату мастера, лучшие тату мастера Кишинев, уникальные татуировки"
-    />
     <!-- TWITTER METAGRAPH -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       property="twitter:title"
       content="Лучший тату салон в Кишиневе - TrinkoTattoo"
     />
-    <meta name="twitter:image" content="./icons/icon.png" />
+    <meta name="twitter:image" content="./logo.png" />
     <meta
       property="twitter:description"
       content="Лучший тату салон в Кишиневе - TrinkoTattoo. Профессиональные мастера, качественные материалы, татуировки любого размера и сложности. Запишитесь на сеанс прямо сейчас!"
     />
     <title>Лучший тату салон в Кишиневе - TrinkoTattoo</title>
     <!-- ICONS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/icons/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="96x96"
-      href="/icons/favicon-96x96.png"
-    />
-    <link rel="manifest" href="/icons/manifest.json" />
-    <link rel="icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     <!-- LEAFLET -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-      crossorigin=""
-    />
-    <script
-      defer
-      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-      crossorigin=""
-    ></script>
-    <script defer src="./js/leaflet.js"></script>
+    <script>
+      window.addEventListener("load", function () {
+        var leafletCss = document.createElement("link");
+        leafletCss.rel = "stylesheet";
+        leafletCss.href = "https://unpkg.com/leaflet@1.9.4/dist/leaflet.css";
+        leafletCss.integrity =
+          "sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=";
+        leafletCss.crossOrigin = "";
+        document.head.appendChild(leafletCss);
+
+        var leafletJs = document.createElement("script");
+        leafletJs.src = "https://unpkg.com/leaflet@1.9.4/dist/leaflet.js";
+        leafletJs.defer = true;
+        leafletJs.integrity =
+          "sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=";
+        leafletJs.crossOrigin = "";
+        leafletJs.onload = function () {
+          var myScript = document.createElement("script");
+          myScript.src = "./js/leaflet.js";
+          myScript.defer = true;
+          document.body.appendChild(myScript);
+        };
+        document.body.appendChild(leafletJs);
+      });
+    </script>
+
     <!-- SWIPER SCRIPTS -->
     <script
       defer
       src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
     ></script>
-    <script defer src="./js/swiper-portfolio.js"></script>
-    <script defer src="./js/portfolio-mobile.js"></script>
+    <link
+      rel="preload"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      as="style"
+      crossorigin
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      />
+    </noscript>
+
     <script defer src="./js/swiper-nav.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const target = document.getElementById("portfolio");
+        if (!target) return;
+
+        let inited = false;
+
+        function loadScript(src) {
+          return new Promise((resolve, reject) => {
+            const s = document.createElement("script");
+            s.src = src;
+            s.defer = true;
+            s.onload = resolve;
+            s.onerror = reject;
+            document.body.appendChild(s);
+          });
+        }
+
+        async function initPortfolio() {
+          if (inited) return;
+          inited = true;
+          try {
+            await loadScript("/js/swiper-portfolio.js");
+            await loadScript("/js/portfolio-mobile.js");
+          } catch (e) {
+            console.error("Check portfolio init", e);
+          }
+        }
+        function isInViewport(el) {
+          const r = el.getBoundingClientRect();
+          return r.top < window.innerHeight && r.bottom > 0;
+        }
+        if (isInViewport(target)) {
+          initPortfolio();
+          return;
+        }
+
+        const observer = new IntersectionObserver((entries, obs) => {
+          const entry = entries[0];
+          if (entry && entry.isIntersecting) {
+            initPortfolio();
+            obs.disconnect();
+          }
+        });
+        observer.observe(target);
+      });
+    </script>
+
     <!-- MY SCRIPTS -->
     <script defer src="./js/duck.js"></script>
     <script defer src="./js/sectionhref.js"></script>
@@ -428,7 +500,7 @@
           <div class="header_nav-logo">
             <img
               class="header_nav-logo--img"
-              src="./icons/icon.png"
+              src="./logo.png"
               alt="TrinkoTattoo"
             />
           </div>
@@ -815,6 +887,7 @@
               src="./img/price-bg.webp"
               alt="Примеры наших работ"
               class="price__img"
+              loading="lazy"
             />
           </div>
         </div>
@@ -828,6 +901,7 @@
               src="./img/course-img.webp"
               alt="Обучение татуировке"
               class="course__img"
+              loading="lazy"
             />
           </div>
 
@@ -1065,6 +1139,7 @@
                 src="./img/correction-bg.webp"
                 alt="Пример коррекции татуировки"
                 class="correction__img"
+                loading="lazy"
               />
               <div class="correction__image-badge">До/После</div>
             </div>

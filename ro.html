@@ -4,23 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- GOOGLE ANALYTICS SCRIPT -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-L0J29744YQ"
-    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
         dataLayer.push(arguments);
       }
-      gtag("js", new Date());
-      gtag("config", "G-L0J29744YQ", { cookie_flags: "SameSite=None; Secure" });
+      window.addEventListener("load", function () {
+        var gtagScript = document.createElement("script");
+        gtagScript.src =
+          "https://www.googletagmanager.com/gtag/js?id=G-L0J29744YQ";
+        gtagScript.async = true;
+        document.head.appendChild(gtagScript);
+
+        gtag("js", new Date());
+        gtag("config", "G-L0J29744YQ", {
+          cookie_flags: "SameSite=None; Secure",
+        });
+      });
     </script>
     <!-- CANONICAL LINK -->
     <link rel="canonical" href="https://trinkotattoo.ink/ro.html" />
     <link rel="alternate" hreflang="ru" href="https://trinkotattoo.ink/" />
-    <link rel="alternate" hreflang="ro" href="https://trinkotattoo.ink/ro.html" />
-    <link rel="alternate" hreflang="x-default" href="https://trinkotattoo.ink/" />
+    <link
+      rel="alternate"
+      hreflang="ro"
+      href="https://trinkotattoo.ink/ro.html"
+    />
+    <link
+      rel="alternate"
+      hreflang="x-default"
+      href="https://trinkotattoo.ink/"
+    />
     <!-- GENERAL METAGRAPH -->
     <meta property="og:type" content="website" />
     <meta
@@ -28,7 +42,7 @@
       content="Cel mai bun salon de tatuaje din Chișinău - TrinkoTattoo"
     />
     <meta property="og:url" content="https://trinkotattoo.ink/" />
-    <meta property="og:image" content="./icons/icon.png" />
+    <meta property="og:image" content="./logo.png" />
     <meta
       property="og:description"
       content="Cel mai bun salon de tatuaje din Chișinău - TrinkoTattoo. Maeștri profesioniști, materiale de calitate, tatuaje de orice dimensiune și complexitate. Programează-te chiar acum!"
@@ -37,41 +51,24 @@
       name="description"
       content="Cel mai bun salon de tatuaje din Chișinău - TrinkoTattoo. Maeștri profesioniști, materiale de calitate, tatuaje de orice dimensiune și complexitate. Programează-te chiar acum!"
     />
-    <!-- KEYWORDS -->
-    <meta
-      name="keywords"
-      content="salon tatuaje, tatuaj, tatuaje, Chișinău, Trinkotattoo, tattoo salon, tattoo, cel mai bun salon tatuaje Chișinău, maeștri profesioniști tatuaje, tatuatori Chișinău, tatuaje unice"
-    />
     <!-- TWITTER METAGRAPH -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       property="twitter:title"
       content="Cel mai bun salon de tatuaje din Chișinău - TrinkoTattoo"
     />
-    <meta name="twitter:image" content="./icons/icon.png" />
+    <meta name="twitter:image" content="./logo.png" />
     <meta
       property="twitter:description"
       content="Cel mai bun salon de tatuaje din Chișinău - TrinkoTattoo. Maeștri profesioniști, materiale de calitate, tatuaje de orice dimensiune și complexitate. Programează-te chiar acum!"
     />
     <title>Cel mai bun salon de tatuaje din Chișinău - TrinkoTattoo</title>
     <!-- ICONS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/icons/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="96x96"
-      href="/icons/favicon-96x96.png"
-    />
-    <link rel="manifest" href="/icons/manifest.json" />
-    <link rel="icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     <!-- LEAFLET -->
     <link
       rel="stylesheet"
@@ -91,9 +88,69 @@
       defer
       src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
     ></script>
-    <script defer src="./js/swiper-portfolio.js"></script>
-    <script defer src="./js/portfolio-mobile.js"></script>
+    <link
+      rel="preload"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      as="style"
+      crossorigin
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      />
+    </noscript>
+
     <script defer src="./js/swiper-nav.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const target = document.getElementById("portfolio");
+        if (!target) return;
+
+        let inited = false;
+
+        function loadScript(src) {
+          return new Promise((resolve, reject) => {
+            const s = document.createElement("script");
+            s.src = src;
+            s.defer = true;
+            s.onload = resolve;
+            s.onerror = reject;
+            document.body.appendChild(s);
+          });
+        }
+
+        async function initPortfolio() {
+          if (inited) return;
+          inited = true;
+          try {
+            await loadScript("/js/swiper-portfolio.js");
+            await loadScript("/js/portfolio-mobile.js");
+          } catch (e) {
+            console.error("Check portfolio init", e);
+          }
+        }
+        function isInViewport(el) {
+          const r = el.getBoundingClientRect();
+          return r.top < window.innerHeight && r.bottom > 0;
+        }
+        if (isInViewport(target)) {
+          initPortfolio();
+          return;
+        }
+
+        const observer = new IntersectionObserver((entries, obs) => {
+          const entry = entries[0];
+          if (entry && entry.isIntersecting) {
+            initPortfolio();
+            obs.disconnect();
+          }
+        });
+        observer.observe(target);
+      });
+    </script>
     <!-- MY SCRIPTS -->
     <script defer src="./js/duck.js"></script>
     <script defer src="./js/sectionhref.js"></script>
@@ -428,7 +485,7 @@
           <div class="header_nav-logo">
             <img
               class="header_nav-logo--img"
-              src="./icons/icon.png"
+              src="./logo.png"
               alt="TrinkoTattoo"
             />
           </div>
