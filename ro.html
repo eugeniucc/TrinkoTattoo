@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ro">
   <head>
     <meta charset="UTF-8" />
@@ -93,7 +93,10 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
       as="style"
       crossorigin
-      onload="this.onload=null;this.rel='stylesheet'"
+      onload="
+        this.onload = null;
+        this.rel = 'stylesheet';
+      "
     />
     <noscript>
       <link
@@ -604,7 +607,9 @@
           <div class="swiper-slide">
             <div
               class="slide-content"
-              style="background-image: url('./img/presentation-1.webp')"
+              style="
+                background-image: url(&quot;./img/presentation-1.webp&quot;);
+              "
             >
               <div class="slide-overlay"></div>
               <div class="slide-text">
@@ -626,7 +631,9 @@
           <div class="swiper-slide">
             <div
               class="slide-content"
-              style="background-image: url('./img/presentation-2.webp')"
+              style="
+                background-image: url(&quot;./img/presentation-2.webp&quot;);
+              "
             >
               <div class="slide-overlay"></div>
               <div class="slide-text">
@@ -642,7 +649,9 @@
           <div class="swiper-slide">
             <div
               class="slide-content"
-              style="background-image: url('./img/presentation-3.webp')"
+              style="
+                background-image: url(&quot;./img/presentation-3.webp&quot;);
+              "
             >
               <div class="slide-overlay"></div>
               <div class="slide-text">
@@ -1144,9 +1153,9 @@
                 Cel mai bun salon de tatuaje Trinkotattoo
               </h3>
               <p class="location__text">
-                Ne aflăm chiar în inima Chișinăului, în centrul comercial
-                "Atrium". Maeștrii noștri au ani de experiență și sunt gata să
-                transforme orice idee a ta într-un tatuaj unic.
+                Ne aflăm în inima Chișinăului. Maeștrii noștri au o experiență
+                de mulți ani și sunt gata să transforme orice idee în tatuaje
+                unice.
               </p>
 
               <div class="location__features">
@@ -1174,11 +1183,11 @@
                       stroke-linejoin="round"
                     />
                   </svg>
-                  <span>Zilnic de la 10:00 până la 20:00</span>
+                  <span>Zilnic între 09:00 și 20:00</span>
                 </div>
 
                 <p class="location__cta-text">
-                  Lucrăm doar pe bază de programare prealabilă.
+                  Programările se fac exclusiv în avans.
                 </p>
 
                 <div class="location__feature">
@@ -1205,7 +1214,11 @@
                       stroke-linejoin="round"
                     />
                   </svg>
-                  <span>CC "Atrium", str. Albișoara 4</span>
+                  <span>
+                    Ne-am mutat! Str. Tighina 65 (mai jos de Gara Centrală).
+                    Reper stația de autobuz. Intrarea este mai aproape de
+                    intersecția cu str. Alexandru cel Bun, inscripția "icam".
+                  </span>
                 </div>
               </div>
             </div>

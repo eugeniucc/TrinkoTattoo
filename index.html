@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
@@ -107,7 +107,10 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
       as="style"
       crossorigin
-      onload="this.onload=null;this.rel='stylesheet'"
+      onload="
+        this.onload = null;
+        this.rel = 'stylesheet';
+      "
     />
     <noscript>
       <link
@@ -619,7 +622,9 @@
           <div class="swiper-slide">
             <div
               class="slide-content"
-              style="background-image: url('./img/presentation-1.webp')"
+              style="
+                background-image: url(&quot;./img/presentation-1.webp&quot;);
+              "
             >
               <div class="slide-overlay"></div>
               <div class="slide-text">
@@ -643,7 +648,9 @@
           <div class="swiper-slide">
             <div
               class="slide-content"
-              style="background-image: url('./img/presentation-2.webp')"
+              style="
+                background-image: url(&quot;./img/presentation-2.webp&quot;);
+              "
             >
               <div class="slide-overlay"></div>
               <div class="slide-text">
@@ -661,7 +668,9 @@
           <div class="swiper-slide">
             <div
               class="slide-content"
-              style="background-image: url('./img/presentation-3.webp')"
+              style="
+                background-image: url(&quot;./img/presentation-3.webp&quot;);
+              "
             >
               <div class="slide-overlay"></div>
               <div class="slide-text">
@@ -1162,9 +1171,9 @@
             <div class="location__card">
               <h3 class="location__title">Лучший тату-салон Trinkotattoo</h3>
               <p class="location__text">
-                Мы расположены в самом сердце Кишинева, в ТЦ "Атриум". Наши
-                мастера обладают многолетним опытом и готовы воплотить любые
-                ваши идеи в уникальные татуировки.
+                Мы находимся в самом сердце Кишинёва. Наши мастера обладают
+                многолетним опытом и готовы воплотить любые ваши идеи в
+                уникальные татуировки.
               </p>
 
               <div class="location__features">
@@ -1192,7 +1201,7 @@
                       stroke-linejoin="round"
                     />
                   </svg>
-                  <span>Ежедневно с 10:00 до 20:00</span>
+                  <span>Ежедневно с 09:00 до 20:00</span>
                 </div>
 
                 <p class="location__cta-text">
@@ -1223,7 +1232,11 @@
                       stroke-linejoin="round"
                     />
                   </svg>
-                  <span>ТЦ "Атриум", ул. Албишоара 4</span>
+                  <span>
+                    Мы переехали! ул. Тигина 65 (ниже Центрального автовокзала).
+                    Ориентир автобусная остановка. Вход ближе к пересечению с
+                    str. Alexandru cel Bun, надпись "icam".
+                  </span>
                 </div>
               </div>
             </div>
